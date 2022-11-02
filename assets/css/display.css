@@ -273,9 +273,9 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; colo
 
 .promotion .promo_con .typo_box .download { float: left; font-size: 32px; font-weight: 700; }
 
-.promotion .promo_con .typo_box .download a span.ico { background: url(../../../assets/images/ico/ico_down.png) no-repeat center; width: 51px; height: 51px; border-radius: 50%; display: inline-block; background-color: #503AE7; }
+.promotion .promo_con .typo_box .download a span.ico { background: url(../../../assets/images/ico/ico_down.png) no-repeat center; width: 51px; height: 51px; border-radius: 50%; display: inline-block; background-color: #503AE7; vertical-align: bottom; }
 
-.promotion .promo_con .typo_box .download a p { display: inline-block; vertical-align: bottom; margin-left: 24px; line-height: 51px; }
+.promotion .promo_con .typo_box .download a p { display: inline-block; margin-left: 24px; line-height: 51px; }
 
 .promotion .promo_con .typo_box .font { font-weight: 600; font-size: 24px; }
 
