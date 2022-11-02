@@ -10,6 +10,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const pcFocus = require('postcss-focus');
 const pcFontpath = require('postcss-fontpath');
 const extender = require('gulp-html-extend');
+const ws = require('gulp-webserver');
 
 gulp.task('sass', function() {
 	return gulp.src('css_dev/*.scss')
@@ -23,13 +24,13 @@ gulp.task('sass', function() {
 	    {	type: 'embedded-opentype', ext: 'eot' },
 	    {	type: 'woff2', ext: 'woff2' },
 	    {	type: 'woff', ext: 'woff' },
-	    {	type: 'truetype', ext: 'ttf' }    
+	    {	type: 'truetype', ext: 'ttf' }
 	  ]
 	 })],
 		//[autoprefixer({browsers: ['last 2 versions']})],
 		[autoprefixer()],
 		[pcFocus()]
-		))	
+		))
 	.pipe(sourcemaps.write('../css'))
 	.pipe(gulp.dest('../assets/css'))
 });
@@ -51,11 +52,19 @@ gulp.task('babel', function () {
 		.pipe(gulp.dest('../assets/js/'));
 });
 
+gulp.task('webserver', function () {
+  return gulp.src('../')
+      .pipe(ws({
+          livereload: true, open: true,
+          directoryListing: {enable: true, path: '../'}
+      }))
+});
+
 gulp.task('watch', function() {
 	gulp.watch('css_dev/**/*.scss', gulp.series('sass'));
 	gulp.watch('page_dev/**/*.html', gulp.series('extend'));
 	gulp.watch('page_include/**/*.html', gulp.series('extend'));
-	gulp.watch('js_dev/*.js', gulp.series('babel'));
+	//gulp.watch('js_dev/*.js', gulp.series('babel'));
 });
 
-gulp.task('default',gulp.parallel(['watch']));
+gulp.task('default', gulp.parallel(['watch', 'webserver']));
