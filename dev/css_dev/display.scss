@@ -6,8 +6,10 @@
 	'utils/mixin.scss';
 
 @import
+	'base/reset.scss',
 	'base/font.scss',
 	'base/normalize_v8.0.1.scss',
+	'base/normalize_kor_v3.0.3.scss',
 	'base/base.scss';
 
 @import

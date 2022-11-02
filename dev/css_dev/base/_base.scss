@@ -4,13 +4,13 @@ html,
 body {
     width: 100%;
     height: 100%;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: $r;
-    line-height: 28px;
     color: #000;
 }
 
@@ -19,6 +19,77 @@ body {
     margin: 0 auto;
 }
 
+// promotion only css - 임시
+
+.promotion {
+    .promo_tit {
+        height: 117px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgba(0,0,0,.2);
+        h1 {
+            float: left;
+            font-weight: $b;
+        }
+    }
+    .promo_con {
+        h3 {
+            margin-top: 96px;
+            font-size: 24px;
+            font-weight: $sb;
+        }
+        .typo_box {
+            overflow: hidden;
+            width: 100%;
+            background-color: #F4F2FF;
+            margin-top: 48px;
+            text-align: center;
+            padding: 80px;
+            .download {
+                float: left;
+                font-size: 32px;
+                font-weight: $b;
+                a {
+                    span.ico {
+                        background: url(../../../assets/images/ico/ico_down.png) no-repeat center;
+                        width: 51px;
+                        height: 51px;
+                        border-radius: 50%;
+                        display: inline-block;
+                        background-color: #503AE7;
+                    }
+                    p {
+                        display: inline-block;
+                        vertical-align: bottom;
+                        margin-left: 24px;
+                        line-height: 51px;
+                    }
+                }
+            }
+            .font {
+                font-weight: $sb;
+                font-size: 24px;
+                .ico {
+                    display: inline-block;
+                    background: url(../../../assets/images/ico/ico_folder.png) no-repeat center / 100%;
+                    width: 68px;
+                    height: 54px;
+                }
+                p {
+                    display: inline-block;
+                    vertical-align: bottom;
+                    line-height: 58px;
+                    margin-left: 22px;
+                    background-color: red;
+                }
+            }
+        }
+    }
+}
+
+
+// content padding
 .con_pd {
     padding: 0 80px;
 }
