@@ -1,7 +1,7 @@
 
 # trial finsweet8
 ***
-- [Index Page](https://idrpubadmin.github.io/trial finsweet8/index.html)
+- [Index Page](https://github.com/IdrpubAdmin/trial_finsweet8/blob/main/index.html)
 
 ### 퍼블리싱 작업환경
  - node.js + gulp.js 환경
