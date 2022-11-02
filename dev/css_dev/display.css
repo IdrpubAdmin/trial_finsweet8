@@ -338,4 +338,13 @@ body {
   font-weight: 400;
   line-height: 28px;
   color: #000;
+}
+
+#container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.con_pd {
+  padding: 0 80px;
 }/*# sourceMappingURL=display.css.map */
