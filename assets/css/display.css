@@ -281,7 +281,7 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; colo
 
 .promotion .promo_con .typo_box .font .ico { display: inline-block; background: url(../../../assets/images/ico/ico_folder.png) no-repeat center/100%; width: 68px; height: 54px; }
 
-.promotion .promo_con .typo_box .font p { display: inline-block; vertical-align: bottom; line-height: 58px; margin-left: 22px; background-color: red; }
+.promotion .promo_con .typo_box .font p { display: inline-block; vertical-align: bottom; line-height: 58px; margin-left: 22px; }
 
 .con_pd { padding: 0 80px; }
 
