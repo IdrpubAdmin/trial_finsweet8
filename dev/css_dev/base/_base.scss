@@ -21,8 +21,10 @@ body {
 
 // promotion only css - 임시
 
+// promotion
 .promotion {
     .promo_tit {
+        overflow: hidden;
         height: 117px;
         display: flex;
         justify-content: space-between;
@@ -83,6 +85,51 @@ body {
                     margin-left: 22px;
                 }
             }
+        }
+    }
+}
+
+//text_heading
+
+.text_heading {
+    margin-top: 96px;
+    .tehead_wrap {
+        overflow: hidden;
+        .heading {
+            float: left;
+            width: 30%;
+            p {
+                margin-bottom: 38px;
+            }
+            .heading_1 {    
+                font-size: 48px;
+                font-weight: $b;
+            }
+            .heading_2 {
+                font-size: 32px;
+                font-weight: $b;
+            }
+            .heading_3 {
+                font-size: 24px;
+                font-weight: $sb;
+            }
+            .heading_4 {
+                font-size: 20px;
+                font-weight: $sb;
+            }
+            .heading_5 {
+                font-size: 16px;
+                font-weight: $r;
+            }
+            .heading_6 {
+                font-size: 12px;
+                font-weight: $r;
+                margin-bottom: 0;
+            }
+        }   
+        .body_text {
+            width: 70%;
+            line-height: 150%;
         }
     }
 }

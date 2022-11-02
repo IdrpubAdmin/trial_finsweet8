@@ -263,7 +263,7 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; colo
 
 #container { max-width: 1440px; margin: 0 auto; }
 
-.promotion .promo_tit { height: 117px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+.promotion .promo_tit { overflow: hidden; height: 117px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
 
 .promotion .promo_tit h1 { float: left; font-weight: 700; }
 
@@ -282,6 +282,28 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; colo
 .promotion .promo_con .typo_box .font .ico { display: inline-block; background: url(../../../assets/images/ico/ico_folder.png) no-repeat center/100%; width: 68px; height: 54px; }
 
 .promotion .promo_con .typo_box .font p { display: inline-block; vertical-align: bottom; line-height: 58px; margin-left: 22px; }
+
+.text_heading { margin-top: 96px; }
+
+.text_heading .tehead_wrap { overflow: hidden; }
+
+.text_heading .tehead_wrap .heading { float: left; width: 30%; }
+
+.text_heading .tehead_wrap .heading p { margin-bottom: 38px; }
+
+.text_heading .tehead_wrap .heading .heading_1 { font-size: 48px; font-weight: 700; }
+
+.text_heading .tehead_wrap .heading .heading_2 { font-size: 32px; font-weight: 700; }
+
+.text_heading .tehead_wrap .heading .heading_3 { font-size: 24px; font-weight: 600; }
+
+.text_heading .tehead_wrap .heading .heading_4 { font-size: 20px; font-weight: 600; }
+
+.text_heading .tehead_wrap .heading .heading_5 { font-size: 16px; font-weight: 400; }
+
+.text_heading .tehead_wrap .heading .heading_6 { font-size: 12px; font-weight: 400; margin-bottom: 0; }
+
+.text_heading .tehead_wrap .body_text { width: 70%; line-height: 150%; }
 
 .con_pd { padding: 0 80px; }
 
