@@ -305,6 +305,42 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; colo
 
 .text_heading .tehead_wrap .body_text { width: 70%; line-height: 150%; }
 
+.color_palette h3 { font-size: 30px; font-weight: 600; }
+
+.color_palette ul { overflow: hidden; text-align: center; margin-top: 48px; }
+
+.color_palette ul li { float: left; width: 128px; height: 96px; line-height: 96px; }
+
+.color_palette ul .sub_color { background-color: #1AD993; }
+
+.color_palette ul .color_1 { background-color: #ABFFE0; }
+
+.color_palette ul .prime_color { background-color: #503AE7; }
+
+.color_palette ul .color_2 { background-color: #832BC1; }
+
+.color_palette ul .color_3 { background-color: black; color: #fff; }
+
+.color_palette ul .color_4 { background-color: #AFB0B9; }
+
+.color_palette ul .color_5 { background-color: #F4F2FF; }
+
+.components .btn_com_list { margin-top: 48px; overflow: hidden; }
+
+.components .btn_com_list li { float: left; }
+
+.btn_1 { background-color: #503AE7; color: #fff; line-height: 48px; width: 115px; height: 48px; text-align: center; }
+
+.btn_1 a { display: block; height: 100%; }
+
+.btn_2 { line-height: 46px; height: 48px; text-align: center; width: 147px; border: 2px solid #14142B; }
+
+.btn_2 a { display: block; height: 100%; }
+
+.btn_3 a { display: block; height: 100%; }
+
+.btn_4 a { display: block; height: 100%; }
+
 .con_pd { padding: 0 80px; }
 
 /*# sourceMappingURL=../css/display.css.map */
