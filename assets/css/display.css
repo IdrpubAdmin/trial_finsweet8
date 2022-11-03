@@ -285,9 +285,9 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; colo
 
 .promotion .promo_con h3 { margin-top: 96px; font-size: 24px; font-weight: 600; }
 
-.promotion .promo_con .typo_box { overflow: hidden; width: 100%; background-color: #F4F2FF; margin-top: 48px; text-align: center; padding: 80px; }
+.promotion .promo_con .typo_box { overflow: hidden; width: 100%; background-color: #F4F2FF; margin-top: 48px; text-align: center; padding: 80px; display: flex; justify-content: space-around; flex-wrap: wrap; }
 
-.promotion .promo_con .typo_box .download { float: left; font-size: 32px; font-weight: 700; }
+.promotion .promo_con .typo_box .download { font-size: 32px; font-weight: 700; }
 
 .promotion .promo_con .typo_box .download a span.ico { background: url(../../../assets/images/ico/ico_down.png) no-repeat center; width: 51px; height: 51px; border-radius: 50%; display: inline-block; background-color: #503AE7; vertical-align: bottom; }
 
@@ -307,19 +307,19 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; colo
 
 .text_heading .tehead_wrap .heading p { margin-bottom: 38px; }
 
-.text_heading .tehead_wrap .heading .heading_1 { font-size: 48px; font-weight: 700; }
-
-.text_heading .tehead_wrap .heading .heading_2 { font-size: 32px; font-weight: 700; }
-
-.text_heading .tehead_wrap .heading .heading_3 { font-size: 24px; font-weight: 600; }
-
-.text_heading .tehead_wrap .heading .heading_4 { font-size: 20px; font-weight: 600; }
-
-.text_heading .tehead_wrap .heading .heading_5 { font-size: 16px; font-weight: 400; }
-
-.text_heading .tehead_wrap .heading .heading_6 { font-size: 12px; font-weight: 400; margin-bottom: 0; }
-
 .text_heading .tehead_wrap .body_text { width: 70%; line-height: 150%; }
+
+.heading_1 { font-size: 48px; font-weight: 700; }
+
+.heading_2 { font-size: 32px; font-weight: 700; }
+
+.heading_3 { font-size: 24px; font-weight: 600; }
+
+.heading_4 { font-size: 20px; font-weight: 600; }
+
+.heading_5 { font-size: 16px; font-weight: 400; }
+
+.heading_6 { font-size: 12px; font-weight: 400; margin-bottom: 0; }
 
 .color_palette h3 { font-size: 30px; font-weight: 600; }
 
@@ -327,19 +327,19 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; colo
 
 .color_palette ul li { float: left; width: 128px; height: 96px; line-height: 96px; }
 
-.color_palette ul .sub_color { background-color: #1AD993; }
+.prime_color { background-color: #503AE7; }
 
-.color_palette ul .color_1 { background-color: #ABFFE0; }
+.sub_color { background-color: #1AD993; }
 
-.color_palette ul .prime_color { background-color: #503AE7; }
+.color_1 { background-color: #ABFFE0; }
 
-.color_palette ul .color_2 { background-color: #832BC1; }
+.color_2 { background-color: #832BC1; }
 
-.color_palette ul .color_3 { background-color: black; color: #fff; }
+.color_3 { background-color: black; color: #fff; }
 
-.color_palette ul .color_4 { background-color: #AFB0B9; }
+.color_4 { background-color: #AFB0B9; }
 
-.color_palette ul .color_5 { background-color: #F4F2FF; }
+.color_5 { background-color: #F4F2FF; }
 
 .components .btn_com_list { margin-top: 48px; overflow: hidden; }
 
@@ -353,9 +353,11 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; colo
 
 .btn_2 a { display: block; height: 100%; }
 
-.btn_3 a { display: block; height: 100%; }
+.btn_listen::before { content: ''; width: 32px; height: 32px; color: #503AE7; }
 
-.btn_4 a { display: block; height: 100%; }
+.btn_listen a { display: block; height: 100%; }
+
+.btn_read a { display: block; height: 100%; }
 
 .con_pd { padding: 0 80px; }
 
@@ -462,12 +464,12 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; colo
 /* ---------------------------------------------------------- */
 /* ========================================================== */
 /*                                                            */
-/* file		: popup                                  	  */
+/* file		: main                                      	  */
 /*                                                            */
 /* ========================================================== */
 /* ---------------------------------------------------------- */
-/* popup s ============================================ */
-/* popup e ============================================ */
+/* main s =================================================== */
+/* main e =================================================== */
 /* ---------------------------------------------------------- */
 
 /*# sourceMappingURL=../css/display.css.map */
