@@ -9,7 +9,7 @@ html, body { width: 100%; height: 100%; box-sizing: border-box; }
 
 body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; color: #000; }
 
-#container { max-width: 1440px; margin: 0 auto; }
+.container { max-width: 1440px; margin: 0 auto; }
 
 .con_pd { padding: 0 80px; }
 
@@ -75,8 +75,97 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; colo
 
 .cate_pot a { display: block; height: 100%; padding: 0 32px; text-align: center; }
 
+.facebook_b { background: url(../../../assets/images/ico/ico_facebook.svg) no-repeat center; width: 24px; height: 24px; display: inline-block; }
+
+.linkedIn_b { background: url(../../../assets/images/ico/ico_linkedIn.svg) no-repeat center; width: 24px; height: 24px; display: inline-block; }
+
+.instagram_b { background: url(../../../assets/images/ico/ico_instagram.svg) no-repeat center; width: 24px; height: 24px; display: inline-block; }
+
+.facebook_s { background: url(../../../assets/images/ico/ico_facebook.svg) no-repeat center/100%; width: 16px; height: 16px; display: inline-block; }
+
+.linkedIn_s { background: url(../../../assets/images/ico/ico_linkedIn.svg) no-repeat center/100%; width: 16px; height: 16px; display: inline-block; }
+
+.instagram_s { background: url(../../../assets/images/ico/ico_instagram.svg) no-repeat center/100%; width: 16px; height: 16px; display: inline-block; }
+
+/* base e =================================================== */
+/* ---------------------------------------------------------- */
 /* ========================================================== */
-/* promotion only css                                         */
+/*                                                            */
+/* file		: header                                      	  */
+/*                                                            */
+/* ========================================================== */
+/* ---------------------------------------------------------- */
+/* header s ================================================= */
+header { position: relative; height: 72px; line-height: 72px; background-color: #fff; display: flex; justify-content: space-between; }
+
+header h1 { margin: 0; }
+
+header h1 a { display: block; }
+
+header h1 a img { vertical-align: middle; }
+
+@media only screen and (max-width: 768px) { header { padding: 0 20px !important; } }
+
+/* header e ================================================= */
+/* ---------------------------------------------------------- */
+/* ========================================================== */
+/*                                                            */
+/* file		: nav                                       	  */
+/*                                                            */
+/* ========================================================== */
+/* ---------------------------------------------------------- */
+/* nav s ==================================================== */
+header .gnb { float: left; }
+
+header .gnb ul.menu { float: left; }
+
+header .gnb ul.menu li { float: left; margin-right: 48px; }
+
+header .gnb ul.menu li:last-child { margin-right: 32px; }
+
+@media only screen and (max-width: 768px) { header .gnb ul.menu li { margin-right: 30px; }
+  header .gnb ul.menu li:last-child { margin-right: 20px; } }
+
+header .gnb ul.menu li a { display: block; height: 100%; }
+
+header .gnb ul.sns { float: left; }
+
+header .gnb ul.sns li { float: left; margin-right: 16px; }
+
+header .gnb ul.sns li:last-child { margin-right: 0; }
+
+header .gnb ul.sns li a { vertical-align: sub; }
+
+@media only screen and (max-width: 425px) { header .gnb { display: none; } }
+
+/* nav e ==================================================== */
+/* ---------------------------------------------------------- */
+/* ========================================================== */
+/*                                                            */
+/* file		: footer                                      	  */
+/*                                                            */
+/* ========================================================== */
+/* ---------------------------------------------------------- */
+/* footer s ================================================= */
+.footer_sponsors { color: #fff; max-width: 1280px; margin: 0 auto; padding: 72px 72px; background-color: #503AE7; text-align: center; }
+
+.footer_sponsors .logoipsum { margin-top: 64px; font-size: 0; }
+
+.footer_sponsors .logoipsum img { margin-right: 83px; }
+
+.footer_sponsors .logoipsum img:last-child { margin-right: 0; }
+
+/* footer e ================================================= */
+/* ---------------------------------------------------------- */
+/* ========================================================== */
+/*                                                            */
+/* file		: soo                                      	  */
+/*                                                            */
+/* ========================================================== */
+/* ---------------------------------------------------------- */
+/* soo s =================================================== */
+/* ========================================================== */
+/* promotion                                                  */
 /* ========================================================== */
 .promotion .promo_tit { overflow: hidden; height: 117px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
 
@@ -102,7 +191,7 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; colo
 
 .promotion .promo_con .typo_box .font p { display: inline-block; vertical-align: bottom; line-height: 58px; margin-left: 22px; }
 
-@media only screen and (max-width: 768px) { .promotion .promo_con { padding: 0 30px; } }
+@media only screen and (max-width: 768px) { .promotion .promo_con { padding: 0 20px; } }
 
 .text_heading { margin-top: 96px; }
 
@@ -158,48 +247,9 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; colo
 
 .potcasts .sns_list li { float: left; margin-right: 24px; }
 
-.potcasts .sns_list .ico_small { vertical-align: middle; }
-
-.potcasts .sns_list .ico_small img { width: 16px; }
-
 @media only screen and (max-width: 768px) { .potcasts .sns_list { width: inherit; height: 100%; } }
 
-/* base e =================================================== */
-/* ---------------------------------------------------------- */
-/* ========================================================== */
-/*                                                            */
-/* file		: header                                      	  */
-/*                                                            */
-/* ========================================================== */
-/* ---------------------------------------------------------- */
-/* header s ================================================= */
-/* header e ================================================= */
-/* ---------------------------------------------------------- */
-/* ========================================================== */
-/*                                                            */
-/* file		: nav                                       	  */
-/*                                                            */
-/* ========================================================== */
-/* ---------------------------------------------------------- */
-/* nav s ==================================================== */
-/* nav e ==================================================== */
-/* ---------------------------------------------------------- */
-/* ========================================================== */
-/*                                                            */
-/* file		: footer                                      	  */
-/*                                                            */
-/* ========================================================== */
-/* ---------------------------------------------------------- */
-/* footer s ================================================= */
-/* footer e ================================================= */
-/* ---------------------------------------------------------- */
-/* ========================================================== */
-/*                                                            */
-/* file		: soo                                      	  */
-/*                                                            */
-/* ========================================================== */
-/* ---------------------------------------------------------- */
-/* soo s =================================================== */
+/* promotion e =================================================== */
 /* soo e =================================================== */
 /* ---------------------------------------------------------- */
 

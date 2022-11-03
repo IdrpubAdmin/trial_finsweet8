@@ -6,6 +6,25 @@
 /* ========================================================== */
 /* ---------------------------------------------------------- */
 /* header s ================================================= */
-
+header {
+  position: relative;
+  height: 72px;
+  line-height: 72px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  h1 {
+    margin: 0;
+    a {
+      display: block;
+      img {
+        vertical-align: middle;
+      }
+    }
+  }
+  @include mdq_pc {
+    padding: 0 20px !important;
+  }
+}
 /* header e ================================================= */
 /* ---------------------------------------------------------- */

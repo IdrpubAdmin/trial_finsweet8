@@ -277,7 +277,7 @@ html, body { width: 100%; height: 100%; box-sizing: border-box; }
 
 body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; color: #000; }
 
-#container { max-width: 1440px; margin: 0 auto; }
+.container { max-width: 1440px; margin: 0 auto; }
 
 .con_pd { padding: 0 80px; }
 
@@ -343,94 +343,17 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; colo
 
 .cate_pot a { display: block; height: 100%; padding: 0 32px; text-align: center; }
 
-/* ========================================================== */
-/* promotion only css                                         */
-/* ========================================================== */
-.promotion .promo_tit { overflow: hidden; height: 117px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+.facebook_b { background: url(../../../assets/images/ico/ico_facebook.svg) no-repeat center; width: 24px; height: 24px; display: inline-block; }
 
-.promotion .promo_tit h1 { float: left; font-weight: 700; }
+.linkedIn_b { background: url(../../../assets/images/ico/ico_linkedIn.svg) no-repeat center; width: 24px; height: 24px; display: inline-block; }
 
-@media only screen and (max-width: 768px) { .promotion .promo_tit { padding: 0 30px; } }
+.instagram_b { background: url(../../../assets/images/ico/ico_instagram.svg) no-repeat center; width: 24px; height: 24px; display: inline-block; }
 
-.promotion .promo_con h3 { margin-top: 96px; font-size: 24px; font-weight: 600; }
+.facebook_s { background: url(../../../assets/images/ico/ico_facebook.svg) no-repeat center/100%; width: 16px; height: 16px; display: inline-block; }
 
-.promotion .promo_con .typo_box { overflow: hidden; width: 100%; background-color: #F4F2FF; margin-top: 48px; text-align: center; padding: 80px; display: flex; justify-content: space-around; flex-wrap: wrap; }
+.linkedIn_s { background: url(../../../assets/images/ico/ico_linkedIn.svg) no-repeat center/100%; width: 16px; height: 16px; display: inline-block; }
 
-@media only screen and (max-width: 768px) { .promotion .promo_con .typo_box { padding: 30px; } }
-
-.promotion .promo_con .typo_box .download { font-size: 32px; font-weight: 700; }
-
-.promotion .promo_con .typo_box .download a span.ico { background: url(../../../assets/images/ico/ico_down.png) no-repeat center; width: 51px; height: 51px; border-radius: 50%; display: inline-block; background-color: #503AE7; vertical-align: bottom; }
-
-.promotion .promo_con .typo_box .download a p { display: inline-block; margin-left: 24px; line-height: 51px; }
-
-.promotion .promo_con .typo_box .font { font-weight: 600; font-size: 24px; }
-
-.promotion .promo_con .typo_box .font .ico { display: inline-block; background: url(../../../assets/images/ico/ico_folder.png) no-repeat center/100%; width: 68px; height: 54px; }
-
-.promotion .promo_con .typo_box .font p { display: inline-block; vertical-align: bottom; line-height: 58px; margin-left: 22px; }
-
-@media only screen and (max-width: 768px) { .promotion .promo_con { padding: 0 30px; } }
-
-.text_heading { margin-top: 96px; }
-
-.text_heading .tehead_wrap { overflow: hidden; }
-
-.text_heading .tehead_wrap .heading { float: left; width: 30%; }
-
-.text_heading .tehead_wrap .heading p { margin-bottom: 38px; }
-
-@media only screen and (max-width: 768px) { .text_heading .tehead_wrap .heading { width: inherit; } }
-
-@media only screen and (max-width: 425px) { .text_heading .tehead_wrap .heading { width: 100%; } }
-
-.text_heading .tehead_wrap .body_text { width: 70%; line-height: 150%; }
-
-@media only screen and (max-width: 768px) { .text_heading .tehead_wrap .body_text { width: inherit; } }
-
-.color_palette h3 { font-size: 30px; font-weight: 600; }
-
-.color_palette ul { overflow: hidden; text-align: center; margin-top: 48px; }
-
-.color_palette ul li { float: left; width: 128px; height: 96px; line-height: 96px; }
-
-.components .btn_com_list, .components .btn_hover_list, .components .category_potcasts { margin-top: 48px; overflow: hidden; }
-
-.components .btn_com_list li, .components .btn_hover_list li, .components .category_potcasts li { float: left; margin-right: 48px; }
-
-.components .btn_com_list li:last-child, .components .btn_hover_list li:last-child, .components .category_potcasts li:last-child { margin-right: 0; }
-
-@media only screen and (max-width: 425px) { .components .btn_com_list li, .components .btn_hover_list li, .components .category_potcasts li { float: none; } }
-
-@media only screen and (max-width: 425px) { .components .btn_com_list, .components .btn_hover_list, .components .category_potcasts { float: inherit; } }
-
-.components .btn_hover_list .btn_1 { background-color: #3E2DB2; transition: .5s; }
-
-.components .btn_hover_list .btn_2 { border: 2px solid #1AD993; color: #1AD993; }
-
-.components .btn_hover_list .btn_listen { color: #503AE7; }
-
-.components .btn_hover_list .btn_listen i { background-color: #503AE7; }
-
-.components .btn_hover_list .btn_read { color: #503AE7; }
-
-.potcasts { overflow: hidden; margin-top: 64px; display: flex; flex-wrap: wrap; }
-
-.potcasts .potcasts_list { width: 50%; }
-
-.potcasts .potcasts_list li { float: left; margin-right: 60px; }
-
-@media only screen and (max-width: 768px) { .potcasts .potcasts_list li { margin-bottom: 30px; } }
-
-.potcasts .sns_list { border: 1px dashed #503AE7; padding: 20px 20px; }
-
-.potcasts .sns_list li { float: left; margin-right: 24px; }
-
-.potcasts .sns_list .ico_small { vertical-align: middle; }
-
-.potcasts .sns_list .ico_small img { width: 16px; }
-
-@media only screen and (max-width: 768px) { .potcasts .sns_list { width: inherit; height: 100%; } }
+.instagram_s { background: url(../../../assets/images/ico/ico_instagram.svg) no-repeat center/100%; width: 16px; height: 16px; display: inline-block; }
 
 /* base e =================================================== */
 /* ---------------------------------------------------------- */

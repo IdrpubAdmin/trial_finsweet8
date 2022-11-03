@@ -7,5 +7,47 @@
 /* ---------------------------------------------------------- */
 /* nav s ==================================================== */
 
+header {
+  .gnb {
+    float: left;
+    ul.menu {
+      float: left;
+      li {
+        float: left;
+        margin-right: 48px;
+        &:last-child {
+          margin-right: 32px;
+        }
+        @include mdq_pc {
+            margin-right: 30px;
+            &:last-child {
+                margin-right: 20px;
+            }
+        }
+        a {
+          display: block;
+          height: 100%;
+        }
+      }
+      }
+    ul.sns {
+      float: left;
+      li {
+        float: left;
+        margin-right: 16px;
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          vertical-align: sub;
+        }
+      }
+    }
+    @include mdq_tab {
+      display: none;
+    }
+  }
+}
+
 /* nav e ==================================================== */
 /* ---------------------------------------------------------- */
