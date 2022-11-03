@@ -1,7 +1,5 @@
 "use strict";
 
-window.onload = function(){
-
 const $checkbox = document.querySelector('.check');
 
 $checkbox.addEventListener('click', e=> {
@@ -11,4 +9,3 @@ $checkbox.addEventListener('click', e=> {
     document.documentElement.setAttribute('color-theme', 'light');
   }
 });
-}

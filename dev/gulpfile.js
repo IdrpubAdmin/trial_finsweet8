@@ -42,7 +42,7 @@ gulp.task('extend', function () {
 	.pipe(gulp.dest('../pages/'));
 });
 
-gulp.task('babel', function () {
+/* gulp.task('babel', function () {
 	return gulp.src('js_dev/*.js')
 		.pipe(babel({
 			//presets: ["@babel/preset-env"]
@@ -50,7 +50,7 @@ gulp.task('babel', function () {
 		}))
 		.pipe(plumber())
 		.pipe(gulp.dest('../assets/js/'));
-});
+}); */
 
 gulp.task('webserver', function () {
   return gulp.src('../')

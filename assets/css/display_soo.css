@@ -1,0 +1,206 @@
+/* ========================================================== */
+/*                                                            */
+/* file		: base                                            */
+/*                                                            */
+/* ========================================================== */
+/* ---------------------------------------------------------- */
+/* base s =================================================== */
+html, body { width: 100%; height: 100%; box-sizing: border-box; }
+
+body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; color: #000; }
+
+#container { max-width: 1440px; margin: 0 auto; }
+
+.con_pd { padding: 0 80px; }
+
+.heading_1 { font-size: 48px; font-weight: 700; }
+
+.heading_2 { font-size: 32px; font-weight: 700; }
+
+.heading_3 { font-size: 24px; font-weight: 600; }
+
+.heading_4 { font-size: 20px; font-weight: 600; }
+
+.heading_5 { font-size: 16px; font-weight: 400; }
+
+.heading_6 { font-size: 12px; font-weight: 400; margin-bottom: 0; }
+
+.prime_color { background-color: #503AE7; }
+
+.sub_color { background-color: #1AD993; }
+
+.color_1 { background-color: #ABFFE0; }
+
+.color_2 { background-color: #832BC1; }
+
+.color_3 { background-color: black; color: #fff; }
+
+.color_4 { background-color: #AFB0B9; }
+
+.color_5 { background-color: #F4F2FF; }
+
+.btn_1 { background-color: #503AE7; color: #fff; line-height: 48px; width: 115px; height: 48px; text-align: center; }
+
+.btn_1:hover { background-color: #3E2DB2; transition: .5s; }
+
+.btn_1 a { display: block; height: 100%; }
+
+.btn_2 { line-height: 46px; height: 48px; text-align: center; width: 147px; border: 2px solid #14142B; }
+
+.btn_2:hover { border: 2px solid #1AD993; color: #1AD993; transition: .5s; }
+
+.btn_2 a { display: block; height: 100%; }
+
+.btn_listen { overflow: hidden; color: #503AE7; }
+
+.btn_listen:hover { color: #3E2DB2; transition: .5s; }
+
+.btn_listen:hover a .play { background-color: #3E2DB2; transition: .5s; }
+
+.btn_listen a { display: block; height: 100%; font-weight: 600; }
+
+.btn_listen a i.play { background: url(../../../assets/images/ico/ico_play.png) no-repeat center; width: 32px; height: 32px; border-radius: 50%; background-color: #503AE7; display: inline-block; vertical-align: middle; margin-right: 8px; }
+
+.btn_read { font-weight: 600; color: #503AE7; }
+
+.btn_read:hover { color: #3E2DB2; transition: .5s; }
+
+.btn_read a { display: block; height: 100%; }
+
+.cate_pot_on { background-color: #503AE7; height: 48px; line-height: 48px; border-radius: 28.5px; color: #fff; font-weight: 700; }
+
+.cate_pot_on a { display: block; height: 100%; padding: 0 32px; text-align: center; }
+
+.cate_pot { height: 48px; line-height: 48px; border-radius: 28.5px; color: #AFB0B9; font-weight: 700; border: 1px solid #AFB0B9; }
+
+.cate_pot a { display: block; height: 100%; padding: 0 32px; text-align: center; }
+
+/* ========================================================== */
+/* promotion only css                                         */
+/* ========================================================== */
+.promotion .promo_tit { overflow: hidden; height: 117px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+
+.promotion .promo_tit h1 { float: left; font-weight: 700; }
+
+@media only screen and (max-width: 768px) { .promotion .promo_tit { padding: 0 30px; } }
+
+.promotion .promo_con h3 { margin-top: 96px; font-size: 24px; font-weight: 600; }
+
+.promotion .promo_con .typo_box { overflow: hidden; width: 100%; background-color: #F4F2FF; margin-top: 48px; text-align: center; padding: 80px; display: flex; justify-content: space-around; flex-wrap: wrap; }
+
+@media only screen and (max-width: 768px) { .promotion .promo_con .typo_box { padding: 30px; } }
+
+.promotion .promo_con .typo_box .download { font-size: 32px; font-weight: 700; }
+
+.promotion .promo_con .typo_box .download a span.ico { background: url(../../../assets/images/ico/ico_down.png) no-repeat center; width: 51px; height: 51px; border-radius: 50%; display: inline-block; background-color: #503AE7; vertical-align: bottom; }
+
+.promotion .promo_con .typo_box .download a p { display: inline-block; margin-left: 24px; line-height: 51px; }
+
+.promotion .promo_con .typo_box .font { font-weight: 600; font-size: 24px; }
+
+.promotion .promo_con .typo_box .font .ico { display: inline-block; background: url(../../../assets/images/ico/ico_folder.png) no-repeat center/100%; width: 68px; height: 54px; }
+
+.promotion .promo_con .typo_box .font p { display: inline-block; vertical-align: bottom; line-height: 58px; margin-left: 22px; }
+
+@media only screen and (max-width: 768px) { .promotion .promo_con { padding: 0 30px; } }
+
+.text_heading { margin-top: 96px; }
+
+.text_heading .tehead_wrap { overflow: hidden; }
+
+.text_heading .tehead_wrap .heading { float: left; width: 30%; }
+
+.text_heading .tehead_wrap .heading p { margin-bottom: 38px; }
+
+@media only screen and (max-width: 768px) { .text_heading .tehead_wrap .heading { width: inherit; } }
+
+@media only screen and (max-width: 425px) { .text_heading .tehead_wrap .heading { width: 100%; } }
+
+.text_heading .tehead_wrap .body_text { width: 70%; line-height: 150%; }
+
+@media only screen and (max-width: 768px) { .text_heading .tehead_wrap .body_text { width: inherit; } }
+
+.color_palette h3 { font-size: 30px; font-weight: 600; }
+
+.color_palette ul { overflow: hidden; text-align: center; margin-top: 48px; }
+
+.color_palette ul li { float: left; width: 128px; height: 96px; line-height: 96px; }
+
+.components .btn_com_list, .components .btn_hover_list, .components .category_potcasts { margin-top: 48px; overflow: hidden; }
+
+.components .btn_com_list li, .components .btn_hover_list li, .components .category_potcasts li { float: left; margin-right: 48px; }
+
+.components .btn_com_list li:last-child, .components .btn_hover_list li:last-child, .components .category_potcasts li:last-child { margin-right: 0; }
+
+@media only screen and (max-width: 425px) { .components .btn_com_list li, .components .btn_hover_list li, .components .category_potcasts li { float: none; } }
+
+@media only screen and (max-width: 425px) { .components .btn_com_list, .components .btn_hover_list, .components .category_potcasts { float: inherit; } }
+
+.components .btn_hover_list .btn_1 { background-color: #3E2DB2; transition: .5s; }
+
+.components .btn_hover_list .btn_2 { border: 2px solid #1AD993; color: #1AD993; }
+
+.components .btn_hover_list .btn_listen { color: #503AE7; }
+
+.components .btn_hover_list .btn_listen i { background-color: #503AE7; }
+
+.components .btn_hover_list .btn_read { color: #503AE7; }
+
+.potcasts { overflow: hidden; margin-top: 64px; display: flex; flex-wrap: wrap; }
+
+.potcasts .potcasts_list { width: 50%; }
+
+.potcasts .potcasts_list li { float: left; margin-right: 60px; }
+
+@media only screen and (max-width: 768px) { .potcasts .potcasts_list li { margin-bottom: 30px; } }
+
+.potcasts .sns_list { border: 1px dashed #503AE7; padding: 20px 20px; }
+
+.potcasts .sns_list li { float: left; margin-right: 24px; }
+
+.potcasts .sns_list .ico_small { vertical-align: middle; }
+
+.potcasts .sns_list .ico_small img { width: 16px; }
+
+@media only screen and (max-width: 768px) { .potcasts .sns_list { width: inherit; height: 100%; } }
+
+/* base e =================================================== */
+/* ---------------------------------------------------------- */
+/* ========================================================== */
+/*                                                            */
+/* file		: header                                      	  */
+/*                                                            */
+/* ========================================================== */
+/* ---------------------------------------------------------- */
+/* header s ================================================= */
+/* header e ================================================= */
+/* ---------------------------------------------------------- */
+/* ========================================================== */
+/*                                                            */
+/* file		: nav                                       	  */
+/*                                                            */
+/* ========================================================== */
+/* ---------------------------------------------------------- */
+/* nav s ==================================================== */
+/* nav e ==================================================== */
+/* ---------------------------------------------------------- */
+/* ========================================================== */
+/*                                                            */
+/* file		: footer                                      	  */
+/*                                                            */
+/* ========================================================== */
+/* ---------------------------------------------------------- */
+/* footer s ================================================= */
+/* footer e ================================================= */
+/* ---------------------------------------------------------- */
+/* ========================================================== */
+/*                                                            */
+/* file		: soo                                      	  */
+/*                                                            */
+/* ========================================================== */
+/* ---------------------------------------------------------- */
+/* soo s =================================================== */
+/* soo e =================================================== */
+/* ---------------------------------------------------------- */
+
+/*# sourceMappingURL=../css/display_soo.css.map */
