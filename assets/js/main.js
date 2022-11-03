@@ -1,6 +1,7 @@
 "use strict";
 
-const $checkbox = document.querySelector('.check');
+// dark mode
+const $checkbox = document.querySelector('.dark_mode');
 
 $checkbox.addEventListener('click', e=> {
   if (e.target.checked) {
