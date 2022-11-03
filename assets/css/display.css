@@ -540,6 +540,52 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; colo
 /* ========================================================== */
 /* ---------------------------------------------------------- */
 /* main s =================================================== */
+:root[color-theme='light'] { --background: #fff; --boxColor: #1f1f1fea; }
+
+:root[color-theme='dark'] { --background: #1f1f1fea; --boxColor: #fff; }
+
+html { background: var(--background); }
+
+.main_wrap { width: 1024px; margin: 0 auto; padding: 0 35px; background: url(../../assets/images/contents/bg_audio_track.png) no-repeat center right; }
+
+.main_wrap .main_tit { width: 480px; margin-top: 92px; }
+
+.main_wrap .main_tit p { margin-top: 32px; color: var(--boxColor); }
+
+.main_wrap .main_tit p:first-child { margin-top: 0; }
+
+.main_wrap .main_tit p:nth-child(2) { line-height: 28px; }
+
+.main_wrap .main_tit .email_send { width: 486px; height: 48px; }
+
+.main_wrap .main_tit .email_send input { display: inline; border: none; outline: none; box-sizing: border-box; height: 100%; }
+
+.main_wrap .main_tit .email_send input[type="email"] { width: 70%; padding-left: 5px; background-color: #F4F2FF; color: var(--boxColor); }
+
+.main_wrap .main_tit .email_send input[type="email"]::placeholder { color: #AFB0B9; }
+
+.main_wrap .main_tit .email_send input[type=submit] { width: 30%; background-color: #503AE7; background-color: #503AE7; margin-left: -10px; color: #F4F2FF; font-size: 18px; font-weight: 700; }
+
+/* tablet 지정 */
+@media only screen and (max-width: 768px) { .main_wrap { width: 100%; background-size: 50%; background-position: 95% center; padding: 0 20px; }
+  .main_wrap .main_tit { width: 314px; margin-top: 92px; }
+  .main_wrap .main_tit p { margin-top: 20px; }
+  .main_wrap .main_tit p:first-child { font-size: 28px; line-height: 35px; }
+  .main_wrap .main_tit p:nth-child(2) { font-size: 16px; line-height: 22px; }
+  .main_wrap .main_tit .email_send { width: 340px; }
+  .main_wrap .main_tit .email_send input[type="email"] { width: 65%; }
+  .main_wrap .main_tit .email_send input[type="email"]::placeholder { color: #AFB0B9; font-size: 14px; }
+  .main_wrap .main_tit .email_send input[type=submit] { width: 25%; font-size: 14px; } }
+
+/* // tablet 지정 */
+/* mobile 지정 */
+@media only screen and (max-width: 425px) { .main_wrap { background: none; }
+  .main_wrap .main_tit { width: 100%; }
+  .main_wrap .main_tit .email_send { width: 100%; }
+  .main_wrap .main_tit .email_send input[type="email"] { width: 70%; }
+  .main_wrap .main_tit .email_send input[type=submit] { width: 30%; } }
+
+/* // mobile 지정 */
 /* main e =================================================== */
 /* ---------------------------------------------------------- */
 

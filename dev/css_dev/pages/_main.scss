@@ -6,6 +6,135 @@
 /* ========================================================== */
 /* ---------------------------------------------------------- */
 /* main s =================================================== */
+:root[color-theme='light'] {
+  --background: #fff;
+  --boxColor: #1f1f1fea;
+}
+
+:root[color-theme='dark'] {
+  --background: #1f1f1fea;
+  --boxColor: #fff;
+}
+
+html {
+  background: var(--background);
+}
+.main_wrap{
+  width: 1024px;
+  margin: 0 auto;
+  padding: 0 35px;
+  background: url(../../assets/images/contents/bg_audio_track.png) no-repeat center right;
+  .main_tit{
+    width: 480px;
+    margin-top: 92px;
+    p{
+      margin-top: 32px;
+      color: var(--boxColor);
+      &:first-child{
+        margin-top: 0;
+      }
+      &:nth-child(2){
+        line-height: 28px;
+      }
+    }
+    .email_send{
+      width:486px;
+      height:48px;
+      input{
+        display:inline;
+        border: none;
+        outline:none;
+        box-sizing: border-box;
+        height:100%;
+      }
+      input[type="email"]{
+        width:70%;
+        padding-left: 5px;
+        background-color: #F4F2FF;
+        color: var(--boxColor);
+
+        &::placeholder{
+          color: $color_4;
+        }
+      }
+      input[type=submit]{
+        width: 30%;
+        background-color: $prime_color;
+        background-color: #503AE7;
+        margin-left: -10px;
+        color: $color_5;
+        font-size: $font-18r;
+        font-weight: $b;
+      }
+    }
+  }
+}
+
+/* tablet 지정 */
+@media only screen and (max-width: 768px) {
+  .main_wrap{
+    width: 100%;
+    background-size: 50%;
+    background-position: 95% center;
+    padding: 0 20px;
+    .main_tit{
+      width: 314px;
+      margin-top: 92px;
+      p{
+        margin-top: 20px;
+        &:first-child{
+          font-size: $font-28r;
+          line-height: 35px;
+        }
+        &:nth-child(2){
+          font-size: $font-16r;
+          line-height: 22px;
+        }
+      }
+      .email_send{
+        width:340px;
+        input[type="email"]{
+          width: 65%;
+          &::placeholder{
+            color: $color_4;
+            font-size: $font-14r;
+          }
+        }
+        input[type=submit]{
+          width: 25%;
+          font-size: $font-14r;
+        }
+      }
+    }
+  }
+
+
+
+} /* // tablet 지정 */
+
+
+/* mobile 지정 */
+@media only screen and (max-width: 425px) {
+  .main_wrap{
+    background: none;
+    .main_tit{
+      width: 100%;
+      .email_send{
+        width: 100%;
+        input[type="email"]{
+          width: 70%;
+        }
+        input[type=submit]{
+          width: 30%;
+        }
+      }
+    }
+  }
+
+
+
+} /* // mobile 지정 */
+
 
 /* main e =================================================== */
 /* ---------------------------------------------------------- */
