@@ -25,7 +25,174 @@ body {
   margin: 0 auto;
 }
 
-// promotion only css - 임시
+// content padding
+.con_pd {
+  padding: 0 80px;
+}
+
+//text_heading - heading List
+.heading_1 {
+  font-size: 48px;
+  font-weight: $b;
+}
+.heading_2 {
+  font-size: 32px;
+  font-weight: $b;
+}
+.heading_3 {
+  font-size: 24px;
+  font-weight: $sb;
+}
+.heading_4 {
+  font-size: 20px;
+  font-weight: $sb;
+}
+.heading_5 {
+  font-size: 16px;
+  font-weight: $r;
+}
+.heading_6 {
+  font-size: 12px;
+  font-weight: $r;
+  margin-bottom: 0;
+}
+
+// color_palette - color List
+.prime_color {
+  background-color: $prime_color;
+}
+.sub_color {
+  background-color: $sub_color;
+}
+.color_1 {
+  background-color: $color_1
+}
+.color_2 {
+  background-color: $color_2;
+}
+.color_3 {
+  background-color: black;
+  color: #fff;
+}
+.color_4 {
+  background-color: $color_4;
+}
+.color_5 {
+  background-color: $color_5;
+}
+
+// components - btn List
+.btn_1 {
+  background-color: $prime_color;
+  color: #fff;
+  line-height: 48px;
+  width: 115px;
+  height: 48px;
+  text-align: center;
+  &:hover {
+    background-color: #3E2DB2;
+    transition: .5s;
+  }
+  a {
+    display: block;
+    height: 100%;
+  }
+}
+
+.btn_2 {
+  line-height: 46px;
+  height: 48px;
+  text-align: center;
+  width: 147px;
+  border: 2px solid #14142B;
+  &:hover {
+    border: 2px solid $sub_color;
+    color: $sub_color;
+    transition: .5s;
+  }
+  a {
+    display: block;
+    height: 100%;
+  }
+}
+
+.btn_listen {
+  overflow: hidden;
+  color: $prime_color;
+  &:hover {
+    color: #3E2DB2;
+    transition: .5s;
+    a {
+      .play {
+        background-color: #3E2DB2;
+        transition: .5s;
+      }
+    }
+  }
+  a {
+    display: block;
+    height: 100%;
+    font-weight: $sb;
+    i.play {
+      background: url(../../../assets/images/ico/ico_play.png) no-repeat center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: $prime_color;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+  }
+}
+
+.btn_read {
+  font-weight: $sb;
+  color: $prime_color;
+  &:hover {
+    color: #3E2DB2;
+    transition: .5s;
+  }
+  a {
+    display: block;
+    height: 100%;
+  }
+}
+
+// category potcasts - potcasts list 
+.cate_pot_on {
+  background-color: $prime_color;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 28.5px;
+  color: #fff;
+  font-weight: $b;
+  a {
+    display: block;
+    height: 100%;
+    padding: 0 32px;
+    text-align: center;
+  }
+}
+
+.cate_pot {
+  height: 48px;
+  line-height: 48px;
+  border-radius: 28.5px;
+  color: $color_4;
+  font-weight: $b;
+  border: 1px solid $color_4;
+  a {
+    display: block;
+    height: 100%;
+    padding: 0 32px;
+    text-align: center;
+  }
+}
+
+/* ========================================================== */
+/* promotion only css                                         */
+/* ========================================================== */
 
 // promotion
 .promotion {
@@ -39,6 +206,9 @@ body {
       h1 {
           float: left;
           font-weight: $b;
+      }
+      @include mdq_pc {
+        padding: 0 30px;
       }
   }
   .promo_con {
@@ -57,6 +227,9 @@ body {
           display: flex;
           justify-content: space-around;
           flex-wrap: wrap;
+          @include mdq_pc {
+            padding: 30px;
+          }
           .download {
               font-size: 32px;
               font-weight: $b;
@@ -94,6 +267,9 @@ body {
               }
           }
       }
+      @include mdq_pc {
+        padding: 0 30px;
+      }
   }
 }
 
@@ -109,40 +285,21 @@ body {
           p {
               margin-bottom: 38px;
           }
+          @include mdq_pc {
+            width: inherit;
+          }
+          @include mdq_tab {
+            width: 100%;
+          }
       }
       .body_text {
           width: 70%;
           line-height: 150%;
+          @include mdq_pc {
+            width: inherit;
+          }
       }
   }
-}
-
-//text_heading - heading List
-
-.heading_1 {
-  font-size: 48px;
-  font-weight: $b;
-}
-.heading_2 {
-  font-size: 32px;
-  font-weight: $b;
-}
-.heading_3 {
-  font-size: 24px;
-  font-weight: $sb;
-}
-.heading_4 {
-  font-size: 20px;
-  font-weight: $sb;
-}
-.heading_5 {
-  font-size: 16px;
-  font-weight: $r;
-}
-.heading_6 {
-  font-size: 12px;
-  font-weight: $r;
-  margin-bottom: 0;
 }
 
 // color_palette
@@ -164,94 +321,87 @@ body {
   }
 }
 
-// color_palette - color List
-.prime_color {
-  background-color: $prime_color;
-}
-.sub_color {
-  background-color: $sub_color;
-}
-.color_1 {
-  background-color: $color_1
-}
-.color_2 {
-  background-color: $color_2;
-}
-.color_3 {
-  background-color: black;
-  color: #fff;
-}
-.color_4 {
-  background-color: $color_4;
-}
-.color_5 {
-  background-color: $color_5;
-}
-
 // components
-
 .components {
-  .btn_com_list {
+  .btn_com_list,
+  .btn_hover_list,
+  .category_potcasts {
     margin-top: 48px;
     overflow: hidden;
     li {
       float: left;
+      margin-right: 48px;
+      &:last-child {
+        margin-right: 0;
+      }
+      @include mdq_tab {
+        float: none;
+      }
+    }
+    @include mdq_tab {
+      float: inherit;
     }
   }
 }
 
-// components - btn List
-.btn_1 {
-  background-color: $prime_color;
-  color: #fff;
-  line-height: 48px;
-  width: 115px;
-  height: 48px;
-  text-align: center;
-  a {
-    display: block;
-    height: 100%;
+.components {
+  .btn_hover_list {
+    .btn_1 {
+      background-color: #3E2DB2;
+      transition: .5s;
+    }
+    .btn_2 {
+      border: 2px solid $sub_color;
+      color: $sub_color;
+    }
+    .btn_listen {
+      color: $prime_color;
+      i {
+        background-color: $prime_color;
+      }
+    }
+    .btn_read {
+      color: $prime_color; 
+    }
   }
 }
 
-.btn_2 {
-  line-height: 46px;
-  height: 48px;
-  text-align: center;
-  width: 147px;
-  border: 2px solid #14142B;
-  a {
-    display: block;
-    height: 100%;
+//potcasts
+.potcasts {
+  overflow: hidden;
+  margin-top: 64px;
+  display: flex;
+  flex-wrap: wrap;
+  .potcasts_list {
+    width: 50%;
+    li {
+      float: left;
+      margin-right: 60px;
+      @include mdq_pc {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .sns_list {
+    border: 1px dashed $prime_color;
+    padding: 20px 20px;
+    li {
+      float: left;
+      margin-right: 24px;
+    }
+    .ico_small {
+      vertical-align: middle;
+      img {
+        width: 16px;
+      }
+    }
+    @include mdq_pc {
+      width: inherit;
+      height: 100%;
+    }
   }
 }
 
-.btn_listen {
-  &::before {
-    content: '';
-    width: 32px;
-    height: 32px;
-    color: $prime_color;
-  }
-  a {
-    display: block;
-    height: 100%;
-  }
-}
-
-.btn_read {
-  a {
-    display: block;
-    height: 100%;
-  }
-}
-
-
-
-// content padding
-.con_pd {
-  padding: 0 80px;
-}
 
 /* base e =================================================== */
 /* ---------------------------------------------------------- */
