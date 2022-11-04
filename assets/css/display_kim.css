@@ -36,8 +36,6 @@
 
 .mySwiper .swiper-wrapper .swiper-slide img { display: block; object-fit: cover; }
 
-.sec_wrap { padding: 0 80px; }
-
 .sec_wrap .sec { display: flex; align-items: center; margin-top: 128px; }
 
 .sec_wrap .sec .sec_txt { width: 50%; }
