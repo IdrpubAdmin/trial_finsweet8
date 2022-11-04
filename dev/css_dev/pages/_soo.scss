@@ -239,7 +239,47 @@
     }
   }
   .recent_video { 
-    
+    ul {
+      overflow: hidden;
+      li {
+        position: relative;
+        float: left;
+        width: calc((100% - 36px ) / 3);
+        margin: 64px 16px 0 0;
+        iframe {
+          width: 100%;
+          height: 256px;
+        }
+        .recent_video_text {
+          h3 {
+            margin-top: 32px;
+            display: block;
+          }
+          p,
+          a.btn_listen {
+            margin-top: 16px;
+          }
+          a.mute {
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: #fff;
+            i {
+              background: url(../../../assets/images/ico/ico_vactor.png) no-repeat center;
+              width: 32px;
+              height: 32px;
+              border-radius: 50%;
+              background-color: #503AE7;
+              display: inline-block;
+              vertical-align: middle;
+            }
+          }
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
   }
 
 }

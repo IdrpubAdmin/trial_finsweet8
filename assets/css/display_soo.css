@@ -102,6 +102,22 @@
 
 .recent_episodes .recent_text .btn_recent { position: absolute; bottom: 0; right: 0; width: 195px; }
 
+.recent_episodes .recent_video ul { overflow: hidden; }
+
+.recent_episodes .recent_video ul li { position: relative; float: left; width: calc((100% - 36px ) / 3); margin: 64px 16px 0 0; }
+
+.recent_episodes .recent_video ul li iframe { width: 100%; height: 256px; }
+
+.recent_episodes .recent_video ul li .recent_video_text h3 { margin-top: 32px; display: block; }
+
+.recent_episodes .recent_video ul li .recent_video_text p, .recent_episodes .recent_video ul li .recent_video_text a.btn_listen { margin-top: 16px; }
+
+.recent_episodes .recent_video ul li .recent_video_text a.mute { position: absolute; top: 0; right: 0; color: #fff; }
+
+.recent_episodes .recent_video ul li .recent_video_text a.mute i { background: url(../../../assets/images/ico/ico_vactor.png) no-repeat center; width: 32px; height: 32px; border-radius: 50%; background-color: #503AE7; display: inline-block; vertical-align: middle; }
+
+.recent_episodes .recent_video ul li:last-child { margin-right: 0; }
+
 /* soo e =================================================== */
 /* ---------------------------------------------------------- */
 
