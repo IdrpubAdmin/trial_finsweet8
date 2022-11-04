@@ -11,7 +11,6 @@
   .main_top{
     width: 1024px;
     margin: 0 auto;
-    padding: 0 35px;
     background: url(../../assets/images/contents/bg_audio_track.png) no-repeat center right;
     .main_tit{
       width: 480px;
@@ -63,18 +62,15 @@
   }
 }
 
-/* swiper */
-.mySwiper{
-  margin-top: 192px;
-  .swiper-wrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    .swiper-slide{
-      display: block;
-      img {
-        display: block;
-        object-fit: cover;
+/* banner */
+.mq_logo_list{
+  width: 70%;
+  margin: 192px auto 0 auto;
+  marquee{
+    & > a{
+      padding-right: 200px;
+      img{
+        vertical-align: -webkit-baseline-middle;
       }
     }
   }
@@ -86,9 +82,8 @@
     align-items: center;
     margin-top: 128px;
     .sec_txt{
-      width: 50%;
       p{
-        width: 409px;
+        color: var(--fontColor);
         &.heading_2{
           line-height: 38px;
         }
@@ -99,18 +94,19 @@
       }
     }
     .sec_img{
-      width: 740px;
+      width: 40%;
       height: 512px;
       text-indent: -999px;
       font-size: 0;
     }
   }
   .sec1{
-    justify-content: end;
+    justify-content: flex-end;
     background: url(../../assets/images/lines/bg_lines_8.png) no-repeat 22% center;
     .sec_txt{
-      padding-left: 190px;
+      width: 41%;
       p{
+        width: 55%;
         &.heading_2{
           span{
             color: $prime_color;
@@ -124,14 +120,16 @@
     }
   }
   .sec2{
-    justify-content: space-between;
-    background: url(../../assets/images/lines/bg_lines_4.png) no-repeat 52% 15%;
+    justify-content: flex-start;
+    background: url(../../assets/images/lines/bg_lines_4.png) no-repeat 70% 15%;
     position: relative;
     .sec_txt{
+      width: 33%;
       order: 2;
+      padding-left: 225px;
       p{
         &.heading_2{
-          padding-right: 100px;
+          width: 71%;
           span{
             color: $prime_color;
           }
@@ -144,11 +142,12 @@
     }
     .bnt_video{
       position: absolute;
-      left: 450px;
+      left: 25%;
       bottom: 40px;
       width: 318px;
       height: 112px;
       padding-left: 68px;
+      border: 0;
       background:#503AE7 url(../../assets/images/ico/ico_youtube.png) no-repeat 10% center;
       color: #fff;
       &:hover {
@@ -159,6 +158,13 @@
   }
 }
 
+.custom_swiper{
+  width: 500px;
+  height: 500px;
+}
+
+
+
 
 footer{
   margin-top: 50px;
@@ -168,23 +174,46 @@ footer{
 
 /* tablet 지정 */
 @media only screen and (max-width: 768px) {
-  .main_top{
-    width: 100%;
-    background-size: 50%;
-    background-position: 95% center;
+
+
+.heading_1 {
+  font-size: 30px;
+}
+.heading_2 {
+  font-size: 28px;
+}
+.heading_3 {
+  font-size: 18px;
+}
+.heading_4 {
+  font-size: 16px;
+}
+.heading_5 {
+  font-size: 14px;
+}
+.heading_6 {
+  font-size: 12px;
+}
+
+  .home_wrap{
     padding: 0 20px;
-    .main_tit{
-      width: 314px;
-      margin-top: 92px;
-      p{
-        margin-top: 20px;
-        &:first-child{
-          font-size: $font-28r;
-          line-height: 35px;
-        }
-        &:nth-child(2){
-          font-size: $font-16r;
-          line-height: 22px;
+    .main_top{
+      width: 100%;
+      background-size: 50%;
+      background-position: 95% center;
+      .main_tit{
+        width: 314px;
+        margin-top: 92px;
+        p{
+          margin-top: 20px;
+          &:first-child{
+            font-size: $font-28r;
+            line-height: 35px;
+          }
+          &:nth-child(2){
+            font-size: $font-16r;
+            line-height: 22px;
+          }
         }
       }
     }
@@ -206,16 +235,70 @@ footer{
     }
   }
 
+  /* banner */
+  .mq_logo_list{
+    width: 100%;
+    margin-top: 80px;
+    marquee{
+      & > a{
+        padding-right: 80px;
+      }
+    }
+  }
+
+  .sec_wrap{
+    .sec{
+      margin-top: 80px;
+      .sec_txt{
+        p{
+          width: 100%;
+        }
+      }
+      .sec_img{
+        width: 50%;
+        height: 275px;
+      }
+    }
+    .sec1{
+      background-size: 43%;
+      background-position: 7% center;
+      .sec_txt{
+        width: 50%;
+      }
+    }
+    .sec2{
+      background-size: 5%;
+      background-position: 93% 7%;
+      .sec_txt{
+        width: 50%;
+        padding-left: 20px;
+        p{
+          &.heading_2{
+            width: 100%;
+          }
+        }
+      }
+      .bnt_video{
+        left: 7%;
+        bottom: 10%;
+        width: 38%;
+        height: 20%;
+      }
+    }
+  }
+
 
 } /* // tablet 지정 */
 
 
 /* mobile 지정 */
 @media only screen and (max-width: 425px) {
-  .main_top{
-    background: none;
-    .main_tit{
-      width: 100%;
+  .home_wrap{
+    .main_top{
+      background: none;
+      .main_tit{
+        width: 100%;
+      }
     }
   }
 
@@ -230,6 +313,40 @@ footer{
     }
   }
 
+  /* banner */
+  .mq_logo_list{
+    margin-top: 40px;
+  }
+
+  .sec_wrap{
+    .sec{
+      display: block;
+      margin-top: 50px;
+      .sec_img{
+        width: 100%;
+        height: 275px;
+      }
+    }
+    .sec1{
+      background: none;
+      .sec_txt{
+        width: 100%;
+      }
+    }
+    .sec2{
+      background: none;
+      .sec_txt{
+        width: 100%;
+        padding-left: 0px;
+      }
+      .bnt_video{
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 13%;
+      }
+    }
+  }
 
 
 } /* // mobile 지정 */
