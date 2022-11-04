@@ -99,6 +99,8 @@ body {
   width: 115px;
   height: 48px;
   text-align: center;
+  display: inline-block;
+  cursor: pointer;
   &:hover {
     background-color: #3E2DB2;
     transition: .5s;
@@ -115,6 +117,8 @@ body {
   text-align: center;
   width: 147px;
   border: 2px solid #14142B;
+  display: inline-block;
+  cursor: pointer;
   &:hover {
     border: 2px solid $sub_color;
     color: $sub_color;
@@ -129,6 +133,7 @@ body {
 .btn_listen {
   overflow: hidden;
   color: $prime_color;
+  display: inline-block;
   &:hover {
     color: #3E2DB2;
     transition: .5s;
@@ -143,6 +148,7 @@ body {
     display: block;
     height: 100%;
     font-weight: $sb;
+    display: inline-block;
     i.play {
       background: url(../../../assets/images/ico/ico_play.png) no-repeat center;
       width: 32px;
