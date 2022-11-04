@@ -281,7 +281,7 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; colo
 
 :root[color-theme='dark'] { --background: #1f1f1fea; --fontColor: #fff; }
 
-.container { max-width: 1440px; margin: 0 auto; }
+.container { max-width: 1920px; margin: 0 auto; }
 
 .con_pd { padding: 0 80px; }
 
@@ -437,9 +437,7 @@ header .gnb ul.sns li a { vertical-align: sub; }
 /* ========================================================== */
 /* ---------------------------------------------------------- */
 /* footer s ================================================= */
-.footer_sponsors { color: #fff; max-width: 1280px; margin: 0 auto; padding: 72px 72px; background-color: #503AE7; text-align: center; }
-
-@media only screen and (max-width: 768px) { .footer_sponsors { padding: 42px 42px !important; max-width: 728px !important; } }
+.footer_sponsors { color: #fff; max-width: 1280px; margin: 0 auto; padding: 72px 72px; background-color: #503AE7; text-align: center; transform: translateY(30%); }
 
 .footer_sponsors .logoipsum { margin-top: 64px; font-size: 0; }
 
@@ -447,9 +445,42 @@ header .gnb ul.sns li a { vertical-align: sub; }
 
 .footer_sponsors .logoipsum img:last-child { margin-right: 0; }
 
+.footer_con { color: #fff; width: 100%; background-color: #222; padding: 195px 80px 96px; display: flex; justify-content: space-between; flex-wrap: wrap; }
+
+.footer_con .pages h4, .footer_con .reach_us h4, .footer_con .subscribe h4 { font-weight: 700; margin-bottom: 32px; font-size: 20px; }
+
+.footer_con .pages li, .footer_con .reach_us li, .footer_con .subscribe li { margin-bottom: 16px; }
+
+.footer_con .pages li:last-child, .footer_con .reach_us li:last-child, .footer_con .subscribe li:last-child { margin-bottom: 0; }
+
+.footer_con .subscribe ul li { margin-bottom: 32px; }
+
+.copyright { height: 64px; line-height: 64px; color: #fff; background-color: #503AE7; text-align: center; font-weight: 700; }
+
+/* ---------------------------------------------------------- */
+@media only screen and (max-width: 768px) { .footer_sponsors { padding: 42px 42px !important; max-width: 728px !important; transform: inherit; } }
+
+.footer_sponsors .logoipsum { margin-top: 34px; }
+
 @media only screen and (max-width: 768px) { .footer_sponsors .logoipsum img { margin-right: 10px !important; padding: 10px; } }
 
-.footer_con { color: #fff; width: 100%; background-color: #222; }
+@media only screen and (max-width: 768px) { .footer_con { padding: 60px 20px; flex-direction: column; transform: inherit; } }
+
+@media only screen and (max-width: 768px) { .footer_con .logo_wrap { margin-bottom: 40px; } }
+
+@media only screen and (max-width: 768px) { .footer_con .pages, .footer_con .reach_us { margin-bottom: 60px; } }
+
+@media only screen and (max-width: 768px) { .footer_con .subscribe { margin-bottom: 0; } }
+
+@media only screen and (max-width: 425px) { .footer_sponsors .logoipsum img { width: 45%; } }
+
+@media only screen and (max-width: 425px) { .footer_sponsors { transform: inherit; } }
+
+@media only screen and (max-width: 425px) { .footer_con .logo_wrap { margin-bottom: 50px; } }
+
+@media only screen and (max-width: 425px) { .footer_con .pages, .footer_con .reach_us { margin-bottom: 50px; } }
+
+@media only screen and (max-width: 425px) { .footer_con .subscribe { margin-bottom: 0px; } }
 
 /* footer e ================================================= */
 /* ---------------------------------------------------------- */
