@@ -15,6 +15,10 @@
     padding: 72px 72px;
     background-color: $prime_color;
     text-align: center;
+    @include mdq_pc {
+        padding: 42px 42px !important;
+        max-width: 728px !important;
+    }
     .logoipsum {
         margin-top: 64px;
         font-size: 0;
@@ -23,8 +27,19 @@
             &:last-child {
                 margin-right: 0;
             }
+            @include mdq_pc {
+                margin-right: 10px !important;
+                padding: 10px;
+            }
         }
     }
+}
+
+//footer_con
+.footer_con {
+    color: #fff;
+    width: 100%;
+    background-color: $black;
 }
 
 

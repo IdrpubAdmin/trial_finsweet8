@@ -439,11 +439,17 @@ header .gnb ul.sns li a { vertical-align: sub; }
 /* footer s ================================================= */
 .footer_sponsors { color: #fff; max-width: 1280px; margin: 0 auto; padding: 72px 72px; background-color: #503AE7; text-align: center; }
 
+@media only screen and (max-width: 768px) { .footer_sponsors { padding: 42px 42px !important; max-width: 728px !important; } }
+
 .footer_sponsors .logoipsum { margin-top: 64px; font-size: 0; }
 
 .footer_sponsors .logoipsum img { margin-right: 83px; }
 
 .footer_sponsors .logoipsum img:last-child { margin-right: 0; }
+
+@media only screen and (max-width: 768px) { .footer_sponsors .logoipsum img { margin-right: 10px !important; padding: 10px; } }
+
+.footer_con { color: #fff; width: 100%; background-color: #222; }
 
 /* footer e ================================================= */
 /* ---------------------------------------------------------- */
