@@ -6,17 +6,11 @@
 /* ========================================================== */
 /* ---------------------------------------------------------- */
 /* main s =================================================== */
-:root[color-theme='light'] { --background: #fff; --boxColor: #1f1f1fea; }
-
-:root[color-theme='dark'] { --background: #1f1f1fea; --boxColor: #fff; }
-
-html { background: var(--background); }
-
 .home_wrap .main_top { width: 1024px; margin: 0 auto; padding: 0 35px; background: url(../../assets/images/contents/bg_audio_track.png) no-repeat center right; }
 
 .home_wrap .main_top .main_tit { width: 480px; margin-top: 92px; }
 
-.home_wrap .main_top .main_tit p { margin-top: 32px; color: var(--boxColor); }
+.home_wrap .main_top .main_tit p { margin-top: 32px; color: var(--fontColor); }
 
 .home_wrap .main_top .main_tit p:first-child { margin-top: 0; }
 

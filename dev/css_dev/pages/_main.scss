@@ -6,19 +6,7 @@
 /* ========================================================== */
 /* ---------------------------------------------------------- */
 /* main s =================================================== */
-:root[color-theme='light'] {
-  --background: #fff;
-  --boxColor: #1f1f1fea;
-}
 
-:root[color-theme='dark'] {
-  --background: #1f1f1fea;
-  --boxColor: #fff;
-}
-
-html {
-  background: var(--background);
-}
 .home_wrap{
   .main_top{
     width: 1024px;
@@ -30,7 +18,7 @@ html {
       margin-top: 92px;
       p{
         margin-top: 32px;
-        color: var(--boxColor);
+        color: var(--fontColor);
         &:first-child{
           margin-top: 0;
         }

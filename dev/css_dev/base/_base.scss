@@ -11,6 +11,7 @@ body {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
+  background: var(--background);
 }
 
 body {
@@ -18,6 +19,15 @@ body {
   font-size: 16px;
   font-weight: $r;
   color: #000;
+}
+:root[color-theme='light'] {
+  --background: #fff;
+  --fontColor: #1f1f1fea;
+}
+
+:root[color-theme='dark'] {
+  --background: #1f1f1fea;
+  --fontColor: #fff;
 }
 
 .container {
@@ -159,7 +169,7 @@ body {
   }
 }
 
-// category potcasts - potcasts list 
+// category potcasts - potcasts list
 .cate_pot_on {
   background-color: $prime_color;
   height: 48px;
