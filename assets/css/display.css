@@ -311,33 +311,25 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; colo
 
 .color_5 { background-color: #F4F2FF; }
 
-.btn_1 { background-color: #503AE7; color: #fff; line-height: 48px; width: 115px; height: 48px; text-align: center; display: inline-block; cursor: pointer; }
+.btn_1 { background-color: #503AE7; color: #fff; line-height: 48px; width: 115px; height: 48px; text-align: center; display: inline-block; cursor: pointer; display: block; }
 
 .btn_1:hover { background-color: #3E2DB2; transition: .5s; }
-
-.btn_1 a { display: block; height: 100%; }
 
 .btn_2 { line-height: 46px; height: 48px; text-align: center; width: 147px; border: 2px solid #14142B; display: inline-block; cursor: pointer; }
 
 .btn_2:hover { border: 2px solid #1AD993; color: #1AD993; transition: .5s; }
 
-.btn_2 a { display: block; height: 100%; }
-
-.btn_listen { overflow: hidden; color: #503AE7; display: inline-block; }
+.btn_listen { overflow: hidden; color: #503AE7; display: inline-block; height: 100%; font-weight: 600; }
 
 .btn_listen:hover { color: #3E2DB2; transition: .5s; }
 
-.btn_listen:hover a .play { background-color: #3E2DB2; transition: .5s; }
+.btn_listen:hover .play { background-color: #3E2DB2; transition: .5s; }
 
-.btn_listen a { display: block; height: 100%; font-weight: 600; display: inline-block; }
+.btn_listen i.play { background: url(../../../assets/images/ico/ico_play.png) no-repeat center; width: 32px; height: 32px; border-radius: 50%; background-color: #503AE7; display: inline-block; vertical-align: middle; margin-right: 8px; }
 
-.btn_listen a i.play { background: url(../../../assets/images/ico/ico_play.png) no-repeat center; width: 32px; height: 32px; border-radius: 50%; background-color: #503AE7; display: inline-block; vertical-align: middle; margin-right: 8px; }
-
-.btn_read { font-weight: 600; color: #503AE7; }
+.btn_read { font-weight: 600; color: #503AE7; display: inline-block; height: 100%; }
 
 .btn_read:hover { color: #3E2DB2; transition: .5s; }
-
-.btn_read a { display: block; height: 100%; }
 
 .cate_pot_on { background-color: #503AE7; height: 48px; line-height: 48px; border-radius: 28.5px; color: #fff; font-weight: 700; }
 
