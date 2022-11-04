@@ -16,6 +16,19 @@
 
 .home_wrap .main_top .main_tit p:nth-child(2) { line-height: 28px; }
 
+.home_wrap .custom_swiper .custom_wrap { display: flex; justify-content: space-around; }
+
+.home_wrap .custom_swiper .custom_wrap .custom_item { width: 500px; }
+
+.home_wrap .custom_swiper .custom_wrap .custom_item::after { content: ''; display: block; height: 12px; background: #503AE7; margin-top: 30px; }
+
+.home_wrap .custom_swiper .custom_wrap .my_review { display: flex; align-items: center; margin-bottom: 16px; }
+
+.home_wrap .custom_swiper .custom_wrap .my_review > p { width: 116px; height: 44px; margin-left: 15px; text-indent: 3px; font-weight: 500; color: var(--fontColor); background: url(../../assets/images/ico/stars.png) no-repeat center bottom; }
+
+.home_wrap .custom_swiper .custom_wrap .review_con { line-height: 24px; color: var(--fontColor); }
+
+/* //home_wrap */
 /* email_input */
 .email_send { width: 486px; height: 48px; }
 
@@ -25,7 +38,7 @@
 
 .email_send input[type="email"]::placeholder { color: #AFB0B9; }
 
-.email_send input[type=submit] { width: 30%; background-color: #503AE7; background-color: #503AE7; margin-left: -10px; color: #F4F2FF; font-size: 18px; font-weight: 700; vertical-align: bottom; }
+.email_send input[type=submit] { width: 30%; background-color: #503AE7; margin-left: -10px; color: #F4F2FF; font-size: 18px; font-weight: 700; vertical-align: bottom; }
 
 /* banner */
 .mq_logo_list { width: 70%; margin: 192px auto 0 auto; }
@@ -34,7 +47,7 @@
 
 .mq_logo_list marquee > a img { vertical-align: -webkit-baseline-middle; }
 
-.sec_wrap .sec { display: flex; align-items: center; margin-top: 128px; }
+.sec_wrap .sec { display: flex; align-items: center; }
 
 .sec_wrap .sec .sec_txt p { color: var(--fontColor); }
 
@@ -68,23 +81,19 @@
 
 .sec_wrap .sec2 .bnt_video:hover { background-color: #3E2DB2; transition: .5s; }
 
-.custom_swiper { width: 500px; height: 500px; }
-
-footer { margin-top: 50px; }
-
 /* tablet 지정 */
-@media only screen and (max-width: 768px) { .heading_1 { font-size: 30px; }
-  .heading_2 { font-size: 28px; }
-  .heading_3 { font-size: 18px; }
-  .heading_4 { font-size: 16px; }
-  .heading_5 { font-size: 14px; }
-  .heading_6 { font-size: 12px; }
-  .home_wrap { padding: 0 20px; }
+@media only screen and (max-width: 768px) { .home_wrap { padding: 0 20px; }
   .home_wrap .main_top { width: 100%; background-size: 50%; background-position: 95% center; }
   .home_wrap .main_top .main_tit { width: 314px; margin-top: 92px; }
   .home_wrap .main_top .main_tit p { margin-top: 20px; }
   .home_wrap .main_top .main_tit p:first-child { font-size: 28px; line-height: 35px; }
   .home_wrap .main_top .main_tit p:nth-child(2) { font-size: 16px; line-height: 22px; }
+  .home_wrap .custom_swiper .custom_wrap { display: block; }
+  .home_wrap .custom_swiper .custom_wrap .custom_item { width: 100%; margin-bottom: 30px; }
+  .home_wrap .custom_swiper .custom_wrap .my_review { display: flex; align-items: center; margin-bottom: 16px; }
+  .home_wrap .custom_swiper .custom_wrap .my_review > p { width: 116px; height: 44px; margin-left: 15px; text-indent: 3px; }
+  .home_wrap .custom_swiper .custom_wrap .review_con { line-height: 24px; color: var(--fontColor); }
+  /* // home_wrap*/
   /* email_input */
   .email_send { width: 340px; }
   .email_send input[type="email"] { width: 65%; }

@@ -27,7 +27,41 @@
       }
     }
   }
-}
+  .custom_swiper{
+    .custom_wrap{
+      display: flex;
+      justify-content: space-around;
+      .custom_item{
+        width: 500px;
+        &::after{
+          content: '';
+          display: block;
+          height: 12px;
+          background: $prime_color;
+          margin-top: 30px;
+        }
+      }
+      .my_review{
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+        & > p{
+          width: 116px;
+          height: 44px;
+          margin-left: 15px;
+          text-indent: 3px;
+          font-weight: $md;
+          color: var(--fontColor);
+          background: url(../../assets/images/ico/stars.png) no-repeat center bottom;
+        }
+      }
+      .review_con{
+        line-height: 24px;
+        color: var(--fontColor);
+      }
+    }
+  }
+} /* //home_wrap */
 
 /* email_input */
 .email_send{
@@ -53,7 +87,6 @@
   input[type=submit]{
     width: 30%;
     background-color: $prime_color;
-    background-color: #503AE7;
     margin-left: -10px;
     color: $color_5;
     font-size: $font-18r;
@@ -80,7 +113,6 @@
   .sec{
     display: flex;
     align-items: center;
-    margin-top: 128px;
     .sec_txt{
       p{
         color: var(--fontColor);
@@ -158,43 +190,11 @@
   }
 }
 
-.custom_swiper{
-  width: 500px;
-  height: 500px;
-}
-
-
-
-
-footer{
-  margin-top: 50px;
-}
 
 
 
 /* tablet 지정 */
 @media only screen and (max-width: 768px) {
-
-
-.heading_1 {
-  font-size: 30px;
-}
-.heading_2 {
-  font-size: 28px;
-}
-.heading_3 {
-  font-size: 18px;
-}
-.heading_4 {
-  font-size: 16px;
-}
-.heading_5 {
-  font-size: 14px;
-}
-.heading_6 {
-  font-size: 12px;
-}
-
   .home_wrap{
     padding: 0 20px;
     .main_top{
@@ -217,7 +217,31 @@ footer{
         }
       }
     }
-  }
+    .custom_swiper{
+      .custom_wrap{
+        display: block;
+        .custom_item{
+          width: 100%;
+          margin-bottom: 30px;
+        }
+        .my_review{
+          display: flex;
+          align-items: center;
+          margin-bottom: 16px;
+          & > p{
+            width: 116px;
+            height: 44px;
+            margin-left: 15px;
+            text-indent: 3px;
+          }
+        }
+        .review_con{
+          line-height: 24px;
+          color: var(--fontColor);
+        }
+      }
+    }
+  }/* // home_wrap*/
 
   /* email_input */
   .email_send{

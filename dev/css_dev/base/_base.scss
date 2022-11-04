@@ -22,11 +22,11 @@ body {
 }
 :root[color-theme='light'] {
   --background: #fff;
-  --fontColor: #1f1f1fea;
+  --fontColor: #000;
 }
 
 :root[color-theme='dark'] {
-  --background: #1f1f1fea;
+  --background: #000;
   --fontColor: #fff;
 }
 
@@ -65,6 +65,11 @@ body {
   font-size: 12px;
   font-weight: $r;
   margin-bottom: 0;
+}
+
+// margin
+.con-m{
+  margin-top: $margin-t;
 }
 
 // color_palette - color List
@@ -229,5 +234,125 @@ body {
   height: 16px;
   display: inline-block;
 }
+
+
+/* layout_your_inbox */
+.inbox_wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1280px;
+  margin: $margin-t auto 0 auto;
+  height: 310px;
+  text-align: center;
+  color: #fff;
+  background: url(../../assets/images/contents/main_banner.png) no-repeat center;
+  .email_send{
+    margin: 32px auto 0 auto;
+    input[type=submit]{
+      background-color: $sub_color;
+    }
+  }
+}
+
+/* layout_list */
+.item_list_wrap{
+  display: flex;
+  justify-content: space-evenly;
+  & > li{
+    display: flex;
+    align-items: flex-end;
+    & > a{
+      display: block;
+    }
+    &:first-child{
+      width: 416px;
+      height: 516px;
+      background: url(../../assets/images/contents/bg_con_1.png) no-repeat;
+      & > a{
+        text-indent: -999px;
+        font-size: 0;
+      }
+    }
+    &:nth-child(2){
+      background: url(../../assets/images/contents/articles_1.png) no-repeat;
+    }
+    &:nth-child(3){
+      background: url(../../assets/images/contents/articles_2.png) no-repeat;
+    }
+  }
+}
+
+
+
+
+
+
+/* tablet 지정 */
+@media only screen and (max-width: 768px) {
+  .heading_1 {
+    font-size: 30px;
+  }
+  .heading_2 {
+    font-size: 28px;
+  }
+  .heading_3 {
+    font-size: 18px;
+  }
+  .heading_4 {
+    font-size: 16px;
+  }
+  .heading_5 {
+    font-size: 14px;
+  }
+  .heading_6 {
+    font-size: 12px;
+  }
+
+  // margin
+  .con-m{
+    margin-top: $margin-t-m;
+  }
+  // content padding
+  .con_pd {
+    padding: 0 20px;
+  }
+  /* your_inbox */
+  .inbox_wrap{
+    height: auto;
+    background-size: 100%;
+    .email_send{
+      margin: 32px auto 0 auto;
+    }
+  }
+
+}/* //tablet 지정 */
+
+/* mobile 지정 */
+@media only screen and (max-width: 425px) {
+
+  // margin
+  .con-m{
+    margin-top: $margin-t-s;
+  }
+
+  /* your_inbox */
+  .inbox_wrap{
+    background-image: none;
+    background-color: $prime_color;
+    width: 100%;
+    height: 130px;
+    margin-bottom: 60px;
+    .heading_2{
+      font-size: $font-16r;
+    }
+    .email_send{
+      margin: 16px auto 0 auto;
+    }
+  }
+
+}/* //mobile 지정 */
+
+
 /* base e =================================================== */
 /* ---------------------------------------------------------- */
