@@ -6,7 +6,7 @@
 /* ========================================================== */
 /* ---------------------------------------------------------- */
 /* main s =================================================== */
-.home_wrap .main_top { width: 1024px; margin: 0 auto; background: url(../../assets/images/contents/bg_audio_track.png) no-repeat center right; }
+.home_wrap .main_top { width: 1024px; margin: 0 auto; padding: 0 35px; background: url(../../assets/images/contents/bg_audio_track.png) no-repeat center right; }
 
 .home_wrap .main_top .main_tit { width: 480px; margin-top: 92px; }
 
@@ -27,99 +27,71 @@
 
 .email_send input[type=submit] { width: 30%; background-color: #503AE7; background-color: #503AE7; margin-left: -10px; color: #F4F2FF; font-size: 18px; font-weight: 700; vertical-align: bottom; }
 
-/* banner */
-.mq_logo_list { width: 70%; margin: 192px auto 0 auto; }
+/* swiper */
+.mySwiper { margin-top: 192px; }
 
-.mq_logo_list marquee > a { padding-right: 200px; }
+.mySwiper .swiper-wrapper { display: flex; justify-content: space-around; align-items: center; }
 
-.mq_logo_list marquee > a img { vertical-align: -webkit-baseline-middle; }
+.mySwiper .swiper-wrapper .swiper-slide { display: block; }
+
+.mySwiper .swiper-wrapper .swiper-slide img { display: block; object-fit: cover; }
 
 .sec_wrap .sec { display: flex; align-items: center; margin-top: 128px; }
 
-.sec_wrap .sec .sec_txt p { color: var(--fontColor); }
+.sec_wrap .sec .sec_txt { width: 50%; }
+
+.sec_wrap .sec .sec_txt p { width: 409px; }
 
 .sec_wrap .sec .sec_txt p.heading_2 { line-height: 38px; }
 
 .sec_wrap .sec .sec_txt p.heading_5 { margin-top: 22px; line-height: 28px; }
 
-.sec_wrap .sec .sec_img { width: 40%; height: 512px; text-indent: -999px; font-size: 0; }
+.sec_wrap .sec .sec_img { width: 740px; height: 512px; text-indent: -999px; font-size: 0; }
 
-.sec_wrap .sec1 { justify-content: flex-end; background: url(../../assets/images/lines/bg_lines_8.png) no-repeat 22% center; }
+.sec_wrap .sec1 { justify-content: end; background: url(../../assets/images/lines/bg_lines_8.png) no-repeat 22% center; }
 
-.sec_wrap .sec1 .sec_txt { width: 41%; }
-
-.sec_wrap .sec1 .sec_txt p { width: 55%; }
+.sec_wrap .sec1 .sec_txt { padding-left: 190px; }
 
 .sec_wrap .sec1 .sec_txt p.heading_2 span { color: #503AE7; }
 
 .sec_wrap .sec1 .sec_img { background: url(../../assets/images/contents/main_con_1.png) no-repeat left center; background-size: 100%; }
 
-.sec_wrap .sec2 { justify-content: flex-start; background: url(../../assets/images/lines/bg_lines_4.png) no-repeat 70% 15%; position: relative; }
+.sec_wrap .sec2 { justify-content: space-between; background: url(../../assets/images/lines/bg_lines_4.png) no-repeat 52% 15%; position: relative; }
 
-.sec_wrap .sec2 .sec_txt { width: 33%; order: 2; padding-left: 225px; }
+.sec_wrap .sec2 .sec_txt { order: 2; }
 
-.sec_wrap .sec2 .sec_txt p.heading_2 { width: 71%; }
+.sec_wrap .sec2 .sec_txt p.heading_2 { padding-right: 100px; }
 
 .sec_wrap .sec2 .sec_txt p.heading_2 span { color: #503AE7; }
 
 .sec_wrap .sec2 .sec_img { background: url(../../assets/images/contents/main_con_1.png) no-repeat left center; background-size: 100%; }
 
-.sec_wrap .sec2 .bnt_video { position: absolute; left: 25%; bottom: 40px; width: 318px; height: 112px; padding-left: 68px; border: 0; background: #503AE7 url(../../assets/images/ico/ico_youtube.png) no-repeat 10% center; color: #fff; }
+.sec_wrap .sec2 .bnt_video { position: absolute; left: 450px; bottom: 40px; width: 318px; height: 112px; padding-left: 68px; background: #503AE7 url(../../assets/images/ico/ico_youtube.png) no-repeat 10% center; color: #fff; }
 
 .sec_wrap .sec2 .bnt_video:hover { background-color: #3E2DB2; transition: .5s; }
-
-.custom_swiper { width: 500px; height: 500px; }
 
 footer { margin-top: 50px; }
 
 /* tablet 지정 */
-@media only screen and (max-width: 768px) { .heading_1 { font-size: 30px; }
-  .heading_2 { font-size: 28px; }
-  .heading_3 { font-size: 18px; }
-  .heading_4 { font-size: 16px; }
-  .heading_5 { font-size: 14px; }
-  .heading_6 { font-size: 12px; }
-  .home_wrap { padding: 0 20px; }
-  .home_wrap .main_top { width: 100%; background-size: 50%; background-position: 95% center; }
-  .home_wrap .main_top .main_tit { width: 314px; margin-top: 92px; }
-  .home_wrap .main_top .main_tit p { margin-top: 20px; }
-  .home_wrap .main_top .main_tit p:first-child { font-size: 28px; line-height: 35px; }
-  .home_wrap .main_top .main_tit p:nth-child(2) { font-size: 16px; line-height: 22px; }
+@media only screen and (max-width: 768px) { .main_top { width: 100%; background-size: 50%; background-position: 95% center; padding: 0 20px; }
+  .main_top .main_tit { width: 314px; margin-top: 92px; }
+  .main_top .main_tit p { margin-top: 20px; }
+  .main_top .main_tit p:first-child { font-size: 28px; line-height: 35px; }
+  .main_top .main_tit p:nth-child(2) { font-size: 16px; line-height: 22px; }
   /* email_input */
   .email_send { width: 340px; }
   .email_send input[type="email"] { width: 65%; }
   .email_send input[type="email"]::placeholder { color: #AFB0B9; font-size: 14px; }
-  .email_send input[type=submit] { width: 25%; font-size: 14px; }
-  /* banner */
-  .mq_logo_list { width: 100%; margin-top: 80px; }
-  .mq_logo_list marquee > a { padding-right: 80px; }
-  .sec_wrap .sec { margin-top: 80px; }
-  .sec_wrap .sec .sec_txt p { width: 100%; }
-  .sec_wrap .sec .sec_img { width: 50%; height: 275px; }
-  .sec_wrap .sec1 { background-size: 43%; background-position: 7% center; }
-  .sec_wrap .sec1 .sec_txt { width: 50%; }
-  .sec_wrap .sec2 { background-size: 5%; background-position: 93% 7%; }
-  .sec_wrap .sec2 .sec_txt { width: 50%; padding-left: 20px; }
-  .sec_wrap .sec2 .sec_txt p.heading_2 { width: 100%; }
-  .sec_wrap .sec2 .bnt_video { left: 7%; bottom: 10%; width: 38%; height: 20%; } }
+  .email_send input[type=submit] { width: 25%; font-size: 14px; } }
 
 /* // tablet 지정 */
 /* mobile 지정 */
-@media only screen and (max-width: 425px) { .home_wrap .main_top { background: none; }
-  .home_wrap .main_top .main_tit { width: 100%; }
+@media only screen and (max-width: 425px) { .main_top { background: none; }
+  .main_top .main_tit { width: 100%; }
   /* email_input */
   .email_send { width: 100%; }
   .email_send input[type="email"] { width: 70%; }
-  .email_send input[type=submit] { width: 30%; }
-  /* banner */
-  .mq_logo_list { margin-top: 40px; }
-  .sec_wrap .sec { display: block; margin-top: 50px; }
-  .sec_wrap .sec .sec_img { width: 100%; height: 275px; }
-  .sec_wrap .sec1 { background: none; }
-  .sec_wrap .sec1 .sec_txt { width: 100%; }
-  .sec_wrap .sec2 { background: none; }
-  .sec_wrap .sec2 .sec_txt { width: 100%; padding-left: 0px; }
-  .sec_wrap .sec2 .bnt_video { left: 0; bottom: 0; width: 100%; height: 13%; } }
+  .email_send input[type=submit] { width: 30%; } }
 
 /* // mobile 지정 */
 /* main e =================================================== */

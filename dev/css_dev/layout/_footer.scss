@@ -1,0 +1,159 @@
+@charset "utf-8";
+/* ========================================================== */
+/*                                                            */
+/* file		: footer                                      	  */
+/*                                                            */
+/* ========================================================== */
+/* ---------------------------------------------------------- */
+/* footer s ================================================= */
+
+// footer_sponsors
+.footer_sponsors {
+  color: #fff;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 72px 72px;
+  background-color: $prime_color;
+  text-align: center;
+  transform: translateY(30%);
+  .logoipsum {
+    margin-top: 64px;
+    font-size: 0;
+    img {
+      margin-right: 83px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+//footer_con
+.footer_con {
+    color: #fff;
+    width: 100%;
+    background-color: $black;
+    padding: 195px 80px 96px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .pages,
+    .reach_us,
+    .subscribe {
+        h4 {
+            font-weight: $b;
+            margin-bottom: 32px;
+            font-size: 20px;
+        }
+        li {
+            margin-bottom: 16px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.footer_con {
+    .subscribe {
+        ul {
+            li {
+                margin-bottom: 32px;
+            }
+        }
+    }  
+}
+
+//copyright
+.copyright {
+    height: 64px;
+    line-height: 64px;
+    color: #fff;
+    background-color: $prime_color;
+    text-align: center;
+    font-weight: $b;
+}
+
+/* ---------------------------------------------------------- */
+
+// mdq pc
+.footer_sponsors {
+  @include mdq_pc {
+      padding: 42px 42px !important;
+      max-width: 728px !important;
+      transform: inherit;
+  }
+  .logoipsum {
+    margin-top: 34px;
+    img {
+      @include mdq_pc {
+        margin-right: 10px !important;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.footer_con {
+  @include mdq_pc {
+    padding: 60px 20px;
+    flex-direction: column;
+    transform: inherit;
+  }
+  .logo_wrap {
+    @include mdq_pc {
+      margin-bottom: 40px;
+    }
+  }
+  .pages,
+  .reach_us {
+    @include mdq_pc {
+      margin-bottom: 60px;
+    }
+  }
+  .subscribe {
+    @include mdq_pc {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// mdq tab
+
+.footer_sponsors {
+  .logoipsum {
+    img {
+      @include mdq_tab {
+        width: 45%;
+      }
+    }
+  }
+  @include mdq_tab {
+    transform: inherit;
+  }
+}
+
+.footer_con {
+  @include mdq_tab {
+  }
+  .logo_wrap {
+    @include mdq_tab {
+      margin-bottom: 50px;
+    }
+  }
+  .pages,
+  .reach_us {
+      @include mdq_tab {
+        margin-bottom: 50px;
+      }
+  }
+  .subscribe {
+    @include mdq_tab {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+
+/* footer e ================================================= */
+/* ---------------------------------------------------------- */
