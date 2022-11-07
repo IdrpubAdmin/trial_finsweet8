@@ -76,84 +76,65 @@
 
 /* ---------------------------------------------------------- */
 
-// mdq pc
-.footer_sponsors {
-  @include mdq_pc {
-      padding: 42px 42px !important;
-      max-width: 728px !important;
+//mdq pc
+@media only screen and (max-width: 768px) {
+
+  .footer_sponsors {
+    padding: 42px 42px !important;
+    transform: inherit;
+    .logoipsum {
+      margin-top: 34px;
+      img {
+          margin-right: 10px !important;
+          padding: 10px;
+      }
+    }
+  }
+
+  .footer_con {
+      padding: 60px 20px;
+      flex-direction: column;
       transform: inherit;
+    .logo_wrap {
+        margin-bottom: 40px;
+    }
+    .pages,
+    .reach_us {
+        margin-bottom: 60px;
+    }
+    .subscribe {
+        margin-bottom: 0;
+    }
   }
-  .logoipsum {
-    margin-top: 34px;
-    img {
-      @include mdq_pc {
-        margin-right: 10px !important;
-        padding: 10px;
+
+}
+
+//mdq tab
+@media only screen and (max-width: 425px) {
+
+  .footer_sponsors {
+    transform: inherit;
+    .logoipsum {
+      img {
+          width: 45%;
       }
     }
   }
-}
-
-.footer_con {
-  @include mdq_pc {
-    padding: 60px 20px;
-    flex-direction: column;
-    transform: inherit;
-  }
-  .logo_wrap {
-    @include mdq_pc {
-      margin-bottom: 40px;
-    }
-  }
-  .pages,
-  .reach_us {
-    @include mdq_pc {
-      margin-bottom: 60px;
-    }
-  }
-  .subscribe {
-    @include mdq_pc {
-      margin-bottom: 0;
-    }
-  }
-}
-
-// mdq tab
-
-.footer_sponsors {
-  .logoipsum {
-    img {
-      @include mdq_tab {
-        width: 45%;
-      }
-    }
-  }
-  @include mdq_tab {
-    transform: inherit;
-  }
-}
-
-.footer_con {
-  @include mdq_tab {
-  }
-  .logo_wrap {
-    @include mdq_tab {
+  
+  .footer_con {
+    .logo_wrap {
       margin-bottom: 50px;
     }
-  }
-  .pages,
-  .reach_us {
-      @include mdq_tab {
-        margin-bottom: 50px;
-      }
-  }
-  .subscribe {
-    @include mdq_tab {
+    .pages,
+    .reach_us {
+      margin-bottom: 50px;
+    }
+    .subscribe {
       margin-bottom: 0px;
     }
   }
-}
 
+}
 
 /* footer e ================================================= */
 /* ---------------------------------------------------------- */

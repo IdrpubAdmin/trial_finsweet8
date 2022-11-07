@@ -158,7 +158,7 @@ body {
   font-weight: $sb;
   color: $prime_color;
   display: inline-block;
-  height: 100%;
+  line-height: 32px;
   &:hover {
     color: #3E2DB2;
     transition: .5s;
@@ -167,18 +167,15 @@ body {
 
 // category potcasts - potcasts list
 .cate_pot_on {
+  text-align: center;
   background-color: $prime_color;
   height: 48px;
   line-height: 48px;
   border-radius: 28.5px;
   color: #fff;
   font-weight: $b;
-  a {
-    display: block;
-    height: 100%;
-    padding: 0 32px;
-    text-align: center;
-  }
+  display: inline-block;
+  padding: 0 32px;
 }
 
 .cate_pot {
@@ -188,6 +185,8 @@ body {
   color: $color_4;
   font-weight: $b;
   border: 1px solid $color_4;
+  display: inline-block;
+  padding: 0 32px;
   a {
     display: block;
     height: 100%;
@@ -235,6 +234,23 @@ body {
   display: inline-block;
 }
 
+// section_tit
+.section_tit_1 {
+  position: relative;
+  h2 {
+    font-size: 32px;
+  }
+  p {
+    line-height: 24px;
+    margin-top: 16px;
+  }
+  >.btn_1 {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 195px;
+  }
+}
 
 /* layout_your_inbox */
 .inbox_wrap{
@@ -317,6 +333,15 @@ body {
   .con_pd {
     padding: 0 20px;
   }
+
+  // section_tit
+  .section_tit_1 {
+    >a {
+      position: inherit !important;
+      margin-top: 20px;
+    }
+  }
+
   /* your_inbox */
   .inbox_wrap{
     height: auto;

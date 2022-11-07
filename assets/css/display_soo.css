@@ -8,31 +8,27 @@
 /* ========================================================== */
 /* promotion                                                  */
 /* ========================================================== */
+.promotion { color: var(--fontColor); }
+
 .promotion .promo_tit { overflow: hidden; height: 117px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
 
 .promotion .promo_tit h1 { float: left; font-weight: 700; }
-
-@media only screen and (max-width: 768px) { .promotion .promo_tit { padding: 0 30px; } }
 
 .promotion .promo_con h3 { margin-top: 96px; font-size: 24px; font-weight: 600; }
 
 .promotion .promo_con .typo_box { overflow: hidden; width: 100%; background-color: #F4F2FF; margin-top: 48px; text-align: center; padding: 80px; display: flex; justify-content: space-around; flex-wrap: wrap; }
 
-@media only screen and (max-width: 768px) { .promotion .promo_con .typo_box { padding: 30px; } }
-
 .promotion .promo_con .typo_box .download { font-size: 32px; font-weight: 700; }
 
-.promotion .promo_con .typo_box .download a span.ico { background: url(../../../assets/images/ico/ico_down.png) no-repeat center; width: 51px; height: 51px; border-radius: 50%; display: inline-block; background-color: #503AE7; vertical-align: bottom; }
+.promotion .promo_con .typo_box .download a span.ico { background: url(../../assets/images/ico/ico_down.png) no-repeat center; width: 51px; height: 51px; border-radius: 50%; display: inline-block; background-color: #503AE7; vertical-align: bottom; }
 
 .promotion .promo_con .typo_box .download a p { display: inline-block; margin-left: 24px; line-height: 51px; }
 
 .promotion .promo_con .typo_box .font { font-weight: 600; font-size: 24px; }
 
-.promotion .promo_con .typo_box .font .ico { display: inline-block; background: url(../../../assets/images/ico/ico_folder.png) no-repeat center/100%; width: 68px; height: 54px; }
+.promotion .promo_con .typo_box .font .ico { display: inline-block; background: url(../../assets/images/ico/ico_folder.png) no-repeat center/100%; width: 68px; height: 54px; }
 
 .promotion .promo_con .typo_box .font p { display: inline-block; vertical-align: bottom; line-height: 58px; margin-left: 22px; }
-
-@media only screen and (max-width: 768px) { .promotion .promo_con { padding: 0 20px; } }
 
 .text_heading { margin-top: 96px; }
 
@@ -42,13 +38,7 @@
 
 .text_heading .tehead_wrap .heading p { margin-bottom: 38px; }
 
-@media only screen and (max-width: 768px) { .text_heading .tehead_wrap .heading { width: inherit; } }
-
-@media only screen and (max-width: 425px) { .text_heading .tehead_wrap .heading { width: 100%; } }
-
 .text_heading .tehead_wrap .body_text { width: 70%; line-height: 150%; }
-
-@media only screen and (max-width: 768px) { .text_heading .tehead_wrap .body_text { width: inherit; } }
 
 .color_palette h3 { font-size: 30px; font-weight: 600; }
 
@@ -56,15 +46,11 @@
 
 .color_palette ul li { float: left; width: 128px; height: 96px; line-height: 96px; }
 
-.components .btn_com_list, .components .btn_hover_list, .components .category_potcasts { margin-top: 48px; overflow: hidden; }
+.components .btn_com_list, .components .btn_hover_list, .components .category_potcasts { margin-top: 48px; }
 
-.components .btn_com_list li, .components .btn_hover_list li, .components .category_potcasts li { float: left; margin-right: 48px; }
+.components .btn_com_list a, .components .btn_hover_list a, .components .category_potcasts a { display: inline-block; margin-right: 48px; }
 
-.components .btn_com_list li:last-child, .components .btn_hover_list li:last-child, .components .category_potcasts li:last-child { margin-right: 0; }
-
-@media only screen and (max-width: 425px) { .components .btn_com_list li, .components .btn_hover_list li, .components .category_potcasts li { float: none; } }
-
-@media only screen and (max-width: 425px) { .components .btn_com_list, .components .btn_hover_list, .components .category_potcasts { float: inherit; } }
+.components .btn_com_list a:last-child, .components .btn_hover_list a:last-child, .components .category_potcasts a:last-child { margin-right: 0; }
 
 .components .btn_hover_list .btn_1 { background-color: #3E2DB2; transition: .5s; }
 
@@ -82,25 +68,27 @@
 
 .potcasts .potcasts_list li { float: left; margin-right: 60px; }
 
-@media only screen and (max-width: 768px) { .potcasts .potcasts_list li { margin-bottom: 30px; } }
-
 .potcasts .sns_list { border: 1px dashed #503AE7; padding: 20px 20px; }
 
 .potcasts .sns_list li { float: left; margin-right: 24px; }
 
-@media only screen and (max-width: 768px) { .potcasts .sns_list { width: inherit; height: 100%; } }
+@media only screen and (max-width: 768px) { .promo_tit { padding: 0 30px; }
+  .promo_con { padding: 0 20px; }
+  .promo_con .typo_box { padding: 30px; }
+  .promo_con .text_heading .heading { width: inherit; }
+  .promo_con .text_heading .body_text { width: inherit; }
+  .promo_con .potcasts .potcasts_list li { margin-bottom: 30px; }
+  .promo_con .potcasts .sns_list { width: inherit; height: 100%; } }
+
+@media only screen and (max-width: 425px) { .promo_con .text_heading .heading { width: 100%; }
+  .promo_con .components .btn_com_list, .promo_con .components .btn_hover_list, .promo_con .components .category_potcasts { float: inherit; }
+  .promo_con .components .btn_com_list a, .promo_con .components .btn_hover_list a, .promo_con .components .category_potcasts a { float: none; } }
 
 /* promotion e =================================================== */
 /* ========================================================== */
 /* recent episode s                                            */
 /* ========================================================== */
-.recent_episodes .recent_text { position: relative; }
-
-.recent_episodes .recent_text h2 { font-size: 32px; }
-
-.recent_episodes .recent_text p { line-height: 24px; margin-top: 16px; }
-
-.recent_episodes .recent_text .btn_recent { position: absolute; bottom: 0; right: 0; width: 195px; }
+.recent_episodes { color: var(--fontColor); }
 
 .recent_episodes .recent_video ul { overflow: hidden; }
 
@@ -112,11 +100,14 @@
 
 .recent_episodes .recent_video ul li .recent_video_text p, .recent_episodes .recent_video ul li .recent_video_text a.btn_listen { margin-top: 16px; }
 
-.recent_episodes .recent_video ul li .recent_video_text a.mute { position: absolute; top: 0; right: 0; color: #fff; }
+.recent_episodes .recent_video ul li .recent_video_text a.mute { position: absolute; top: 16px; right: 16px; color: #fff; }
 
-.recent_episodes .recent_video ul li .recent_video_text a.mute i { background: url(../../../assets/images/ico/ico_vactor.png) no-repeat center; width: 32px; height: 32px; border-radius: 50%; background-color: #503AE7; display: inline-block; vertical-align: middle; }
+.recent_episodes .recent_video ul li .recent_video_text a.mute i { background: url(../../assets/images/ico/ico_vector.png) no-repeat center/14px; width: 40px; height: 40px; border-radius: 50%; background-color: #503AE7; display: inline-block; vertical-align: middle; }
 
 .recent_episodes .recent_video ul li:last-child { margin-right: 0; }
+
+@media only screen and (max-width: 768px) { .recent_episodes .recent_video ul { margin: 40px 0 0 0; }
+  .recent_episodes .recent_video ul li { width: 100%; margin: 0 0 30px 0; } }
 
 /* soo e =================================================== */
 /* ---------------------------------------------------------- */

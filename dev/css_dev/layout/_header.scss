@@ -24,9 +24,16 @@ header {
       }
     }
   }
-  @include mdq_pc {
+}
+
+// mdq pc
+@media only screen and (max-width: 768px) {
+  header {
+    overflow: inherit;
     padding: 0 20px !important;
+    overflow-x: clip !important;
   }
 }
+
 /* header e ================================================= */
 /* ---------------------------------------------------------- */
