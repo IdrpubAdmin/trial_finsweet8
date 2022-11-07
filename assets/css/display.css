@@ -283,7 +283,7 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; colo
 
 :root[color-theme='dark'] { --background: #000; --fontColor: #fff; }
 
-.container { max-width: 1920px; margin: 0 auto; }
+.container { max-width: 1280px; margin: 0 auto; }
 
 .con_pd { padding: 0 80px; }
 
@@ -362,11 +362,19 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; colo
 .section_tit_1 > .btn_1 { position: absolute; bottom: 0; right: 0; width: 195px; }
 
 /* layout_your_inbox */
-.inbox_wrap { display: flex; justify-content: center; align-items: center; max-width: 1280px; margin: 128px auto 0 auto; height: 310px; text-align: center; color: #fff; background: url(../../assets/images/contents/main_banner.png) no-repeat center; }
+.inbox_wrap { position: relative; display: flex; justify-content: center; align-items: center; height: 310px; margin: 128px 80px 0 80px; text-align: center; color: #fff; background-color: #503AE7; }
+
+.inbox_wrap::after { content: ''; display: block; width: 100%; height: 100%; background: url(../../assets/images/contents/bg_vector.png) no-repeat bottom; position: absolute; left: 0; top: 0; opacity: 0.1; }
 
 .inbox_wrap .email_send { margin: 32px auto 0 auto; }
 
 .inbox_wrap .email_send input[type=submit] { background-color: #1AD993; }
+
+.inbox_wrap .email_send::before, .inbox_wrap .email_send::after { content: ''; display: block; width: 114px; height: 120px; position: absolute; }
+
+.inbox_wrap .email_send::before { background: url(../../assets/images/ico/mic_2.png) no-repeat; left: 10%; top: 19%; }
+
+.inbox_wrap .email_send::after { background: url(../../assets/images/ico/mic_1.png) no-repeat; right: 10%; top: 50%; }
 
 /* layout_list */
 .item_list_wrap { display: flex; justify-content: space-evenly; }
@@ -394,8 +402,9 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; colo
   .con_pd { padding: 0 20px; }
   .section_tit_1 > a { position: inherit !important; margin-top: 20px; }
   /* your_inbox */
-  .inbox_wrap { height: auto; background-size: 100%; }
-  .inbox_wrap .email_send { margin: 32px auto 0 auto; } }
+  .inbox_wrap { margin: 80px 0; }
+  .inbox_wrap .email_send { margin: 32px auto 0 auto; }
+  .inbox_wrap .email_send::before { left: 0; } }
 
 /* //tablet 지정 */
 /* mobile 지정 */
@@ -403,7 +412,8 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; colo
   /* your_inbox */
   .inbox_wrap { background-image: none; background-color: #503AE7; width: 100%; height: 130px; margin-bottom: 60px; }
   .inbox_wrap .heading_2 { font-size: 16px; }
-  .inbox_wrap .email_send { margin: 16px auto 0 auto; } }
+  .inbox_wrap .email_send { margin: 16px auto 0 auto; }
+  .inbox_wrap .email_send::before, .inbox_wrap .email_send::after { display: none; } }
 
 /* //mobile 지정 */
 /* base e =================================================== */
@@ -510,11 +520,11 @@ header .gnb .sub_menu ul.sns li a { vertical-align: sub; }
 /* ========================================================== */
 /* ---------------------------------------------------------- */
 /* footer s ================================================= */
-.footer_sponsors { color: #fff; max-width: 1280px; margin: 0 auto; padding: 72px 72px; background-color: #503AE7; text-align: center; transform: translateY(30%); }
+.footer_sponsors { color: #fff; padding: 72px 0; margin: 0 80px; background-color: #503AE7; text-align: center; transform: translateY(30%); }
 
 .footer_sponsors .logoipsum { margin-top: 64px; font-size: 0; }
 
-.footer_sponsors .logoipsum img { margin-right: 83px; }
+.footer_sponsors .logoipsum img { margin-right: 50px; }
 
 .footer_sponsors .logoipsum img:last-child { margin-right: 0; }
 

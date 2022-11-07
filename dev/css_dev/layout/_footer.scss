@@ -10,9 +10,8 @@
 // footer_sponsors
 .footer_sponsors {
   color: #fff;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 72px 72px;
+  padding: 72px 0;
+  margin: 0 80px;
   background-color: $prime_color;
   text-align: center;
   transform: translateY(30%);
@@ -20,7 +19,7 @@
     margin-top: 64px;
     font-size: 0;
     img {
-      margin-right: 83px;
+      margin-right: 50px;
       &:last-child {
         margin-right: 0;
       }
@@ -120,7 +119,7 @@
       }
     }
   }
-  
+
   .footer_con {
     .logo_wrap {
       margin-bottom: 50px;

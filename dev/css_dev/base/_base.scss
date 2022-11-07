@@ -31,7 +31,7 @@ body {
 }
 
 .container {
-  max-width: 1920px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -254,19 +254,48 @@ body {
 
 /* layout_your_inbox */
 .inbox_wrap{
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1280px;
-  margin: $margin-t auto 0 auto;
   height: 310px;
+  margin: 128px 80px 0 80px;
   text-align: center;
   color: #fff;
-  background: url(../../assets/images/contents/main_banner.png) no-repeat center;
+  background-color: $prime_color;
+  &::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../../assets/images/contents/bg_vector.png) no-repeat bottom;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.1;
+  }
   .email_send{
     margin: 32px auto 0 auto;
     input[type=submit]{
       background-color: $sub_color;
+    }
+    &::before,
+    &::after{
+      content: '';
+      display: block;
+      width: 114px;
+      height: 120px;
+      position: absolute;
+    }
+    &::before{
+      background: url(../../assets/images/ico/mic_2.png) no-repeat;
+      left: 10%;
+      top: 19%;
+    }
+    &::after{
+      background: url(../../assets/images/ico/mic_1.png) no-repeat;
+      right: 10%;
+      top: 50%;
     }
   }
 }
@@ -344,10 +373,12 @@ body {
 
   /* your_inbox */
   .inbox_wrap{
-    height: auto;
-    background-size: 100%;
+    margin: 80px 0;
     .email_send{
       margin: 32px auto 0 auto;
+      &::before{
+        left: 0;
+      }
     }
   }
 
@@ -373,6 +404,10 @@ body {
     }
     .email_send{
       margin: 16px auto 0 auto;
+      &::before,
+      &::after{
+        display: none;
+      }
     }
   }
 
