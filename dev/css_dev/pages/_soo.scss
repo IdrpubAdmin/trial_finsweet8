@@ -185,7 +185,7 @@
   }
 
 
-// mdq_pc
+// mdq_tab
 @media only screen and (max-width: 768px) {
   .promo_tit {
     padding: 0 30px;
@@ -204,19 +204,21 @@
       }
     }
     .potcasts {
+      flex-direction: column;
       .potcasts_list {
         li {
           margin-bottom: 30px;
         }
       }
       .sns_list {
+        margin-top: 20px;
         width: inherit;
         height: 100%;
       }
     }
   }
 }
-// mdq_tab
+// mdq_mo
 @media only screen and (max-width: 425px) {
   .promo_con {
     .text_heading {
@@ -291,7 +293,7 @@
 
 }
 
-// mdq_pc
+// mdq_tab
 @media only screen and (max-width: 768px) {
   .recent_episodes {
     .recent_video {
@@ -315,7 +317,108 @@
 .host_top {
   max-width: 1069px;
   margin: 0 auto;
-  .host_vector {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 78px;
+  position: relative;
+  .host_top_img {
+    height: 524px;
+    background: url(../../assets/images/contents/main_host.png) no-repeat left;
+  }
+  .host_tit_wrap {
+    position: absolute;
+    left: 51%;
+    top: 0;
+    .host_tit {
+      padding: 50px 79px;
+      background: url(../../assets/images/lines/bg_lines_5.png) no-repeat right bottom 21px;
+      em {
+        color: $prime_color;
+        letter-spacing: 3px;
+        font-weight: $sb;
+      }
+      .host_tit_sub {
+        margin-top: 32px;
+        line-height: 38.4px;
+      }
+      .host_sub {
+        margin-top: 32px;
+        line-height: 24px;
+      }
+      a {
+        margin-top: 48px;
+        width: 151px;
+      }
+    }
+  }
+}
+
+// mq_logo_list
+.host_wrap {
+  .mq_logo_list {
+    width: 100%;
+    margin: inherit;
+  }
+}
+
+// origins
+.origins_wrap {
+  height: 100%;
+  margin-top: 107px;
+  background: url(../../assets/images/lines/bg_lines_9.png) no-repeat center / 100% auto;
+  .ori_con {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1024px;
+    .origins_txt,
+    .journalist_txt {
+      width: 480px;
+      .heading_2 {
+        line-height: 38.2px;
+      }
+      p.con_txt {
+        line-height: 28px;
+        margin-top: 32px;
+        span {
+          font-weight: $b;
+        }
+      }
+    }
+  }
+}
+
+.ori_con {
+  .origins_txt {
+    margin-right: 64px;
+  }
+}
+
+//mdq_tab
+@media only screen and (max-width: 768px) {
+  .host_top {
+    .host_top_img {
+      background: url(../../assets/images/contents/main_host.png) no-repeat left / 60%;
+    }
+    .host_tit_wrap {
+      .host_tit {
+        padding: 50px 20px;
+      }
+    }
+  }
+}
+
+//mdq_mo
+@media only screen and (max-width: 425px) {
+  .host_top {
+    .host_top_img {
+      height: 390px;
+      background: url(../../assets/images/contents/main_host.png) no-repeat center / 100%;
+    }
+    .host_tit_wrap {
+      position: inherit;
+      left: inherit;
+    }
   }
 }
 

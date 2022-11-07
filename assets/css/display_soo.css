@@ -77,8 +77,9 @@
   .promo_con .typo_box { padding: 30px; }
   .promo_con .text_heading .heading { width: inherit; }
   .promo_con .text_heading .body_text { width: inherit; }
+  .promo_con .potcasts { flex-direction: column; }
   .promo_con .potcasts .potcasts_list li { margin-bottom: 30px; }
-  .promo_con .potcasts .sns_list { width: inherit; height: 100%; } }
+  .promo_con .potcasts .sns_list { margin-top: 20px; width: inherit; height: 100%; } }
 
 @media only screen and (max-width: 425px) { .promo_con .text_heading .heading { width: 100%; }
   .promo_con .components .btn_com_list, .promo_con .components .btn_hover_list, .promo_con .components .category_potcasts { float: inherit; }
@@ -113,7 +114,43 @@
 /* ========================================================== */
 /* host s                                                     */
 /* ========================================================== */
-.host_top { max-width: 1069px; margin: 0 auto; }
+.host_top { max-width: 1069px; margin: 0 auto; width: 100%; overflow: hidden; margin-top: 78px; position: relative; }
+
+.host_top .host_top_img { height: 524px; background: url(../../assets/images/contents/main_host.png) no-repeat left; }
+
+.host_top .host_tit_wrap { position: absolute; left: 51%; top: 0; }
+
+.host_top .host_tit_wrap .host_tit { padding: 50px 79px; background: url(../../assets/images/lines/bg_lines_5.png) no-repeat right bottom 21px; }
+
+.host_top .host_tit_wrap .host_tit em { color: #503AE7; letter-spacing: 3px; font-weight: 600; }
+
+.host_top .host_tit_wrap .host_tit .host_tit_sub { margin-top: 32px; line-height: 38.4px; }
+
+.host_top .host_tit_wrap .host_tit .host_sub { margin-top: 32px; line-height: 24px; }
+
+.host_top .host_tit_wrap .host_tit a { margin-top: 48px; width: 151px; }
+
+.host_wrap .mq_logo_list { width: 100%; margin: inherit; }
+
+.origins_wrap { height: 100%; margin-top: 107px; background: url(../../assets/images/lines/bg_lines_9.png) no-repeat center/100% auto; }
+
+.origins_wrap .ori_con { display: flex; flex-wrap: wrap; margin: 0 auto; max-width: 1024px; }
+
+.origins_wrap .ori_con .origins_txt, .origins_wrap .ori_con .journalist_txt { width: 480px; }
+
+.origins_wrap .ori_con .origins_txt .heading_2, .origins_wrap .ori_con .journalist_txt .heading_2 { line-height: 38.2px; }
+
+.origins_wrap .ori_con .origins_txt p.con_txt, .origins_wrap .ori_con .journalist_txt p.con_txt { line-height: 28px; margin-top: 32px; }
+
+.origins_wrap .ori_con .origins_txt p.con_txt span, .origins_wrap .ori_con .journalist_txt p.con_txt span { font-weight: 700; }
+
+.ori_con .origins_txt { margin-right: 64px; }
+
+@media only screen and (max-width: 768px) { .host_top .host_top_img { background: url(../../assets/images/contents/main_host.png) no-repeat left/60%; }
+  .host_top .host_tit_wrap .host_tit { padding: 50px 20px; } }
+
+@media only screen and (max-width: 425px) { .host_top .host_top_img { height: 390px; background: url(../../assets/images/contents/main_host.png) no-repeat center/100%; }
+  .host_top .host_tit_wrap { position: inherit; left: inherit; } }
 
 /* host e =================================================== */
 /* soo e =================================================== */
