@@ -541,7 +541,7 @@ header .gnb .sub_menu ul.sns li a { vertical-align: sub; }
 .copyright { height: 64px; line-height: 64px; color: #fff; background-color: #503AE7; text-align: center; font-weight: 700; }
 
 /* ---------------------------------------------------------- */
-@media only screen and (max-width: 768px) { .footer_sponsors { padding: 42px 42px !important; transform: inherit; }
+@media only screen and (max-width: 768px) { .footer_sponsors { padding: 42px 42px !important; margin: inherit; transform: inherit; }
   .footer_sponsors .logoipsum { margin-top: 34px; }
   .footer_sponsors .logoipsum img { margin-right: 10px !important; padding: 10px; }
   .footer_con { padding: 60px 20px; flex-direction: column; transform: inherit; }
