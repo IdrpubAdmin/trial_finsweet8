@@ -6,6 +6,73 @@
 /* ========================================================== */
 /* ---------------------------------------------------------- */
 /* container s ============================================== */
+.layout_banner_wrap{
+  color: #fff;
+  position: relative;
+  width: 100%;
+	padding-top : 46%;
+  &::after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+  & > div{
+    position: absolute;
+    left: 11%;
+    top: 50%;
+    width: 34%;
+    transform: translateY(-50%);
+    & > p{
+      margin-bottom: 32px;
+      &:nth-child(2){
+      line-height: 28px;
+      }
+    }
+  }
+}
+.page_host{
+  .layout_banner_wrap{
+    background: url(../../assets/images/contents/host_banner.png) no-repeat center;
+  }
+}
+.page_padcast{
+  .layout_banner_wrap{
+    background: url(../../assets/images/contents/potcast_banner_2.png) no-repeat center;
+  }
+}
+
+/* tablet 지정 */
+@media only screen and (max-width: 768px) {
+  .layout_banner_wrap{
+    background-size: cover;
+    & > div{
+      left: 8%;
+      top: 50%;
+      width: 70%;
+      & > p{
+        margin-bottom: 12px;
+        &:nth-child(2){
+        line-height: 18px;
+        }
+      }
+    }
+  }
+
+}/* tablet */
+
+/* mobile 지정 */
+@media only screen and (max-width: 425px) {
+  .layout_banner_wrap{
+    & > div{
+      left: 1%;
+      width: 100%;
+      & > p{
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+}/* mobile */
 
 /* container e ============================================== */
 /* ---------------------------------------------------------- */

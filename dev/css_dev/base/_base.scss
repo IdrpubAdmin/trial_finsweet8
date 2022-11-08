@@ -44,7 +44,9 @@ body {
   margin-top: $margin-t;
 }
 
-//text_heading - heading List
+/* ========================================================== */
+/* text_heading List css s ================================== */
+
 .heading_1 {
   font-size: 48px;
   font-weight: $b;
@@ -70,8 +72,14 @@ body {
   font-weight: $r;
   margin-bottom: 0;
 }
+/* text_heading List css e ================================== */
+/* ---------------------------------------------------------- */
 
-// color_palette - color List
+
+
+
+/* ========================================================== */
+/* color_palette css s ====================================== */
 .prime_color {
   background-color: $prime_color;
 }
@@ -94,45 +102,63 @@ body {
 .color_5 {
   background-color: $color_5;
 }
+/* color_palette css e ====================================== */
+/* ---------------------------------------------------------- */
 
-// components - btn List
+
+
+/* ========================================================== */
+/* components - btn List css s ============================== */
+
+//btn_type _ 공통
+.btn_typ_01{
+  display: inline-block;
+  padding: 12px 32px;
+  cursor: pointer;
+  &:hover {
+    transition: .5s;
+  }
+}
+.btn_typ_02{
+  display: inline-block;
+  font-weight: $sb;
+  color: $prime_color;
+}
+
 .btn_1 {
   background-color: $prime_color;
   color: #fff;
-  line-height: 48px;
-  width: 115px;
-  height: 48px;
-  text-align: center;
-  display: inline-block;
-  cursor: pointer;
-  display: block;
   &:hover {
     background-color: #3E2DB2;
-    transition: .5s;
   }
 }
 
 .btn_2 {
-  line-height: 46px;
-  height: 48px;
-  text-align: center;
-  width: 147px;
   border: 2px solid #14142B;
-  display: inline-block;
-  cursor: pointer;
   &:hover {
     border: 2px solid $sub_color;
     color: $sub_color;
-    transition: .5s;
+  }
+}
+/* btn_bg_del은 빼고 btn_3만 사용 (보여주기위한 배경색넣음) */
+.btn_bg_del{
+  display: inline-block;
+  margin-right: 48px;
+  padding: 10px;
+  background-color: #3E2DB2;
+}
+.btn_3{
+  border:2px solid #fff;
+  color: #fff;
+  &:hover {
+    border: 2px solid $color_4;
+    color: $color_4;
   }
 }
 
-.btn_listen {
-  overflow: hidden;
-  color: $prime_color;
-  display: inline-block;
+.btn_listen,
+.btn_read {
   height: 100%;
-  font-weight: $sb;
   &:hover {
     color: #3E2DB2;
     transition: .5s;
@@ -153,48 +179,28 @@ body {
   }
 }
 
-.btn_read {
-  font-weight: $sb;
-  color: $prime_color;
-  display: inline-block;
-  line-height: 32px;
-  &:hover {
-    color: #3E2DB2;
-    transition: .5s;
-  }
-}
+
+/* components - btn List css e ============================== */
+/* ---------------------------------------------------------- */
+
 
 // category potcasts - potcasts list
-.cate_pot_on {
-  text-align: center;
-  background-color: $prime_color;
-  height: 48px;
-  line-height: 48px;
-  border-radius: 28.5px;
-  color: #fff;
-  font-weight: $b;
-  display: inline-block;
-  padding: 0 32px;
-}
-
 .cate_pot {
-  height: 48px;
-  line-height: 48px;
-  border-radius: 28.5px;
-  color: $color_4;
-  font-weight: $b;
-  border: 1px solid $color_4;
   display: inline-block;
-  padding: 0 32px;
-  a {
-    display: block;
-    height: 100%;
-    padding: 0 32px;
-    text-align: center;
+  padding: 12px 32px;
+  border: 1px solid $color_4;
+  border-radius: 28.5px;
+  font-weight: $b;
+  color: $color_4;
+  &.on{
+    border: 1px solid $prime_color;
+    background-color: $prime_color;
+    color: #fff;
   }
 }
 
-// sns
+/* ========================================================== */
+/* sns List css s =========================================== */
 .facebook_b {
   background: url(../../assets/images/ico/ico_facebook.svg) no-repeat center;
   width: 24px;
@@ -232,33 +238,20 @@ body {
   height: 16px;
   display: inline-block;
 }
+/* sns List css e =========================================== */
+/* ---------------------------------------------------------- */
 
-// section_tit
-.section_tit_1 {
-  position: relative;
-  h2 {
-    font-size: 32px;
-  }
-  p {
-    line-height: 24px;
-    margin-top: 16px;
-  }
-  >.btn_1 {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 195px;
-  }
-}
 
-/* layout_your_inbox */
+
+
+/* ========================================================== */
+/* layout_your_inbox css s ================================== */
 .inbox_wrap{
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 90px 0;
-  margin: 128px 80px 0 80px;
   text-align: center;
   color: #fff;
   background-color: $prime_color;
@@ -300,61 +293,42 @@ body {
     }
   }
 }
+/* layout_your_inbox css e =================================== */
+/* ---------------------------------------------------------- */
 
-/* layout_list */
-.item_list_wrap{
-  display: flex;
-  justify-content: space-between;
-  & > li{
-    width: calc((100% - 26px ) / 3);
-    .item{
-      display: block;
-      & > img{
-        width: 100%;
-      }
-      & > div{
-        color: var(--fontColor);
-      }
-      .heading_3{
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        line-height: 30px;
-        margin-top: 16px;
-      }
-      .heading_5{
-        line-height: 24px;
-        margin-top: 16px;
-      }
-      .btn_listen{
-        margin-top:16px;
-      }
-    }
-    &:first-child{
-      & > a{
-        width: 100%;
-        height: 100%;
-        & > img{
-          height: 100%;
-        }
-      }
-    }
+
+
+/* ========================================================== */
+/* layout_banner css s ===================================== */
+
+
+/* layout_banner css e ====================================== */
+/* ---------------------------------------------------------- */
+
+
+
+/* ========================================================== */
+/* promotion only css s ===================================== */
+.promo_only{
+  color: #fff;
+  margin: 30px 0;
+  padding: 20px;
+  & > p{
+    margin-top: 20px;
   }
 }
-
-
-
+/* promotion only css e ===================================== */
+/* ---------------------------------------------------------- */
 
 
 
 /* tablet 지정 */
 @media only screen and (max-width: 768px) {
   .heading_1 {
-    font-size: 30px;
+    font-size: 28px;
   }
   .heading_2 {
-    font-size: 28px;
+    font-size: 24px;
   }
   .heading_3 {
     font-size: 18px;
@@ -378,14 +352,6 @@ body {
     padding: 0 20px;
   }
 
-  // section_tit
-  .section_tit_1 {
-    >a {
-      position: inherit !important;
-      margin-top: 20px;
-    }
-  }
-
   /* your_inbox */
   .inbox_wrap{
     margin: 80px 0 0 0;
@@ -397,29 +363,28 @@ body {
     }
   }
 
-   /* layout_list */
-  .item_list_wrap{
-    & > li{
-      .item{
-        .heading_3{
-          line-height: 20px;
-          margin-top: 5px;
-        }
-        .heading_5{
-          line-height: 20px;
-          margin-top: 5px;
-        }
-        .btn_listen{
-          margin-top: 5px;
-        }
-      }
-    }
-  }
-
 }/* //tablet 지정 */
 
 /* mobile 지정 */
 @media only screen and (max-width: 425px) {
+  .heading_1 {
+    font-size: 20px;
+  }
+  .heading_2 {
+    font-size: 18px;
+  }
+  .heading_3 {
+    font-size: 16px;
+  }
+  .heading_4 {
+    font-size: 14px;
+  }
+  .heading_5 {
+    font-size: 12px;
+  }
+  .heading_6 {
+    font-size: 10px;
+  }
 
   // margin
   .con-m{
@@ -439,15 +404,6 @@ body {
       &::after{
         display: none;
       }
-    }
-  }
-
-  /* layout_list */
-  .item_list_wrap{
-    display: block;
-    & > li{
-      width: 100%;
-      margin-bottom: 26px;
     }
   }
 

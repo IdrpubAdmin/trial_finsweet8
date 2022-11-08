@@ -16,11 +16,11 @@
 
 .home_wrap .main_top .main_tit p:nth-child(2) { line-height: 28px; }
 
-.home_wrap .custom_swiper .custom_wrap { display: flex; justify-content: space-around; }
+.home_wrap .custom_swiper .custom_wrap { overflow: visible; }
 
-.home_wrap .custom_swiper .custom_wrap .custom_item { width: calc((100% - 36px ) / 3); }
+.home_wrap .custom_swiper .custom_wrap > li { margin-bottom: 28px; }
 
-.home_wrap .custom_swiper .custom_wrap .custom_item::after { content: ''; display: block; width: 100%; height: 12px; margin-top: 12px; background: #503AE7; }
+.home_wrap .custom_swiper .custom_wrap > li::after { content: ''; display: block; width: 100%; height: 12px; margin-top: 12px; background: #503AE7; }
 
 .home_wrap .custom_swiper .custom_wrap .my_review { display: flex; align-items: center; margin-bottom: 16px; }
 

@@ -29,10 +29,9 @@
   }
   .custom_swiper{
     .custom_wrap{
-      display: flex;
-      justify-content: space-around;
-      .custom_item{
-        width: calc((100% - 36px ) / 3);
+      overflow: visible;
+      & > li{
+        margin-bottom: 28px;
         &::after{
           content: '';
           display: block;
