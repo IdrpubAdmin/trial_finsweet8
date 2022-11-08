@@ -7,6 +7,15 @@
 /* ---------------------------------------------------------- */
 /* soo s =================================================== */
 
+// base
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  margin: -1px;
+}
 
 /* ========================================================== */
 /* promotion                                                  */
@@ -314,6 +323,7 @@
 /* host s                                                     */
 /* ========================================================== */
 
+
 .host_top {
   max-width: 1069px;
   margin: 0 auto;
@@ -332,7 +342,7 @@
     .host_tit {
       padding: 50px 79px;
       background: url(../../assets/images/lines/bg_lines_5.png) no-repeat right bottom 21px;
-      em {
+      h2 {
         color: $prime_color;
         letter-spacing: 3px;
         font-weight: $sb;
@@ -346,7 +356,7 @@
         line-height: 24px;
       }
       a {
-        margin-top: 48px;
+        margin-top: 6.5%;
         width: 151px;
       }
     }
@@ -355,6 +365,7 @@
 
 // mq_logo_list
 .host_wrap {
+  color: var(--fontColor);
   .mq_logo_list {
     width: 100%;
     margin: inherit;
@@ -363,17 +374,15 @@
 
 // origins
 .origins_wrap {
-  height: 100%;
-  margin-top: 107px;
-  background: url(../../assets/images/lines/bg_lines_9.png) no-repeat center / 100% auto;
+  background: url(../../assets/images/lines/bg_lines_9.png) no-repeat left / contain;
+  padding: 107px 114px;
   .ori_con {
     display: flex;
-    flex-wrap: wrap;
     margin: 0 auto;
     max-width: 1024px;
     .origins_txt,
     .journalist_txt {
-      width: 480px;
+      width: 50%;
       .heading_2 {
         line-height: 38.2px;
       }
@@ -394,8 +403,83 @@
   }
 }
 
+// potcasts_n_view
+.potcasts_n_view_wrap {
+  position: relative;
+  height: 560px;
+  .pot_vi {
+    ul {
+      display: flex;
+      li {
+        width: calc(( 100% - 48px) / 4);
+        background-color: $prime_color;
+        padding: 64px 43px;
+        color: #fff;
+        position: absolute;
+        i {
+          height: 128px;
+          width: 128px;
+          display: block;
+          margin: 0 auto;
+        }
+        &:nth-child(1) {
+          bottom: 0;
+          left: 0;
+          animation: updown 5s linear 0s infinite alternate;
+          i {
+            background: url(../../../assets/images/ico/ico_podcasts_g.png) no-repeat center / cover ;
+          }
+        }
+        &:nth-child(2) {
+          top: 0;
+          left: 25.25%;
+          animation: downup 5s linear 0s infinite alternate;
+          i {
+            width: 138px;
+            background: url(../../../assets/images/ico/ico_views_g.png) no-repeat center / cover ;
+          }
+        }
+        &:nth-child(3) {
+          bottom: 0;
+          left: 50.55%;
+          animation: updown 5s linear 0s infinite alternate;
+          i {
+            width: 109px;
+            background: url(../../../assets/images/ico/ico_subscribers_g.png) no-repeat center / cover ;
+          }
+        }
+        &:nth-child(4) {
+          top: 0;
+          margin-right: 0;
+          left: 76%;
+          animation: downup 5s linear 0s infinite alternate;
+          i {
+            background: url(../../../assets/images/ico/ico_views_2.png) no-repeat center / cover ;
+          }
+        }
+        span {
+          display: block;
+          margin: 96px 0 16px 0;
+        }
+      }
+    }
+  }
+}
+
+// keyframes animation
+@keyframes updown {
+  0% { bottom: 0; }
+  100% { bottom: 111px; }
+}
+
+@keyframes downup {
+  0% { top: 0; }
+  100% { top: 111px; }
+}
+
 //mdq_tab
 @media only screen and (max-width: 768px) {
+  // host_top
   .host_top {
     .host_top_img {
       background: url(../../assets/images/contents/main_host.png) no-repeat left / 60%;
@@ -406,10 +490,57 @@
       }
     }
   }
+
+  // origins
+  .origins_wrap {
+    padding: 0 20px;
+    .ori_con {
+      flex-wrap: wrap;
+      .origins_txt,
+      .journalist_txt {
+        width: 100% !important;
+      }
+      .journalist_txt {
+        margin-top: 50px;
+      }
+    }
+  }
+
+  // potcasts_n_view
+  .potcasts_n_view_wrap {
+    height: 360px;
+    .pot_vi {
+      ul {
+        li {
+          padding: 20px 10px;
+          font-size: 15px;
+          i {
+            height: 80px;
+            width: 80px;
+          }
+          span {
+            margin: 30px 0 10px 0;
+            font-size: 20px;
+          }
+          &:nth-child(2) {
+            i {
+              width: 89px !important;
+            }
+          }
+          &:nth-child(3) {
+            i {
+              width: 70px !important;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 //mdq_mo
 @media only screen and (max-width: 425px) {
+  //host_top
   .host_top {
     .host_top_img {
       height: 390px;
@@ -420,10 +551,234 @@
       left: inherit;
     }
   }
+
+  // potcasts_n_view
+  .potcasts_n_view_wrap {
+    height: 280px;
+    .pot_vi {
+      ul {
+        li {
+          font-size: 14px;
+          width: calc(( 100% - 15px) / 4);
+          margin-right: 5px;
+          i {
+            height: 50px;
+            width: 50px;
+          }
+          span {
+            margin: 30px 0 10px 0;
+            font-size: 20px;
+          }
+          &:nth-child(2) {
+            i {
+              width: 55px !important;
+            }
+          }
+          &:nth-child(3) {
+            i {
+              width: 43px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+    // potcasts_n_view
+    .potcasts_n_view_wrap {
+      .pot_vi {
+        ul {
+          li {
+            font-size: 10px;
+            span {
+              font-size: 17px;
+            }
+          }
+        }
+      }
+    }
+}
+
+/* host e =================================================== */
+
+/* ========================================================== */
+/* potcast s                                                  */
+/* ========================================================== */
+
+.potcast_top {
+  .potcast_tit_wrap {
+    background: url(../../assets/images/contents/podcasts_banner_1.png) no-repeat right bottom;
+    width: 100%;
+    height: 564px;
+    position: relative;
+    .potcast_tit {
+      position: absolute;
+      top: 48px;
+      left: 6.25%;
+      color: $color_5;
+      background-color: $prime_color;
+      border-left: 16px solid $sub_color;
+      padding: 7.5% 8.5% 7.5% 5%;
+      width: 60%;
+      h2 {
+        letter-spacing: 3px;
+      }
+      p.potcast_tit_sub {
+        margin-top: 16px;
+        line-height: 38.4px;
+      }
+      p.potcast_sub {
+        margin-top: 16px;
+        line-height: 28px;
+      }
+      a {
+        color: $color_5;
+        margin-top: 32px;
+        i {
+          background-color: $sub_color;
+        }
+      }
+    }
+  }
+}
+
+// mdq_tab
+@media only screen and (max-width: 768px) {
+  .potcast_top {
+    .potcast_tit_wrap {
+      .potcast_tit {
+        padding: 10% 8% 10%;
+        width: 80%;
+      }
+    }
+  }
+}
+
+// mdq_mo
+@media only screen and (max-width: 425px) {
+  .potcast_top {
+    .potcast_tit_wrap {
+      .potcast_tit {
+        padding: 6% 4%;
+        width: 86%;
+        left: 30px;
+      }
+    }
+  }
 }
 
 
-/* host e =================================================== */
+/* potcast e ================================================ */
+
+/* ========================================================== */
+/* about s                                                    */
+/* ========================================================== */
+
+//out_team
+.our_team {
+  background: url(../../../assets/images/lines/bg_lines_10.png) no-repeat left 33%;
+  .our_t_tit_wrap {
+    margin: 0 auto;
+    max-width: 1024px;
+    .our_t_img_wrap {
+      margin-top: 48px;
+      background: url(../../../assets/images/contents/about_banner.png) no-repeat bottom;
+      height: 320px;
+      width: 100%;
+    }
+    .our_t_txt {
+      margin-top: 48px;
+      display: flex;
+      line-height: 24px;
+      p {
+        margin-right: 32px;
+        width: 50%;
+        &:last-child {
+          margin-right: 0;
+        }
+        span {
+          font-weight: $b;
+        }
+      }
+    }
+  }
+}
+
+//our_sponsors
+.our_sponsors {
+  .our_s_tit_wrap {
+    .our_s_con {
+      ul {
+        margin-top: 48px;
+        display: grid;
+        grid-template-columns: repeat(3, 33.3%);
+        grid-template-rows: repeat(4, 224px);
+        gap: 16px;
+        li {
+          background-color: #F4F2FF;
+          height: 224px;
+          &:last-child {
+            color: $color_5;
+            background-color: $prime_color;
+            padding: 32px;
+
+            p {
+              font-size: 24px;
+              font-weight: $sb;
+              line-height: 30px;
+            }
+            span.contact {
+              display: block;
+              margin-top: 64px;
+              line-height: 24px;
+            }
+            span.line {
+              width: 39px;
+              height: 4px;
+              line-height: 24px;
+              background-color: $sub_color;
+              display: block;
+              margin-top: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// mdq_tab
+@media only screen and (max-width: 768px) {
+  .our_team {
+    .our_t_tit_wrap {
+      padding: 0 20px;
+      .our_t_txt {
+        margin-top: 28px;
+      }
+    }
+  }
+}
+
+// mdq_mo
+@media only screen and (max-width: 425px) {
+  .our_team {
+    .our_t_tit_wrap {
+      .our_t_txt {
+        flex-wrap: wrap;
+        p {
+          width: 100%;
+          &:last-child {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+/* about e ================================================== */
+
 
 /* soo e =================================================== */
 /* ---------------------------------------------------------- */
