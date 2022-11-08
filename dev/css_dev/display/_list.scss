@@ -70,25 +70,25 @@
           width: 100%;
           height: 256px;
         }
-        .typ_sub_wrap {
-          a.mute {
-            position: absolute;
-            top: 16px;
-            right: 16px;
-            color: #fff;
-            i {
-              background: url(../../assets/images/ico/ico_vector.png) no-repeat center / 14px;
-              width: 40px;
-              height: 40px;
-              border-radius: 50%;
-              background-color: #503AE7;
-              display: inline-block;
-              vertical-align: middle;
-            }
-          }
-        }
       }
     }
+  }
+}
+
+// 음소거 icon
+a.mute {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+  i {
+    background: url(../../assets/images/ico/ico_vector.png) no-repeat center / 14px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #503AE7;
+    display: inline-block;
+    vertical-align: middle;
   }
 }
 

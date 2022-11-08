@@ -30,16 +30,109 @@
     }
   }
 }
+
+/* page_host */
 .page_host{
   .layout_banner_wrap{
     background: url(../../assets/images/contents/host_banner.png) no-repeat center;
   }
 }
+
+/* page_padcast */
 .page_padcast{
   .layout_banner_wrap{
     background: url(../../assets/images/contents/potcast_banner_2.png) no-repeat center;
   }
 }
+
+/* page_blog */
+.page_blog{
+  .top_img_wrap{
+    order: 2;
+  }
+  .typ_sec_01{
+    padding: 64px 124px 62px 0;
+    .btn_read{
+      &::after{
+        content: '';
+        display: inline-block;
+        width: 23px;
+        height: 12px;
+        background: url(../../assets/images/ico/ico_next_02.png) no-repeat center;
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
+/* page_s_podcast  */
+.page_s_podcast{
+  .typ_sec_01{
+    padding: 42px 0 46px 73px;
+  }
+}
+
+
+
+/* top_sec영역  */
+.top_sec_wrap{
+  display: flex;
+  justify-content: space-around;
+  .top_img_wrap{
+    position: relative;
+    width: 50%;
+    & > img{
+      width: 100%;
+    }
+  }
+}
+
+/* top section 공통 텍스트 */
+.typ_sec{
+  h2 {
+    color: $prime_color;
+    letter-spacing: 3px;
+    font-weight: $sb;
+  }
+  .top_sub_01 {
+    line-height: 38px;
+  }
+  .top_sub_txt_02 {
+    line-height: 24px;
+  }
+}
+
+/* typ_sec_01 */
+.typ_sec_01{
+    padding: 64px 80px 62px 0;
+    width: 50%;
+  .top_sub_01 {
+    margin-top: 16px;
+  }
+  .top_sub_txt_02 {
+    margin-top: 15px;
+  }
+  & > a{
+    margin-top: 22px;
+  }
+}
+
+/* typ_sec_02 */
+.typ_sec_02{
+  padding: 50px 79px;
+  .top_sub_01 {
+    margin-top: 32px;
+  }
+  .top_sub_txt_02 {
+    margin-top: 32px;
+  }
+  & > a{
+    margin-top: 32px;
+  }
+}
+
+
+
 
 /* tablet 지정 */
 @media only screen and (max-width: 768px) {
@@ -57,6 +150,48 @@
       }
     }
   }
+  /* page_blog */
+  .page_blog{
+    .typ_sec_01{
+      padding: 20px 0 0 0;
+    }
+  }
+  /* page_s_podcast */
+  .page_s_podcast{
+    .typ_sec_01{
+      padding: 20px 0 0 0;
+    }
+  }
+
+
+
+  /* top_sec영역  */
+  .top_sec_wrap{
+    display: block;
+    .top_img_wrap{
+      width: 100%;
+    }
+  }
+
+  /* typ_sec_01 */
+  .typ_sec_01{
+    width: 100%;
+  }
+
+  /* top section 공통 텍스트 */
+  .typ_sec{
+    .top_sub_01 {
+      line-height: 28px;
+    }
+    .top_sub_txt_02 {
+      margin-top: 10px;
+      line-height: 27px;
+    }
+    & > a{
+      margin-top: 22px;
+    }
+  }
+
 
 }/* tablet */
 
