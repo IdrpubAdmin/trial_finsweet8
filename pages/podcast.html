@@ -15,20 +15,77 @@
 
 <!-- wrapper -->
 <div id="wrapper">
+<!-- header -->
+<header class="con_pd">
+    <h1>
+      <a href="Home.html"><img src="../assets/images/logo/logo.svg" alt="finsweet"></a>
+    </h1>
+
+    <!-- gnb -->
+    <nav>
+      <div class="gnb">
+        
+        <!-- mo_hamburger -->
+        <div class="mo_hamburger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <!-- //mo_hamburger -->
+
+        <div class="bg_gray"></div>
+
+        <div class="sub_menu">
+          <ul class="menu">
+            <li><a href="Podcasts.html">Podcasts</a></li>
+            <li><a href="Host.html">Host</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+
+          <ul class="sns">
+            <li><a href="#none" class="facebook_b"></a></li>
+            <li><a href="#none" class="linkedIn_b"></a></li>
+            <li><a href="#none" class="instagram_b"></a></li>
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+    <!-- //gnb -->
+</header>
+<!-- //header -->
+
+<script>
+
+  const burger = document.querySelector('.mo_hamburger');
+  const sub = document.querySelector('.sub_menu');
+  const bgOn = document.querySelector('.bg_gray');
+
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('toggle');
+    // 수정필요 .contents oh
+    sub.classList.toggle('mo_menu_on')
+    bgOn.classList.toggle('mo_bg_on')
+    document.body.classList.toggle('no_scroll')
+  })
+
+</script>
   
   <!-- container -->
   <div class="container">
 
       <!-- contents -->
-      <div id="contents">
+      <div id="contents" class="page_podcast">
         <div class="contents_wrap">
 
-          <div class="potcast_top">
-            <div class="potcast_tit_wrap">
-              <div class="potcast_tit">
+          <div class="podcast_top">
+            <div class="podcast_tit_wrap">
+              <div class="podcast_tit">
                 <h2>Featured</h2>
-                <p class="heading_2 potcast_tit_sub">A UX Case Study on Creating a Studious Environment</p>
-                <p class="potcast_sub">Apparently we had reached a great height in the atmosphere, for the sky was
+                <p class="heading_2 podcast_tit_sub">A UX Case Study on Creating a Studious Environment</p>
+                <p class="podcast_sub">Apparently we had reached a great height in the atmosphere, for the sky was
                   a dead black, and the stars had ceased to twinkle. By the same illusion which
                   lifts the horizon
                 </p>
@@ -36,6 +93,65 @@
               </div>
             </div>
           </div>
+
+<!-- list_typ_01 -->
+<div class="list_type list_typ_01 con_pd">
+  <div class="typ_tit_wrap">
+    <h2 class="heading_2">Recent Episodes</h2>
+    <p>Apparently we had reached a great height in the</br>atmosphere, for the sky was a dead black.</p>
+    <a href="#none" class="btn_typ_01 btn_1 btn_recent">See All Episodes</a>
+  </div>
+
+  <!-- typ_list_wrap -->
+  <div class="typ_list_wrap">
+    <ul>
+      <li>
+        <iframe src="https://www.youtube.com/embed/bsmoFqvY5gw?rel=0&autoplay=0&mute=1&playlist=bsmoFqvY5gw&loop=1" frameborder="0" allowfullscreen class="typ_list_img"></iframe>
+        <div class="typ_sub_wrap">
+          <h3 class="heading_3">Ep 1: How to build a world-class business brand</h3>
+          <p class="heading_5 sub_txt">Lorem ipsum at vero eos et accusam et justo duo dolores et ea rebum.</p>
+          <a href="#none" class="btn_typ_02 btn_listen"><i class="play"></i>Listen Now</a>
+          <a href="#none" class="mute"><i class="ico_mute"></i></a>
+        </div>
+      </li>
+      <li>
+        <iframe src="https://www.youtube.com/embed/aGjhO75XCCw?rel=0&autoplay=0&mute=1&playlist=aGjhO75XCCw&loop=1" frameborder="0" allowfullscreen class="typ_list_img"></iframe>
+        <div class="typ_sub_wrap">
+          <h3 class="heading_3">Ep 2: Getting the first 100 customers for your business</h3>
+          <p class="heading_5 sub_txt">Lorem ipsum at vero eos et accusam et justo duo dolores et ea rebum.</p>
+          <a href="#none" class="btn_typ_02 btn_listen"><i class="play"></i>Listen Now</a>
+          <a href="#none" class="mute"><i class="ico_mute"></i></a>
+        </div>
+      </li>
+      <li>
+        <iframe src="https://www.youtube.com/embed/dGNJcwUXDFQ?rel=0&autoplay=0&mute=1&playlist=dGNJcwUXDFQ&loop=1" frameborder="0" allowfullscreen class="typ_list_img"></iframe>
+        <div class="typ_sub_wrap">
+          <h3 class="heading_3">Ep 3: Should I raise money for my startup, or not?</h3>
+          <p class="heading_5 sub_txt">Lorem ipsum at vero eos et accusam et justo duo dolores et ea rebum.</p>
+          <a href="#none" class="btn_typ_02 btn_listen"><i class="play"></i>Listen Now</a>
+          <a href="#none" class="mute"><i class="ico_mute"></i></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <!-- //typ_list_wrap -->
+</div>
+<!-- //list_typ_01 -->
+
+
+
+          <div class="all_podcasts con_pd con-m">
+            <h3 class="heading_2">All Podcasts</h3>
+            <!-- category podcasts -->
+            <div class="category_podcasts">
+              <a href="#none" class="cate_pod on">All Podcasts</a>
+              <a href="#none" class="cate_pod">Startup</a>
+              <a href="#none" class="cate_pod">Marketing</a>
+              <a href="#none" class="cate_pod">Business</a>
+            </div>
+            <!-- //category podcasts -->
+          </div>
+
         </div>
       </div>
       <!-- //contents -->
