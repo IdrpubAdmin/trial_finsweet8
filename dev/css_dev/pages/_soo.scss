@@ -23,26 +23,38 @@
 /* ========================================================== */
 
 
-.host_top {
+// container로 빼기 : 221110 / 수정하기
+.banner_top_01 {
   max-width: 1069px;
   margin: 0 auto;
   width: 100%;
   overflow: hidden;
   margin-top: 78px;
   position: relative;
-  .host_top_img {
-    height: 524px;
-    background: url(../../assets/images/contents/main_host.png) no-repeat left;
-  }
-  .host_tit_wrap {
+  color: var(--fontColor);
+  .banner_top_tit_wrap {
     position: absolute;
-    left: 51%;
-    top: 0;
+    .banner_top_tit {
+      .typ_sec {
+        a {
+          line-height: 24px;
+        }
+      }
+    }
   }
 }
-.page_host{
-  .typ_sec_02{
-    background: url(../../assets/images/lines/bg_lines_5.png) no-repeat right bottom 21px;
+
+
+.page_host {
+  .banner_top_01 {
+    .banner_top_img {
+      height: 524px;
+      background: url(../../assets/images/contents/main_host.png) no-repeat left;
+    }
+    .banner_top_tit_wrap {
+      left: 51%;
+      top: 0;
+    }
   }
 }
 
@@ -90,7 +102,6 @@
 .podcasts_n_view_wrap {
   position: relative;
   height: 560px;
-  margin-top: 122px;
   .pod_vi {
     ul {
       display: flex;
@@ -163,14 +174,15 @@
 
 //mdq_tab
 @media only screen and (max-width: 768px) {
-  // host_top
-  .host_top {
-    .host_top_img {
-      background: url(../../assets/images/contents/main_host.png) no-repeat left / 60%;
+
+  // banner_top
+  .page_host {
+    .banner_top_01 {
+      .banner_top_img {
+        background: url(../../assets/images/contents/main_host.png) no-repeat left / 60%;
+      }
     }
-  }
-  .page_host{
-    .host_tit_wrap {
+    .banner_top_tit_wrap {
       .typ_sec_02 {
         padding: 50px 20px;
       }
@@ -226,15 +238,21 @@
 
 //mdq_mo
 @media only screen and (max-width: 425px) {
-  //host_top
-  .host_top {
-    .host_top_img {
-      height: 390px;
-      background: url(../../assets/images/contents/main_host.png) no-repeat center / 100%;
-    }
-    .host_tit_wrap {
-      position: inherit;
-      left: inherit;
+
+  //banner_top
+  .page_host {
+    .banner_top_01 {
+      .banner_top_img {
+        height: 390px;
+        background: url(../../assets/images/contents/main_host.png) no-repeat center / 100%;
+      }
+      .banner_top_tit_wrap {
+        position: inherit;
+        left: inherit;
+        .typ_sec_02 {
+          padding: 0 20px;
+        }
+      }
     }
   }
 
@@ -461,8 +479,35 @@
 /* about s                                                    */
 /* ========================================================== */
 
+// banner_top
+.page_about {
+  .banner_top_01 {
+    max-width: 1024px;
+    .banner_top_img {
+      background: url(../../assets/images/contents/main_about.png) no-repeat right;
+      height: 500px;
+    }
+    .banner_top_tit_wrap {
+      padding: 95px 0;
+      width: 44%;
+      left: 0;
+      top: 0;
+      .banner_top_tit {
+        .typ_sec {
+          padding: 0;
+          p.top_sub_01 {
+            line-height: 52.8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
 //out_team
 .our_team {
+  margin-top: 86px;
   background: url(../../../assets/images/lines/bg_lines_10.png) no-repeat left 33%;
   color: var(--fontColor);
   .our_t_tit_wrap {
@@ -487,6 +532,47 @@
         span {
           font-weight: $b;
         }
+      }
+    }
+  }
+}
+
+// meet_our_team
+.meet_our_team {
+  background: url(../../assets/images/lines/bg_lines_5.png) no-repeat right bottom 18%;
+  color: var(--fontColor);
+  .meet_t {
+    .meetTeamSwiper {
+      margin-top: 49px;
+      .swiper-slide {
+        .meet_t_txt {
+          .name {
+            display: block;
+            line-height: 38.4px;
+            margin-top: 32px;
+          }
+          .job {
+            color: $color_4;
+            line-height: 24px;
+            margin-top: 16px;
+            display: block;
+          }
+          .socials {
+            margin-top: 16px !important;
+            ul {
+              margin-top: inherit;
+              li {
+              }
+            }
+          }
+        }
+      }
+    }
+    .team-pagination {
+      text-align: center;
+      margin-top: 50px;
+      .swiper-pagination-bullet-active {
+        background-color: $prime_color;
       }
     }
   }
@@ -549,6 +635,24 @@
 // mdq_tab
 @media only screen and (max-width: 768px) {
 
+
+  //banner_top
+  .page_about {
+    .banner_top_01 {
+      .banner_top_tit_wrap {
+        padding: 55px 20px;
+        width: 45%;
+        left: 0;
+        bottom: 0;
+        .banner_top_tit {
+          .typ_sec {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+
   // our_team
   .our_team {
     .our_t_tit_wrap {
@@ -586,6 +690,56 @@
 
 // mdq_mo
 @media only screen and (max-width: 425px) {
+
+  //banner_top
+  .page_about {
+    .banner_top_01 {
+      .banner_top_img {
+        background-size: 80%;
+        background-position: center;
+        height: 480px;
+      }
+      .banner_top_tit_wrap {
+        padding: 0 20px;
+        width: 100%;
+        position: relative;
+        .banner_top_tit {
+          .typ_sec {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+
+  // meet_out_team
+  .meet_our_team {
+    .meet_t {
+      .meetTeamSwiper {
+        margin-top: 29px;
+        .swiper-slide {
+          img {
+            width: 100%;
+          }
+          .meet_t_txt {
+            padding: 10px 20px;
+            .name {
+              font-size: 25px;
+              margin-top: 10px;
+            }
+            .job {
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+      .team-pagination {
+        text-align: center;
+        margin-top: 20px;
+
+      }
+    }
+  }
 
   // our_team
   .our_team {
@@ -733,12 +887,9 @@
 /* ========================================================== */
 
 .contact_us {
+  color: var(--fontColor);
   margin-top: 64px;
-  height: 716px;
-  // position: absolute;
-  // top: 50%;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
+  height: calc( 100vh - 136px );
   background: url(../../../assets/images/contents/bg_contact.png) no-repeat right bottom;
   .contact_us_wrap {
     display: flex;
@@ -750,6 +901,7 @@
           font-size: 20px;
           font-weight: $sb;
           margin-top: 16px;
+          line-height: 28px;
         }
       }
       .contact_input {
@@ -782,20 +934,19 @@
         }
         textarea {
           padding-top: 20px;
+          resize: none;
         }
       }
     }
     .contact_sub {
       margin-left: 64px;
-      width: 50%;
       h3 {
         color: #808080;
+        color: var(--fontColor);
         font-size: 20px;
         font-weight: $b;
       }
       .subscribe {
-        h3 {
-        }
         .podcasts_list {
           margin-top: 32px;
           display: grid;
@@ -810,41 +961,44 @@
       }
       .socials {
         margin-top: 64px;
-        ul {
-          margin-top: 32px;
-          overflow: hidden;
-          li {
-            float: left;
-            margin-right: 24px;
-            .ico_facebook_p {
-              background: url(../../assets/images/ico/ico_facebook_p.png) no-repeat center;
-              width: 20px;
-              height: 20px;
-              display: inline-block;
-            }
-            .ico_twitter_p {
-              background: url(../../assets/images/ico/ico_twitter_p.png) no-repeat center;
-              width: 20px;
-              height: 20px;
-              display: inline-block;
-            }
-            .ico_linkedIn_p {
-              background: url(../../assets/images/ico/ico_linkedIn_p.png) no-repeat center;
-              width: 20px;
-              height: 20px;
-              display: inline-block;
-              margin-right: 0;
-            }
-          }
-        }
       }
     }
   }
 }
 
+
+// social 공통영역 - blue ver. : 221110 / 수정하기
+ul.socials_list {
+  margin-top: 32px;
+  overflow: hidden;
+  li {
+    float: left;
+    margin-right: 24px;
+    .ico_facebook_p {
+      background: url(../../assets/images/ico/ico_facebook_p.png) no-repeat center;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+    }
+    .ico_twitter_p {
+      background: url(../../assets/images/ico/ico_twitter_p.png) no-repeat center;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+    }
+    .ico_linkedIn_p {
+      background: url(../../assets/images/ico/ico_linkedIn_p.png) no-repeat center;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      margin-right: 0;
+    }
+  }
+}
+
+
 @media only screen and (max-width: 768px) {
   .contact_us {
-    height: inherit;
     padding: 0 20px;
     margin-top: 64px;
     .contact_us_wrap {

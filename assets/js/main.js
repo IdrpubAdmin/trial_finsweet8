@@ -34,4 +34,33 @@ $checkbox.addEventListener('click', e=> {
 //   }
 // });
 
+// meet our team swiper
+var swiper = new Swiper(".meetTeamSwiper", {
+  slidesPerView: 4,
+  spaceBetween: 16,
+  // loop: true,
+  pagination: {
+    el: ".team-pagination",
+    clickable: true,
+  },
+  variableWidth: true,
+  breakpoints: {
+    360: {
+      slidesPerView: 1,
+    },
+    425: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 2.4,
+    },
+    820: {
+      slidesPerView: 2.5,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 16,
+    },
+  }
+});
 
