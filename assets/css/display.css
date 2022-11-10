@@ -432,14 +432,12 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; colo
 .layout_banner_wrap > div > p:nth-child(2) { line-height: 28px; }
 
 /* page_host */
-.page_host .layout_banner_wrap { background: url(../../assets/images/contents/host_banner.png) no-repeat center; }
+.page_host .layout_banner_wrap { background: url(../../assets/images/contents/host_banner.png) no-repeat center; background-size: cover; }
 
 /* page_padcast */
-.page_padcast .layout_banner_wrap { background: url(../../assets/images/contents/podcast_banner_2.png) no-repeat center; }
+.page_padcast .layout_banner_wrap { background: url(../../assets/images/contents/podcast_banner_2.png) no-repeat center; background-size: cover; }
 
 /* page_blog */
-.page_blog .top_img_wrap { order: 2; }
-
 .page_blog .typ_sec_01 { padding: 64px 124px 62px 0; }
 
 .page_blog .typ_sec_01 .btn_read::after { content: ''; display: inline-block; width: 23px; height: 12px; background: url(../../assets/images/ico/ico_next_02.png) no-repeat center; padding: 0 10px; }
@@ -448,13 +446,15 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; colo
 .page_s_podcast .typ_sec_01 { padding: 42px 0 46px 73px; }
 
 /* top_sec영역  */
-.top_sec_wrap { display: flex; justify-content: space-around; }
+.top_sec_wrap { display: flex; justify-content: space-around; color: var(--fontColor); }
 
 .top_sec_wrap .top_img_wrap { position: relative; width: 50%; }
 
 .top_sec_wrap .top_img_wrap > img { width: 100%; }
 
 /* top section 공통 텍스트 */
+.typ_sec { width: 50%; }
+
 .typ_sec h2 { color: #503AE7; letter-spacing: 3px; font-weight: 600; }
 
 .typ_sec .top_sub_01 { line-height: 38px; }
@@ -462,8 +462,6 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; colo
 .typ_sec .top_sub_txt_02 { line-height: 24px; }
 
 /* typ_sec_01 */
-.typ_sec_01 { padding: 64px 80px 62px 0; width: 50%; }
-
 .typ_sec_01 .top_sub_01 { margin-top: 16px; }
 
 .typ_sec_01 .top_sub_txt_02 { margin-top: 15px; }
@@ -479,31 +477,42 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; colo
 
 .typ_sec_02 > a { margin-top: 32px; }
 
-/* tablet 지정 */
-@media only screen and (max-width: 768px) { .layout_banner_wrap { background-size: cover; }
-  .layout_banner_wrap > div { left: 8%; top: 50%; width: 70%; }
-  .layout_banner_wrap > div > p { margin-bottom: 12px; }
-  .layout_banner_wrap > div > p:nth-child(2) { line-height: 18px; }
-  /* page_blog */
-  .page_blog .typ_sec_01 { padding: 20px 0 0 0; }
-  /* page_s_podcast */
-  .page_s_podcast .typ_sec_01 { padding: 20px 0 0 0; }
-  /* top_sec영역  */
-  .top_sec_wrap { display: block; }
-  .top_sec_wrap .top_img_wrap { width: 100%; }
-  /* typ_sec_01 */
-  .typ_sec_01 { width: 100%; }
-  /* top section 공통 텍스트 */
-  .typ_sec .top_sub_01 { line-height: 28px; }
-  .typ_sec .top_sub_txt_02 { margin-top: 10px; line-height: 27px; }
-  .typ_sec > a { margin-top: 22px; } }
+/* typ_sec_03 */
+.typ_sec_03 { background-repeat: no-repeat; }
 
-/* tablet */
-/* mobile 지정 */
-@media only screen and (max-width: 425px) { .layout_banner_wrap > div { left: 1%; width: 100%; }
-  .layout_banner_wrap > div > p { margin-bottom: 10px; } }
+.typ_sec_03 .top_sub_01 { margin-top: 16px; }
 
-/* mobile */
+.typ_sec_03 .top_sub_01 > span { color: #503AE7; }
+
+.typ_sec_03 .top_sub_txt_02 { padding: 15px 109px 0 114px; }
+
+/* page_home */
+.page_home .top_img_wrap { position: relative; }
+
+.page_home .top_img_wrap::after { content: ''; display: block; clear: both; }
+
+.page_home .top_img_wrap .bnt_video { position: absolute; left: 12%; bottom: 40px; width: 318px; height: 112px; padding-left: 68px; border: 0; background-image: url(../../assets/images/ico/ico_youtube.png); background-repeat: no-repeat; background-position: 10% center; }
+
+.sec_fir .typ_sec_03 { background-image: url(../../assets/images/lines/bg_lines_8.png); background-position: 44%; }
+
+.sec_fir .typ_sec_03 .top_sub_01 { padding: 100px 116px 0 114px; }
+
+.sec_secon .typ_sec_03 { background-image: url(../../assets/images/lines/bg_lines_4.png); background-position: top 12% right 12%; }
+
+.sec_secon .typ_sec_03 .top_sub_01 { padding: 100px 173px 0 114px; }
+
+.sec_thir .top_img_wrap::after { content: ''; display: inline-block; position: absolute; left: -34px; bottom: -21px; width: 384px; height: 124px; background: #503AE7 url(../../assets/images/contents/sound_wave.png) no-repeat center; }
+
+.sec_thir .typ_sec_03 { background-image: url(../../assets/images/lines/bg_lines_6.png); background-position: bottom 30% right 5%; }
+
+.sec_thir .typ_sec_03 .top_sub_01 { padding: 90px 244px 0 0px; }
+
+.sec_thir .typ_sec_03 .sub_txt { padding: 30px 41px 0 0px; }
+
+.sec_thir .typ_sec_03 .top_sub_txt_03 { font-weight: 600; line-height: 28px; }
+
+.reverse { order: 2; }
+
 /* single blog, single_podcast 공통 container */
 .producer_post_wrap { width: 49.7%; }
 
@@ -543,13 +552,74 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; colo
 
 .producer_post .pro_po_profile .pro_po_profile_wrap .pro_info_con { line-height: 24px; margin-left: 64px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 6; -webkit-box-orient: vertical; }
 
+/* home ,about */
+.custom_swiper .custom_wrap { overflow: visible; }
+
+.custom_swiper .custom_wrap > li { margin-bottom: 28px; }
+
+.custom_swiper .custom_wrap > li::after { content: ''; display: block; width: 100%; height: 12px; margin-top: 12px; background: #503AE7; }
+
+.custom_swiper .custom_wrap .my_review { display: flex; align-items: center; margin-bottom: 16px; }
+
+.custom_swiper .custom_wrap .my_review > p { width: 116px; height: 44px; margin-left: 15px; text-indent: 3px; font-weight: 500; color: var(--fontColor); background: url(../../assets/images/ico/stars.png) no-repeat center bottom; }
+
+.custom_swiper .custom_wrap .review_con { line-height: 24px; color: var(--fontColor); min-height: 65%; }
+
+/* page_about */
+.page_about .custom_wrap > li::after { display: none; }
+
+.page_about .custom_wrap .my_review { display: block; margin-bottom: 16px; }
+
+.page_about .custom_wrap .my_review > p { width: 100%; height: 100%; margin-top: 32px; margin-left: 0; text-indent: 0; font-weight: 600; color: var(--fontColor); background: none; }
+
+.page_about .custom_wrap .icon_desc { line-height: 24px; }
+
 /* tablet 지정 */
-@media only screen and (max-width: 768px) { .producer_post { flex-wrap: wrap; padding: 0 20px; }
+@media only screen and (max-width: 768px) { .layout_banner_wrap > div { left: 8%; top: 50%; width: 70%; }
+  .layout_banner_wrap > div > p { margin-bottom: 12px; }
+  .layout_banner_wrap > div > p:nth-child(2) { line-height: 18px; }
+  /* top section 공통 텍스트 */
+  .typ_sec .top_sub_01 { line-height: 28px; }
+  .typ_sec .top_sub_txt_02 { margin-top: 10px; line-height: 27px; }
+  .typ_sec > a { margin-top: 22px; }
+  /* page_blog */
+  .page_blog .typ_sec_01 { padding: 20px 0 0 0; }
+  /* page_s_podcast */
+  .page_s_podcast .typ_sec_01 { padding: 20px 0 0 0; }
+  /* top_sec영역  */
+  .top_sec_wrap { display: block; }
+  .top_sec_wrap .top_img_wrap { width: 100%; }
+  /* typ_sec_01 */
+  .typ_sec_01, .typ_sec_03 { width: 100%; }
+  /* typ_sec_03 */
+  .top_sec_wrap .typ_sec_03 .top_sub_01, .top_sec_wrap .typ_sec_03 .top_sub_txt_02, .top_sec_wrap .typ_sec_03 .top_sub_txt_03 { padding: 0 20px !important; }
+  /* page_home */
+  .sec_fir .typ_sec_03, .sec_secon .typ_sec_03 { background: none; }
+  .page_home .top_img_wrap .bnt_video { left: 0; bottom: 0; width: 100%; max-height: 70px; }
+  /* // page_home */
+  .sec_thir .top_img_wrap::after { left: 0; bottom: 0; }
+  .sec_thir .typ_sec_03 { background: none; }
+  .producer_post { flex-wrap: wrap; padding: 0 20px; }
   .producer_post .producer_post_wrap { width: 100%; }
   .producer_post .producer_post_wrap .pro_po_profile { margin-top: 36px; }
   .producer_post .producer_post_wrap .pro_po_profile .pro_po_profile_wrap { padding: 17px 0 22px 25px; flex-wrap: wrap; }
-  .producer_post .producer_post_wrap .pro_po_profile .pro_po_profile_wrap .pro_info_con { margin-top: 20px; margin-left: 0; } }
+  .producer_post .producer_post_wrap .pro_po_profile .pro_po_profile_wrap .pro_info_con { margin-top: 20px; margin-left: 0; }
+  /* home ,about */
+  .custom_swiper .custom_wrap { display: block; }
+  .custom_swiper .custom_wrap .custom_item { width: 100%; margin-bottom: 30px; }
+  .custom_swiper .custom_wrap .my_review { display: flex; align-items: center; margin-bottom: 16px; }
+  .custom_swiper .custom_wrap .my_review > p { width: 116px; height: 44px; margin-left: 15px; text-indent: 3px; }
+  .custom_swiper .custom_wrap .review_con { color: var(--fontColor); } }
 
+/* tablet */
+/* mobile 지정 */
+@media only screen and (max-width: 425px) { .layout_banner_wrap > div { left: 1%; width: 100%; }
+  .layout_banner_wrap > div > p { margin-bottom: 10px; }
+  /* typ_sec_03 */
+  .typ_sec_03 { background-image: none; }
+  .sec_thir .top_img_wrap::after { background-size: 60%; width: 100%; height: 64px; } }
+
+/* mobile */
 /* container e ============================================== */
 /* ---------------------------------------------------------- */
 /* ========================================================== */
@@ -742,6 +812,8 @@ header .gnb .sub_menu ul.sns li a { vertical-align: sub; }
 
 .list_typ_01 .typ_tit_wrap > .btn_1 { position: absolute; bottom: 0; right: 0; width: 195px; }
 
+.list_typ_01 .typ_tit_wrap .category_podcasts { display: none; }
+
 .list_typ_01 .typ_list_wrap ul li { margin-top: 64px; }
 
 .list_typ_01 .typ_list_wrap ul li .typ_list_img { width: 100%; height: 256px; }
@@ -757,6 +829,12 @@ a.mute i { background: url(../../assets/images/ico/ico_vector.png) no-repeat cen
 
 .list_typ_02 .typ_list_wrap ul li a .typ_sub_wrap h3 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 
+/* podcast page */
+.page_podcast .typ_tit_wrap .hide { display: none; }
+
+.page_podcast .typ_tit_wrap .category_podcasts { margin-top: 32px; display: block; }
+
+/* // podcast page */
 @media only screen and (max-width: 768px) { /* list_type 공통 */
   .list_type .typ_list_wrap ul { display: block; }
   .list_type .typ_list_wrap ul li { width: 100%; margin: 0 0 30px 0; }

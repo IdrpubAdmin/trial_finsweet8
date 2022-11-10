@@ -61,6 +61,9 @@
         right: 0;
         width: 195px;
     }
+    .category_podcasts{
+      display: none;
+    }
   }
   .typ_list_wrap{
     ul {
@@ -117,6 +120,19 @@ a.mute {
   }
 }
 
+/* podcast page */
+.page_podcast{
+  .typ_tit_wrap{
+    .hide{
+      display: none;
+    }
+    .category_podcasts{
+      margin-top: 32px;
+      display: block;
+    }
+  }
+}
+/* // podcast page */
 
 
 // mdq_tab

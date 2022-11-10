@@ -16,18 +16,6 @@
 
 .home_wrap .main_top .main_tit p:nth-child(2) { line-height: 28px; }
 
-.home_wrap .custom_swiper .custom_wrap { overflow: visible; }
-
-.home_wrap .custom_swiper .custom_wrap > li { margin-bottom: 28px; }
-
-.home_wrap .custom_swiper .custom_wrap > li::after { content: ''; display: block; width: 100%; height: 12px; margin-top: 12px; background: #503AE7; }
-
-.home_wrap .custom_swiper .custom_wrap .my_review { display: flex; align-items: center; margin-bottom: 16px; }
-
-.home_wrap .custom_swiper .custom_wrap .my_review > p { width: 116px; height: 44px; margin-left: 15px; text-indent: 3px; font-weight: 500; color: var(--fontColor); background: url(../../assets/images/ico/stars.png) no-repeat center bottom; }
-
-.home_wrap .custom_swiper .custom_wrap .review_con { line-height: 24px; color: var(--fontColor); min-height: 65%; }
-
 /* //home_wrap */
 /* email_input */
 .email_send { width: 486px; height: 48px; }
@@ -87,11 +75,6 @@
   .home_wrap .main_top .main_tit p { margin-top: 20px; }
   .home_wrap .main_top .main_tit p:first-child { font-size: 28px; line-height: 35px; }
   .home_wrap .main_top .main_tit p:nth-child(2) { font-size: 16px; line-height: 22px; }
-  .home_wrap .custom_swiper .custom_wrap { display: block; }
-  .home_wrap .custom_swiper .custom_wrap .custom_item { width: 100%; margin-bottom: 30px; }
-  .home_wrap .custom_swiper .custom_wrap .my_review { display: flex; align-items: center; margin-bottom: 16px; }
-  .home_wrap .custom_swiper .custom_wrap .my_review > p { width: 116px; height: 44px; margin-left: 15px; text-indent: 3px; }
-  .home_wrap .custom_swiper .custom_wrap .review_con { color: var(--fontColor); }
   /* // home_wrap*/
   /* email_input */
   .email_send { width: 340px; }
