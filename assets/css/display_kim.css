@@ -37,15 +37,13 @@
 
 .page_home .swiper-sec { position: relative; }
 
-.page_home .swiper-sec .swiper-button-next, .page_home .swiper-sec .swiper-button-prev { width: 48px; height: 48px; border-radius: 50%; background-color: #503AE7; }
+.page_home .swiper-sec .swiper-button-next, .page_home .swiper-sec .swiper-button-prev { width: 48px; height: 48px; border-radius: 50%; }
 
-.page_home .swiper-sec .swiper-button-prev { left: 85%; }
+.page_home .swiper-sec .swiper-button-next::after, .page_home .swiper-sec .swiper-button-prev::after { content: ''; }
 
-.page_home .swiper-sec .swiper-button-prev::after { background: url(../../assets/images/ico/ico_prev.png) no-repeat center; }
+.page_home .swiper-sec .swiper-button-prev { left: 85%; background: #503AE7 url(../../assets/images/ico/ico_prev.png) no-repeat center; }
 
-.page_home .swiper-sec .swiper-button-next { right: 6%; }
-
-.page_home .swiper-sec .swiper-button-next::after { background: url(../../assets/images/ico/ico_next_01.png) no-repeat center; }
+.page_home .swiper-sec .swiper-button-next { right: 6%; background: #503AE7 url(../../assets/images/ico/ico_next_01.png) no-repeat center; }
 
 /* tablet 지정 */
 @media only screen and (max-width: 768px) { .home_wrap .main_top { width: 100%; background-size: 50%; background-position: 95% center; }
