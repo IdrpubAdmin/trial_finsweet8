@@ -23,28 +23,6 @@
 /* ========================================================== */
 
 
-// container로 빼기 : 221110 / 수정하기
-.banner_top_01 {
-  max-width: 1069px;
-  margin: 0 auto;
-  width: 100%;
-  overflow: hidden;
-  margin-top: 78px;
-  position: relative;
-  color: var(--fontColor);
-  .banner_top_tit_wrap {
-    position: absolute;
-    .banner_top_tit {
-      .typ_sec {
-        a {
-          line-height: 24px;
-        }
-      }
-    }
-  }
-}
-
-
 .page_host {
   .banner_top_01 {
     .banner_top_img {
@@ -965,37 +943,6 @@
     }
   }
 }
-
-
-// social 공통영역 - blue ver. : 221110 / 수정하기
-ul.socials_list {
-  margin-top: 32px;
-  overflow: hidden;
-  li {
-    float: left;
-    margin-right: 24px;
-    .ico_facebook_p {
-      background: url(../../assets/images/ico/ico_facebook_p.png) no-repeat center;
-      width: 20px;
-      height: 20px;
-      display: inline-block;
-    }
-    .ico_twitter_p {
-      background: url(../../assets/images/ico/ico_twitter_p.png) no-repeat center;
-      width: 20px;
-      height: 20px;
-      display: inline-block;
-    }
-    .ico_linkedIn_p {
-      background: url(../../assets/images/ico/ico_linkedIn_p.png) no-repeat center;
-      width: 20px;
-      height: 20px;
-      display: inline-block;
-      margin-right: 0;
-    }
-  }
-}
-
 
 @media only screen and (max-width: 768px) {
   .contact_us {

@@ -220,7 +220,7 @@
 }
 
 
-/* single blog, single_podcast 공통 container */
+/* single_blog.html, single_podcast 공통 container */
 .producer_post_wrap {
   width: 49.7%;
   h2 {
@@ -298,6 +298,27 @@
         display: -webkit-box;
         -webkit-line-clamp: 6;
         -webkit-box-orient: vertical;
+      }
+    }
+  }
+}
+
+// host.html, about.html top
+.banner_top_01 {
+  max-width: 1069px;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 78px;
+  position: relative;
+  color: var(--fontColor);
+  .banner_top_tit_wrap {
+    position: absolute;
+    .banner_top_tit {
+      .typ_sec {
+        a {
+          line-height: 24px;
+        }
       }
     }
   }

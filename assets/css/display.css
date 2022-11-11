@@ -362,6 +362,16 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; colo
 
 .instagram_s { background: url(../../assets/images/ico/ico_instagram.svg) no-repeat center/100%; width: 16px; height: 16px; display: inline-block; }
 
+ul.socials_list { margin-top: 32px; overflow: hidden; }
+
+ul.socials_list li { float: left; margin-right: 24px; }
+
+ul.socials_list li .ico_facebook_p { background: url(../../assets/images/ico/ico_facebook_p.png) no-repeat center; width: 20px; height: 20px; display: inline-block; }
+
+ul.socials_list li .ico_twitter_p { background: url(../../assets/images/ico/ico_twitter_p.png) no-repeat center; width: 20px; height: 20px; display: inline-block; }
+
+ul.socials_list li .ico_linkedIn_p { background: url(../../assets/images/ico/ico_linkedIn_p.png) no-repeat center; width: 20px; height: 20px; display: inline-block; margin-right: 0; }
+
 /* layout_your_inbox */
 .inbox_wrap { position: relative; display: flex; justify-content: center; align-items: center; padding: 90px 0; text-align: center; color: #fff; background-color: #503AE7; z-index: 1; }
 
@@ -381,6 +391,8 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; colo
 .promo_only { color: #fff; margin: 30px 0; padding: 20px; }
 
 .promo_only > p { margin-top: 20px; }
+
+.page_promotion .socials { margin-top: 0 !important; }
 
 /* tablet 지정 */
 @media only screen and (max-width: 768px) { .heading_1 { font-size: 28px; }
@@ -513,7 +525,7 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; colo
 
 .reverse { order: 2; }
 
-/* single blog, single_podcast 공통 container */
+/* single_blog.html, single_podcast 공통 container */
 .producer_post_wrap { width: 49.7%; }
 
 .producer_post_wrap h2 { line-height: 38.4px; }
@@ -551,6 +563,12 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; colo
 .producer_post .pro_po_profile .pro_po_profile_wrap .pro_info .sns ul li:last-child { margin-right: 0; }
 
 .producer_post .pro_po_profile .pro_po_profile_wrap .pro_info_con { line-height: 24px; margin-left: 64px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 6; -webkit-box-orient: vertical; }
+
+.banner_top_01 { max-width: 1069px; margin: 0 auto; width: 100%; overflow: hidden; margin-top: 78px; position: relative; color: var(--fontColor); }
+
+.banner_top_01 .banner_top_tit_wrap { position: absolute; }
+
+.banner_top_01 .banner_top_tit_wrap .banner_top_tit .typ_sec a { line-height: 24px; }
 
 /* home ,about */
 .custom_swiper .custom_wrap { overflow: visible; }

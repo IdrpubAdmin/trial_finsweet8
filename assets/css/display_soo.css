@@ -10,12 +10,6 @@
 /* ========================================================== */
 /* host s                                                     */
 /* ========================================================== */
-.banner_top_01 { max-width: 1069px; margin: 0 auto; width: 100%; overflow: hidden; margin-top: 78px; position: relative; color: var(--fontColor); }
-
-.banner_top_01 .banner_top_tit_wrap { position: absolute; }
-
-.banner_top_01 .banner_top_tit_wrap .banner_top_tit .typ_sec a { line-height: 24px; }
-
 .page_host .banner_top_01 .banner_top_img { height: 524px; background: url(../../assets/images/contents/main_host.png) no-repeat left; }
 
 .page_host .banner_top_01 .banner_top_tit_wrap { left: 51%; top: 0; }
@@ -300,16 +294,6 @@
 .contact_us .contact_us_wrap .contact_sub .subscribe .podcasts_list { margin-top: 32px; display: grid; grid-template-columns: 1fr 1fr; gap: 30px 100px; }
 
 .contact_us .contact_us_wrap .contact_sub .socials { margin-top: 64px; }
-
-ul.socials_list { margin-top: 32px; overflow: hidden; }
-
-ul.socials_list li { float: left; margin-right: 24px; }
-
-ul.socials_list li .ico_facebook_p { background: url(../../assets/images/ico/ico_facebook_p.png) no-repeat center; width: 20px; height: 20px; display: inline-block; }
-
-ul.socials_list li .ico_twitter_p { background: url(../../assets/images/ico/ico_twitter_p.png) no-repeat center; width: 20px; height: 20px; display: inline-block; }
-
-ul.socials_list li .ico_linkedIn_p { background: url(../../assets/images/ico/ico_linkedIn_p.png) no-repeat center; width: 20px; height: 20px; display: inline-block; margin-right: 0; }
 
 @media only screen and (max-width: 768px) { .contact_us { padding: 0 20px; margin-top: 64px; }
   .contact_us .contact_us_wrap { flex-wrap: wrap; }

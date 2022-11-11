@@ -220,6 +220,34 @@ body {
   display: inline-block;
 }
 
+// /* sns List */
+ul.socials_list {
+  margin-top: 32px;
+  overflow: hidden;
+  li {
+    float: left;
+    margin-right: 24px;
+    .ico_facebook_p {
+      background: url(../../assets/images/ico/ico_facebook_p.png) no-repeat center;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+    }
+    .ico_twitter_p {
+      background: url(../../assets/images/ico/ico_twitter_p.png) no-repeat center;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+    }
+    .ico_linkedIn_p {
+      background: url(../../assets/images/ico/ico_linkedIn_p.png) no-repeat center;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      margin-right: 0;
+    }
+  }
+}
 
 
 /* layout_your_inbox */
@@ -281,6 +309,11 @@ body {
   }
 }
 
+.page_promotion {
+  .socials {
+    margin-top: 0 !important;
+  }
+}
 
 
 /* tablet 지정 */
