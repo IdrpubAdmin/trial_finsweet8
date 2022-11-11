@@ -1,5 +1,31 @@
 "use strict";
 
+// podcast.html - all products category js
+// function categoryOn() {
+//   const itemTab = document.querySelector('.category_podcasts')
+//   const item = document.querySelectorAll('.page_podcast .data li')
+
+//   const btn = document.querySelectorAll('.page_podcas .cate_pod')
+  
+//   itemTab.addEventListener('click', (e) => {
+//     const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+//     if (filter == null) {
+//       return;
+//     }
+//     item.forEach((item) => {
+//       if (filter === '*' || filter === item.dataset.type) {
+//         item.style.display = "block";
+//       } else {
+//         item.style.display = "none";
+
+//       }
+//     });
+//   });
+
+// }
+
+// categoryOn();
+
 // dark mode
 const $checkbox = document.querySelector('.dark_mode');
 
@@ -34,7 +60,8 @@ $checkbox.addEventListener('click', e=> {
 //   }
 // });
 
-// meet our team swiper
+
+// about.html - meet our team swiper
 var swiper = new Swiper(".meetTeamSwiper", {
   slidesPerView: 4,
   spaceBetween: 16,

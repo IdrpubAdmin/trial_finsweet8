@@ -261,6 +261,7 @@ ul.socials_list {
   color: #fff;
   background-color: $prime_color;
   z-index: 1;
+  transform: translateY(30%);
   &::after{
     content: '';
     display: block;

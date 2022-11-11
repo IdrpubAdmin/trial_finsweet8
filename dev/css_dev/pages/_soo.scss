@@ -42,6 +42,7 @@
   color: var(--fontColor);
   .mq_logo_list {
     width: 100%;
+    margin: 78px 0 0 0;
   }
 }
 
@@ -49,6 +50,7 @@
 .origins_wrap {
   background: url(../../assets/images/lines/bg_lines_9.png) no-repeat left / contain;
   padding: 107px 114px 0px 114px;
+  margin-top: 40px;
   .ori_con {
     display: flex;
     margin: 0 auto;
@@ -232,6 +234,9 @@
         }
       }
     }
+    .mq_logo_list {
+      margin-top: 38px;
+    }
   }
 
   // podcasts_n_view
@@ -289,12 +294,7 @@
 /* podcast s                                                  */
 /* ========================================================== */
 
-.page_podcast {
-  .list_typ_01 {
-    margin-top: 128px;
-  }
-}
-
+//podcast_top
 .podcast_top {
   .podcast_tit_wrap {
     background: url(../../assets/images/contents/podcasts_banner_1.png) no-repeat right bottom;
@@ -333,6 +333,18 @@
   }
 }
 
+//all_podcasts
+.page_podcast {
+  .all_podcast {
+    .category_podcasts {
+      margin-top: 32px;
+      a {
+        margin-right: 16px;
+      }
+    }
+  }
+}
+
 // mdq_tab
 @media only screen and (max-width: 768px) {
   .podcast_top {
@@ -356,6 +368,21 @@
       }
     }
   }
+
+  .page_podcast {
+    .all_podcast {
+      .category_podcasts {
+        margin-top: 32px;
+        a {
+          margin-right: 16px;
+          &:nth-child(n+2) {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+  
 }
 
 
@@ -766,6 +793,66 @@
   }
 }
 /* about e ================================================== */
+
+/* ========================================================== */
+/* blog s                                                     */
+/* ========================================================== */
+
+.page_blog {
+  .top_sec_wrap {
+    margin-top: 64px;
+  }
+  .list_typ_01 {
+    .typ_list_wrap {
+      ul {
+        column-gap: 16px;
+        row-gap: 0px;
+        li {
+          &:nth-child(n+4) {
+            margin-top: 64px;
+          }
+          .img_wrap {
+            overflow: hidden;
+            img {
+              transition: all 0.4s linear;
+              object-fit: cover;
+            }
+            &:hover {
+              >img {
+                transform: scale(1.1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// mdq_tab
+@media only screen and (max-width: 768px) {
+  .page_blog {
+    .top_sec_wrap {
+    }
+    .list_typ_01 {
+      .typ_list_wrap {
+        ul {
+          li {
+            margin-bottom: 30px;
+            &:nth-child(n+4) {
+              margin-top: inherit;
+            }
+            img {
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* blog e =================================================== */
 
 /* ========================================================== */
 /* single blog s                                              */
