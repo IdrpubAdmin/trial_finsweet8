@@ -832,7 +832,7 @@ header .gnb .sub_menu ul.sns li a { vertical-align: sub; }
 
 .list_typ_01 .typ_tit_wrap .category_podcasts { display: none; }
 
-.list_typ_01 .typ_list_wrap ul li { margin-top: 64px; }
+.list_typ_01 .typ_list_wrap { margin-top: 64px; }
 
 .list_typ_01 .typ_list_wrap ul li .typ_list_img { width: 100%; height: 256px; }
 
