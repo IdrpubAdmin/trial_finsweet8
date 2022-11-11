@@ -31,36 +31,62 @@
               <a href="#none"><img src="../assets/images/logo/spotify.png" alt="spotify logo"></a>
             </marquee>
           </div>
-          <div class="sec_wrap con-m">
-            <div class="sec sec1">
-              <div class="sec_txt">
-                <p class="heading_2">A podcast for makers and entrepreneurs</p>
-                <p class="heading_5">
-                  Apparently we had reached a great height in the atmosphere, for the sky was a dead black,
-                  and the stars had ceased to twinkle.
-                </p>
-              </div>
-              <p class="sec_img">A podcast for makers and entrepreneurs img</p>
+          <div class="top_sec_wrap con-m sec_fir">
+            <div class="top_img_wrap reverse">
+              <img src="../assets/images/contents/main_con_1.png" alt="podcast img">
             </div>
-            <div class="sec sec2">
-              <div class="sec_txt">
-                <p class="heading_2">My origins on <span>YouTube</span> in 2008</p>
-                <p class="heading_5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus cras lacus tellus morbi viverra suspendisse ornare.
-                  Sit volutpat, volutpat ut netus malesuada enim penatibus non aliquet.
-                </p>
-              </div>
-              <p class="sec_img">my origins on youtube in 2008 img</p>
-              <button type="button" class="heading_2 bnt_video">350+ Videos</button>
+            <div class="typ_sec typ_sec_03">
+              <p class="heading_2 top_sub_01">A podcast for makers and entrepreneurs</p>
+              <p class="top_sub_txt_02">
+                Apparently we had reached a great height in the atmosphere,
+                for the sky was a dead black, and the stars had ceased to twinkle.
+              </p>
             </div>
-          </div> <!-- //sec_wrap -->
+          </div>
 
+          <div class="top_sec_wrap con-m sec_secon">
+            <div class="top_img_wrap">
+              <img src="../assets/images/contents/main_con_1.png" alt="my origins img">
+              <button type="button" class="heading_2 bnt_video btn_1">350+ Videos</button>
+            </div>
+            <div class="typ_sec typ_sec_03">
+              <p class="heading_2 top_sub_01">My origins on <span>YouTube</span> in 2008</p>
+              <p class="top_sub_txt_02">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Mus cras lacus tellus morbi viverra suspendisse ornare. Sit volutpat,
+                volutpat ut netus malesuada enim penatibus non aliquet.
+              </p>
+            </div>
+          </div>
 
-          <div class="list_type custom_swiper con-m con_pd">
+          <div class="typ_tit_wrap con_pd con-m">
+            <h2 class="heading_2">Recent Episodes</h2>
+            <div class="type_01_sub">
+              <p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black.</p>
+              <a href="#none" class="btn_typ_01 btn_1 btn_recent">See All Episodes</a>
+            </div>
+          </div>
+          <!-- @@include ../page_include/layout_list_typ_01.html -->
+
+          <div class="typ_tit_wrap swiper-sec con_pd con-m">
+            <h2 class="heading_2">What our listeners say</h2>
+            <div class="type_01_sub">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Mus cras lacus tellus morbi viverra suspendisse ornare. Sit volutpat,
+                volutpat ut netus malesuada enim penatibus non aliquet.
+              </p>
+              <div class="swiper_btn_wrap">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+          <div class="list_type custom_swiper con_pd">
             <!-- typ_list_wrap -->
-            <div class="typ_list_wrap">
-              <ul class="custom_wrap">
-                <li>
+            <div class="swiper typ_list_wrap">
+              <ul class="swiper-wrapper custom_wrap">
+                <li class="swiper-slide">
                   <div class="my_review">
                     <img src="../assets/images/contents/listeners_1.png" alt="Eve Madien" class="profile_img">
                     <p class="heading_5">Eve Madien</p>
@@ -71,7 +97,7 @@
                     Fermentum auctor lacus eget in ut integer viverra sed. Penatibus tortor consequat.
                   </div>
                 </li>
-                <li>
+                <li class="swiper-slide">
                   <div class="my_review">
                     <img src="../assets/images/contents/listeners_2.png" alt="Ash Benfred" class="profile_img">
                     <p class="heading_5">Ash Benfred</p>
@@ -81,7 +107,7 @@
                     Lorem eget condimentum enim libero ultricies amet odio fringilla.
                   </div>
                 </li>
-                <li>
+                <li class="swiper-slide">
                   <div class="my_review">
                     <img src="../assets/images/contents/listeners_3.png" alt="Ryan Smith" class="profile_img">
                     <p class="heading_5">Ryan Smith</p>
@@ -96,11 +122,11 @@
               </ul>
             </div>
             <!-- //typ_list_wrap -->
-            <!-- <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div> -->
           </div>
 
           <!-- @@include ../page_include/layout_your_inbox.html -->
+
+          <!-- @@include ../page_include/layout_list_typ_02.html -->
 
         </div><!-- //home_wrap -->
       </div>

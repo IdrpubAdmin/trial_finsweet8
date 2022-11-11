@@ -54,6 +54,7 @@
     justify-content: space-between;
     align-items: end;
     p {
+      width: 33%;
       line-height: 24px;
       margin-top: 16px;
     }
@@ -116,6 +117,16 @@ a.mute {
   }
 }
 
+.page_home{
+  .typ_tit_wrap {
+    .type_01_sub{
+      p {
+        width: 46%;
+      }
+    }
+  }
+}
+
 
 // mdq_tab
 @media only screen and (max-width: 768px) {
@@ -145,6 +156,9 @@ a.mute {
   .typ_tit_wrap {
     .type_01_sub{
       display: block;
+      p{
+        width: 100%;
+      }
       & > a {
         margin-top: 20px;
       }
@@ -165,7 +179,15 @@ a.mute {
       }
     }
   }
-
+  .page_home{
+    .typ_tit_wrap {
+      .type_01_sub{
+        p {
+          width: 100%;
+        }
+      }
+    }
+  }
 
 }// mdq_tab
 
