@@ -205,7 +205,7 @@
 <!-- //wrapper -->
 
 <script>
-  function categoryOn() {
+function categoryOn() {
   const itemTab = document.querySelector('.category_podcasts')
   const item = document.querySelectorAll('.page_podcast .data li')
   const btn = document.querySelectorAll('.page_podcast .cate_pod')
@@ -230,21 +230,16 @@
 categoryOn();
 
 function classOn() {
-  // 감싸는 div
-  const itemTab = document.querySelector('.page_podcast .category_podcasts')
-  // btn
-  const btns = itemTab.getElementsByClassName('cate_pod')
 
-  for (let i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", () => {
-        const current = document.getElementsByClassName("on");
-      if ( current.length > 0 ) {
-        current[0].className = current[0].className.replace(" on", "");
-      }
-      this.className += " on";
-      })
-  }
+  const btns = document.querySelectorAll('.page_podcast .cate_pod')
 
+  Array.from(btns).forEach(item => {
+      item.addEventListener("click", () => {
+         var selected = document.getElementsByClassName("on");
+         selected[0].className = selected[0].className.replace(" on", "");
+         item.className += " on";
+      });
+   });
 
 }
 
