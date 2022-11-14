@@ -37,6 +37,7 @@ header {
           a {
             display: block;
             height: 100%;
+            font-weight: $b;
           }
         }
         }
@@ -110,7 +111,7 @@ header {
 @media only screen and (max-width: 768px) {
   header {
     overflow: inherit;
-    .gnb { 
+    .gnb {
       .mo_hamburger {
         display: block;
       }

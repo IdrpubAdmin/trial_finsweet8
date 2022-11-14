@@ -21,7 +21,6 @@
       grid-template-columns: 1fr 1fr 1fr;
       li {
         position: relative;
-        //width: calc((100% - 36px ) / 3);
         .typ_sub_wrap {
           margin-top: 32px;
           h3 {
@@ -46,6 +45,7 @@
 
 /* list_type_01 _ tit */
 .typ_tit_wrap {
+  color: var(--fontColor);
   h2 {
     font-size: 32px;
   }

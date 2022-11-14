@@ -6,7 +6,7 @@
 //   const item = document.querySelectorAll('.page_podcast .data li')
 
 //   const btn = document.querySelectorAll('.page_podcas .cate_pod')
-  
+
 //   itemTab.addEventListener('click', (e) => {
 //     const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
 //     if (filter == null) {
@@ -37,28 +37,36 @@ $checkbox.addEventListener('click', e=> {
   }
 });
 
-// var swiper = new Swiper(".mySwiper", {
-//   slidesPerView: 1,
-//   spaceBetween: 10,
-//   loop: true,
-//   autoplay: {
-//     delay: 2500
-//   },
-//   breakpoints: {
-//     640: {
-//       slidesPerView: 2,
-//       spaceBetween: 20
-//     },
-//     768: {
-//       slidesPerView: 4,
-//       spaceBetween: 40
-//     },
-//     1024: {
-//       slidesPerView: 5,
-//       spaceBetween: 50
-//     }
-//   }
-// });
+//home swiper
+var swiper = new Swiper(".custom_swiper", {
+  slidesPerView: 3,
+  spaceBetween: 16,
+  slidesPerGroup: 1,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  variableWidth: true,
+  breakpoints: {
+    360: {
+      slidesPerView: 1,
+    },
+    425: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    820: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 16,
+    },
+  }
+});
 
 
 // about.html - meet our team swiper
@@ -90,4 +98,9 @@ var swiper = new Swiper(".meetTeamSwiper", {
     },
   }
 });
+
+
+
+
+
 
