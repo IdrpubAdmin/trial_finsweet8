@@ -102,7 +102,7 @@
           left: 0;
           animation: updown 5s linear 0s infinite alternate;
           i {
-            background: url(../../../assets/images/ico/ico_podcasts_g.png) no-repeat center / cover ;
+            background: url(../../assets/images/ico/ico_podcasts_g.png) no-repeat center / cover ;
           }
         }
         &:nth-child(2) {
@@ -111,7 +111,7 @@
           animation: downup 5s linear 0s infinite alternate;
           i {
             width: 138px;
-            background: url(../../../assets/images/ico/ico_views_g.png) no-repeat center / cover ;
+            background: url(../../assets/images/ico/ico_views_g.png) no-repeat center / cover ;
           }
         }
         &:nth-child(3) {
@@ -120,7 +120,7 @@
           animation: updown 5s linear 0s infinite alternate;
           i {
             width: 109px;
-            background: url(../../../assets/images/ico/ico_subscribers_g.png) no-repeat center / cover ;
+            background: url(../../assets/images/ico/ico_subscribers_g.png) no-repeat center / cover ;
           }
         }
         &:nth-child(4) {
@@ -129,7 +129,7 @@
           left: 76%;
           animation: downup 5s linear 0s infinite alternate;
           i {
-            background: url(../../../assets/images/ico/ico_views_2.png) no-repeat center / cover ;
+            background: url(../../assets/images/ico/ico_views_2.png) no-repeat center / cover ;
           }
         }
         span {
@@ -392,12 +392,17 @@
 /* single podcast s                                           */
 /* ========================================================== */
 
+//single_podcast_top
+.single_podcast_top {
+  margin-top: 64px;
+}
+
 // producer_post : page include section
 .page_single_podcast {
  .producer_post {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 128px auto;
   max-width: 1024px;
   .producer_post_wrap {
     width: 62%;
@@ -417,6 +422,13 @@
     }
    }
  }
+}
+
+// recent_episodes
+.page_single_podcast {
+  .typ_tit_wrap {
+    color: var(--fontColor)
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -513,14 +525,14 @@
 //out_team
 .our_team {
   margin-top: 86px;
-  background: url(../../../assets/images/lines/bg_lines_10.png) no-repeat left 33%;
+  background: url(../../assets/images/lines/bg_lines_10.png) no-repeat left 33%;
   color: var(--fontColor);
   .our_t_tit_wrap {
     margin: 0 auto;
     max-width: 1024px;
     .our_t_img_wrap {
       margin-top: 48px;
-      background: url(../../../assets/images/contents/about_banner.png) no-repeat bottom;
+      background: url(../../assets/images/contents/about_banner.png) no-repeat bottom;
       height: 320px;
       width: 100%;
     }
@@ -637,6 +649,13 @@
   }
 }
 
+// recent_episodes
+.page_about {
+  .typ_tit_wrap {
+    color: var(--fontColor)
+  }
+}
+
 // mdq_tab
 @media only screen and (max-width: 768px) {
 
@@ -691,6 +710,7 @@
       }
     }
   }
+
 }
 
 // mdq_mo
@@ -955,7 +975,7 @@
   color: var(--fontColor);
   margin-top: 64px;
   height: calc( 100vh - 136px );
-  background: url(../../../assets/images/contents/bg_contact.png) no-repeat right bottom;
+  background: url(../../assets/images/contents/bg_contact.png) no-repeat right bottom;
   .contact_us_wrap {
     display: flex;
     .contact_input_wrap {

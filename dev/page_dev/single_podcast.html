@@ -4,19 +4,36 @@
 
 <!-- wrapper -->
 <div id="wrapper">
+  <!-- @@include ../page_include/header.html -->
 
   <!-- container -->
   <div class="container">
 
-      <!-- dark_mode -->
-      <input class="dark_mode" type="checkbox">
-      <!-- // dark_mode -->
-
       <!-- contents -->
       <div id="contents" class="page_single_podcast">
 
+        <!-- single_podcast_top -->
+        <div class="single_podcast_top">
+          <div class="top_sec_wrap con_pd page_s_podcast"><!-- page_s_podcast 페이지에 넣는 컴포넌트-->
+            <div class="top_img_wrap">
+              <img src="../assets/images/contents/common_con_2.png" alt="business_img">
+              <a href="#none" class="mute"><i class="ico_mute"></i></a>
+            </div>
+            <div class="typ_sec typ_sec_01">
+              <h2>Business</h2>
+              <p class="heading_2 top_sub_01">Ep 2: Getting the first 100 customers for your business</p>
+              <p class="top_sub_txt_02">
+                Apparently we had reached a great height in the atmosphere, for the sky was a dead black,
+                and the stars had ceased to twinkle. By the same illusion which lifts the horizon
+              </p>
+              <a href="#none" class="btn_typ_01 btn_1">Listen now<span class="time">53:32</span></a>
+            </div>
+          </div>
+        </div>
+        <!-- // single_podcast_top -->
+
         <!-- producer_post -->
-        <div class="producer_post con-m">
+        <div class="producer_post">
 
           <!-- producer_post_wrap : 공통 -->
           <div class="producer_post_wrap">
@@ -115,12 +132,23 @@
         </div>
         <!-- //producer post -->
 
+        <!-- recent_episodes -->
+        <div class="typ_tit_wrap con_pd con-m">
+          <h2 class="heading_2">Recent Episodes</h2>
+          <div class="type_01_sub">
+            <p>Apparently we had reached a great height in the</br>atmosphere, for the sky was a dead black.</p>
+          </div>
+        </div>
+        <!-- @@include ../page_include/layout_list_typ_01.html -->
+        <!-- //recent_episodes -->
       </div>
+      <!-- @@include ../page_include/footer_sponsors.html -->
       <!-- //contents -->
 
   </div>
   <!-- //container -->
 
+  <!-- @@include ../page_include/footer.html -->
 </div>
 <!-- //wrapper -->
 
