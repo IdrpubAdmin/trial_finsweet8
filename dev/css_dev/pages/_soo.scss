@@ -395,6 +395,18 @@
 //single_podcast_top
 .single_podcast_top {
   margin-top: 64px;
+  .top_sec_wrap {
+    .typ_sec {
+      a {
+        line-height: 24px;
+        span.time {
+          color: $sub_color;
+          margin-left: 32px;
+          font-weight: $sb;
+        }
+      }
+    }
+  }
 }
 
 // producer_post : page include section
