@@ -42,7 +42,7 @@
           <div class="all_podcast con-m con_pd">
             <h3 class="heading_2">All Podcasts</h3>
             <!-- category podcasts -->
-            <div class="category_podcasts">
+            <div class="category_podcasts" id="test">
               <a href="#none" data-filter="*" class="cate_pod on">All Podcasts</a>
               <a href="#none" data-filter="a" class="cate_pod">Startup</a>
               <a href="#none" data-filter="b" class="cate_pod">Marketing</a>
@@ -69,7 +69,7 @@
   function categoryOn() {
   const itemTab = document.querySelector('.category_podcasts')
   const item = document.querySelectorAll('.page_podcast .data li')
-  const btn = document.querySelectorAll('.page_podcas .cate_pod')
+  const btn = document.querySelectorAll('.page_podcast .cate_pod')
 
   itemTab.addEventListener('click', (e) => {
     const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
@@ -90,11 +90,26 @@
 
 categoryOn();
 
-//   function classOn() {
-//     const btn = document.querySelectorAll('.page_podcas .cate_pod')
-    
-//   }
-// classOn();
+function classOn() {
+  // 감싸는 div
+  const itemTab = document.querySelector('.page_podcast .category_podcasts')
+  // btn
+  const btns = itemTab.getElementsByClassName('cate_pod')
+
+  for (let i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", () => {
+        const current = document.getElementsByClassName("on");
+      if ( current.length > 0 ) {
+        current[0].className = current[0].className.replace(" on", "");
+      }
+      btns.className += " on";
+      })
+  }
+
+
+}
+
+classOn();
 </script>
 
 <!-- @@close -->
