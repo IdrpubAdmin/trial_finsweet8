@@ -26,9 +26,11 @@
 
 .origins_wrap .ori_con .origins_txt .heading_2, .origins_wrap .ori_con .journalist_txt .heading_2 { line-height: 38.2px; }
 
-.origins_wrap .ori_con .origins_txt p.con_txt, .origins_wrap .ori_con .journalist_txt p.con_txt { line-height: 28px; margin-top: 32px; }
+.origins_wrap .ori_con .origins_txt p.con_txt, .origins_wrap .ori_con .journalist_txt p.con_txt { line-height: 28px; margin-top: 32px; margin-bottom: 20px; }
 
 .origins_wrap .ori_con .origins_txt p.con_txt span, .origins_wrap .ori_con .journalist_txt p.con_txt span { font-weight: 700; }
+
+.origins_wrap .ori_con .origins_txt p.con_txt span.dbr, .origins_wrap .ori_con .journalist_txt p.con_txt span.dbr { display: block; }
 
 .ori_con .origins_txt { margin-right: 64px; }
 
@@ -38,25 +40,15 @@
 
 .podcasts_n_view_wrap .pod_vi ul li { width: calc(( 100% - 48px) / 4); background-color: #503AE7; padding: 64px 43px; color: #fff; position: absolute; }
 
-.podcasts_n_view_wrap .pod_vi ul li i { height: 128px; width: 128px; display: block; margin: 0 auto; }
+.podcasts_n_view_wrap .pod_vi ul li:nth-child(1) { bottom: 0; left: 0; animation: updown 5s linear 0s infinite alternate; background: url(../../assets/images/ico/ico_podcasts_g.png) no-repeat #503AE7 top 20% left 50%; }
 
-.podcasts_n_view_wrap .pod_vi ul li:nth-child(1) { bottom: 0; left: 0; animation: updown 5s linear 0s infinite alternate; }
+.podcasts_n_view_wrap .pod_vi ul li:nth-child(2) { top: 0; left: 25.25%; animation: downup 5s linear 0s infinite alternate; background: url(../../assets/images/ico/ico_views_g.png) no-repeat #503AE7 top 20% left 50%; }
 
-.podcasts_n_view_wrap .pod_vi ul li:nth-child(1) i { background: url(../../assets/images/ico/ico_podcasts_g.png) no-repeat center/cover; }
+.podcasts_n_view_wrap .pod_vi ul li:nth-child(3) { bottom: 0; left: 50.55%; animation: updown 5s linear 0s infinite alternate; background: url(../../assets/images/ico/ico_subscribers_g.png) no-repeat #503AE7 top 20% left 50%; }
 
-.podcasts_n_view_wrap .pod_vi ul li:nth-child(2) { top: 0; left: 25.25%; animation: downup 5s linear 0s infinite alternate; }
+.podcasts_n_view_wrap .pod_vi ul li:nth-child(4) { top: 0; margin-right: 0; left: 76%; animation: downup 5s linear 0s infinite alternate; background: url(../../assets/images/ico/ico_views_2.png) no-repeat #503AE7 top 20% left 50%; }
 
-.podcasts_n_view_wrap .pod_vi ul li:nth-child(2) i { width: 138px; background: url(../../assets/images/ico/ico_views_g.png) no-repeat center/cover; }
-
-.podcasts_n_view_wrap .pod_vi ul li:nth-child(3) { bottom: 0; left: 50.55%; animation: updown 5s linear 0s infinite alternate; }
-
-.podcasts_n_view_wrap .pod_vi ul li:nth-child(3) i { width: 109px; background: url(../../assets/images/ico/ico_subscribers_g.png) no-repeat center/cover; }
-
-.podcasts_n_view_wrap .pod_vi ul li:nth-child(4) { top: 0; margin-right: 0; left: 76%; animation: downup 5s linear 0s infinite alternate; }
-
-.podcasts_n_view_wrap .pod_vi ul li:nth-child(4) i { background: url(../../assets/images/ico/ico_views_2.png) no-repeat center/cover; }
-
-.podcasts_n_view_wrap .pod_vi ul li span { display: block; margin: 96px 0 16px 0; }
+.podcasts_n_view_wrap .pod_vi ul li span { display: block; margin-bottom: 16px; padding-top: 240px; font-size: 48px; font-weight: 700; }
 
 @keyframes updown { 0% { bottom: 0; }
   100% { bottom: 111px; } }
@@ -66,27 +58,22 @@
 
 @media only screen and (max-width: 768px) { .page_host .banner_top_01 .banner_top_img { background: url(../../assets/images/contents/main_host.png) no-repeat left/60%; }
   .page_host .banner_top_tit_wrap .typ_sec_02 { padding: 50px 20px; }
-  .origins_wrap { padding: 0 20px; }
+  .origins_wrap { background: none; padding: 0 20px; }
   .origins_wrap .ori_con { flex-wrap: wrap; }
-  .origins_wrap .ori_con .origins_txt, .origins_wrap .ori_con .journalist_txt { width: 100% !important; }
+  .origins_wrap .ori_con .origins_txt, .origins_wrap .ori_con .journalist_txt { width: 100%; }
+  .origins_wrap .ori_con .origins_txt .dbr, .origins_wrap .ori_con .journalist_txt .dbr { display: none; }
   .origins_wrap .ori_con .journalist_txt { margin-top: 50px; }
   .podcasts_n_view_wrap { height: 360px; }
-  .podcasts_n_view_wrap .pod_vi ul li { padding: 20px 10px; font-size: 15px; }
-  .podcasts_n_view_wrap .pod_vi ul li i { height: 80px; width: 80px; }
-  .podcasts_n_view_wrap .pod_vi ul li span { margin: 30px 0 10px 0; font-size: 20px; }
-  .podcasts_n_view_wrap .pod_vi ul li:nth-child(2) i { width: 89px !important; }
-  .podcasts_n_view_wrap .pod_vi ul li:nth-child(3) i { width: 70px !important; } }
+  .podcasts_n_view_wrap .pod_vi ul li.heading_2 { padding: 20px 10px; font-size: 15px; background-size: 50%; }
+  .podcasts_n_view_wrap .pod_vi ul li.heading_2 span { margin: 30px 0 10px 0; font-size: 20px; padding-top: 110px; } }
 
 @media only screen and (max-width: 425px) { .page_host .banner_top_01 .banner_top_img { height: 390px; background: url(../../assets/images/contents/main_host.png) no-repeat center/100%; }
   .page_host .banner_top_01 .banner_top_tit_wrap { position: inherit; left: inherit; }
   .page_host .banner_top_01 .banner_top_tit_wrap .typ_sec_02 { padding: 0 20px; }
   .page_host .mq_logo_list { margin-top: 38px; }
   .podcasts_n_view_wrap { height: 280px; }
-  .podcasts_n_view_wrap .pod_vi ul li { font-size: 14px; width: calc(( 100% - 15px) / 4); margin-right: 5px; }
-  .podcasts_n_view_wrap .pod_vi ul li i { height: 50px; width: 50px; }
-  .podcasts_n_view_wrap .pod_vi ul li span { margin: 30px 0 10px 0; font-size: 20px; }
-  .podcasts_n_view_wrap .pod_vi ul li:nth-child(2) i { width: 55px !important; }
-  .podcasts_n_view_wrap .pod_vi ul li:nth-child(3) i { width: 43px !important; } }
+  .podcasts_n_view_wrap .pod_vi ul li.heading_2 { font-size: 14px; width: calc(( 100% - 15px) / 4); margin-right: 5px; }
+  .podcasts_n_view_wrap .pod_vi ul li.heading_2 span { margin: 30px 0 10px 0; font-size: 20px; padding-top: 70px; } }
 
 @media only screen and (max-width: 360px) { .podcasts_n_view_wrap .pod_vi ul li { font-size: 10px; }
   .podcasts_n_view_wrap .pod_vi ul li span { font-size: 17px; } }
@@ -137,6 +124,8 @@
 .page_single_podcast .producer_post .listen_on h3 { margin-bottom: 32px; }
 
 .page_single_podcast .producer_post .listen_on .podcasts_list li { margin-bottom: 32px; }
+
+.page_single_podcast .producer_post .listen_on .podcasts_list li a { display: block; height: 100%; }
 
 .page_single_podcast .producer_post .listen_on .podcasts_list li:last-child { margin-bottom: 0; }
 
