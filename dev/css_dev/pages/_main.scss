@@ -102,47 +102,48 @@
       background: $prime_color url(../../assets/images/ico/ico_next_01.png) no-repeat center;
     }
   }
-}
-
-.custom_swiper{
-  .custom_wrap{
-    overflow: visible;
-    & > li{
-      margin-bottom: 28px;
-      &::after{
-        content: '';
-        display: block;
-        width: 100%;
-        height: 12px;
-        margin-top: 12px;
-        background: $prime_color;
+  .custom_swiper{
+    .custom_wrap{
+      overflow: visible;
+      & > li{
+        margin-bottom: 28px;
+        &::after{
+          content: '';
+          display: block;
+          width: 100%;
+          height: 12px;
+          margin-top: 12px;
+          background: $prime_color;
+        }
       }
-    }
-    .my_review{
-      display: flex;
-      align-items: center;
-      margin-bottom: 16px;
-      & > img{
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
+      .my_review{
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+        & > img{
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+        }
+        & > p{
+          width: 116px;
+          height: 44px;
+          margin-left: 15px;
+          text-indent: 3px;
+          font-weight: $md;
+          background: url(../../assets/images/ico/stars.png) no-repeat center bottom;
+        }
       }
-      & > p{
-        width: 116px;
-        height: 44px;
-        margin-left: 15px;
-        text-indent: 3px;
-        font-weight: $md;
-        background: url(../../assets/images/ico/stars.png) no-repeat center bottom;
+      .review_con{
+        height: auto;
+        min-height: 192px;
+        line-height: 24px;
       }
-    }
-    .review_con{
-      height: auto;
-      min-height: 192px;
-      line-height: 24px;
     }
   }
 }
+
+
 
 
 /* tablet 지정 */

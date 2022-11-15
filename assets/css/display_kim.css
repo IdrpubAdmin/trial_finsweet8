@@ -47,19 +47,19 @@
 
 .page_home .swiper-sec .swiper-button-next { right: 0%; background: #503AE7 url(../../assets/images/ico/ico_next_01.png) no-repeat center; }
 
-.custom_swiper .custom_wrap { overflow: visible; }
+.page_home .custom_swiper .custom_wrap { overflow: visible; }
 
-.custom_swiper .custom_wrap > li { margin-bottom: 28px; }
+.page_home .custom_swiper .custom_wrap > li { margin-bottom: 28px; }
 
-.custom_swiper .custom_wrap > li::after { content: ''; display: block; width: 100%; height: 12px; margin-top: 12px; background: #503AE7; }
+.page_home .custom_swiper .custom_wrap > li::after { content: ''; display: block; width: 100%; height: 12px; margin-top: 12px; background: #503AE7; }
 
-.custom_swiper .custom_wrap .my_review { display: flex; align-items: center; margin-bottom: 16px; }
+.page_home .custom_swiper .custom_wrap .my_review { display: flex; align-items: center; margin-bottom: 16px; }
 
-.custom_swiper .custom_wrap .my_review > img { width: 80px; height: 80px; border-radius: 50%; }
+.page_home .custom_swiper .custom_wrap .my_review > img { width: 80px; height: 80px; border-radius: 50%; }
 
-.custom_swiper .custom_wrap .my_review > p { width: 116px; height: 44px; margin-left: 15px; text-indent: 3px; font-weight: 500; background: url(../../assets/images/ico/stars.png) no-repeat center bottom; }
+.page_home .custom_swiper .custom_wrap .my_review > p { width: 116px; height: 44px; margin-left: 15px; text-indent: 3px; font-weight: 500; background: url(../../assets/images/ico/stars.png) no-repeat center bottom; }
 
-.custom_swiper .custom_wrap .review_con { height: auto; min-height: 192px; line-height: 24px; }
+.page_home .custom_swiper .custom_wrap .review_con { height: auto; min-height: 192px; line-height: 24px; }
 
 /* tablet 지정 */
 @media only screen and (max-width: 768px) { .home_wrap .main_top { padding: 0 20px; background-size: 37%; background-position: 85% center; }
