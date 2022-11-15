@@ -716,6 +716,8 @@ header .gnb .sub_menu ul.sns li a { vertical-align: sub; }
 /* ========================================================== */
 /* ---------------------------------------------------------- */
 /* footer s ================================================= */
+.footer_top { position: relative; z-index: 1; }
+
 .footer_sponsors { color: #fff; padding: 72px 0; background-color: #503AE7; text-align: center; transform: translateY(30%); }
 
 .footer_sponsors .logoipsum { margin-top: 64px; font-size: 0; }
@@ -724,7 +726,9 @@ header .gnb .sub_menu ul.sns li a { vertical-align: sub; }
 
 .footer_sponsors .logoipsum img:last-child { margin-right: 0; }
 
-.footer_con { color: #fff; width: 100%; background-color: #222; padding: 195px 80px 96px; display: flex; justify-content: space-between; flex-wrap: wrap; }
+.footer_con { color: #fff; width: 100%; background-color: #222; padding: 195px 80px 96px; display: flex; justify-content: space-between; flex-wrap: wrap; position: relative; }
+
+.footer_con::after { content: ''; display: block; clear: both; }
 
 .footer_con .pages h4, .footer_con .reach_us h4, .footer_con .subscribe h4 { font-weight: 700; margin-bottom: 32px; font-size: 20px; }
 
@@ -736,6 +740,22 @@ header .gnb .sub_menu ul.sns li a { vertical-align: sub; }
 
 .copyright { height: 64px; line-height: 64px; color: #fff; background-color: #503AE7; text-align: center; font-weight: 700; }
 
+.button-cover, .sun, .moon { position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 0px; }
+
+.turn { position: relative; top: 52%; left: 82px; width: 6rem; height: 2.6rem; margin: -2rem auto 0 auto; overflow: hidden; border-radius: 100px; }
+
+.turn .switch_chk { position: relative; width: 100%; height: 100%; padding: 0; margin: 0; opacity: 0; cursor: pointer; z-index: 3; }
+
+.turn .sun, .turn .moon { transition: 0.3s ease all; }
+
+.turn .sun { width: 100%; z-index: 2; background: url(../../assets/images/ico/sun.png) no-repeat 22% center; }
+
+.turn .sun::before { content: ""; background: url(../../assets/images/ico/sun.png) no-repeat 50% center; position: absolute; top: .4rem; left: .4rem; width: 1rem; height: 0rem; padding: .9rem .4rem; background-color: #3563E9; border-radius: 50%; transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all; }
+
+.turn .moon { width: 100%; background-color: #ebf7fc; transition: 0.3s ease all; z-index: 1; }
+
+.turn .switch_chk:checked + .sun:before { content: ""; left: 3.7rem; background: #3563E9 url(../../assets/images/ico/moon.png) no-repeat 60% center; }
+
 /* ---------------------------------------------------------- */
 @media only screen and (max-width: 768px) { .footer_top { padding: 0; }
   .footer_sponsors, .inbox_wrap { padding: 42px 42px !important; transform: inherit; }
@@ -744,7 +764,8 @@ header .gnb .sub_menu ul.sns li a { vertical-align: sub; }
   .footer_con { padding: 60px 20px; flex-direction: column; transform: inherit; }
   .footer_con .logo_wrap { margin-bottom: 40px; }
   .footer_con .pages, .footer_con .reach_us { margin-bottom: 60px; }
-  .footer_con .subscribe { margin-bottom: 0; } }
+  .footer_con .subscribe { margin-bottom: 0; }
+  .turn { top: 11%; left: 238px; } }
 
 @media only screen and (max-width: 425px) { .footer_sponsors { transform: inherit; }
   .footer_sponsors .logoipsum img { width: 45%; }

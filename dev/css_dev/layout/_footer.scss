@@ -8,6 +8,10 @@
 /* footer s ================================================= */
 
 // footer_sponsors
+.footer_top{
+  position: relative;
+  z-index: 1;
+}
 .footer_sponsors {
   color: #fff;
   padding: 72px 0;
@@ -35,6 +39,12 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: relative;
+    &::after{
+      content: '';
+      display: block;
+      clear: both;
+    }
     .pages,
     .reach_us,
     .subscribe {
@@ -70,6 +80,71 @@
     background-color: $prime_color;
     text-align: center;
     font-weight: $b;
+}
+
+//dark_mode
+.button-cover,
+.sun,
+.moon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 0px;
+}
+.turn {
+  position: relative;
+  top: 52%;
+  left: 82px;
+  width: 6rem;
+  height: 2.6rem;
+  margin: -2rem auto 0 auto;
+  overflow: hidden;
+  border-radius: 100px;
+  .switch_chk {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .sun,
+  .moon{
+    transition: 0.3s ease all;
+  }
+  .sun {
+    width: 100%;
+    z-index: 2;
+    background: url(../../assets/images/ico/sun.png) no-repeat 22% center;
+    &::before {
+      content: "";
+      background: url(../../assets/images/ico/sun.png) no-repeat 50% center;
+      position: absolute;
+      top: .4rem;
+      left: .4rem;
+      width: 1rem;
+      height: 0rem;
+      padding: .9rem .4rem;
+      background-color: #3563E9;
+      border-radius: 50%;
+      transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+    }
+  }
+  .moon {
+    width: 100%;
+    background-color: #ebf7fc;
+    transition: 0.3s ease all;
+    z-index: 1;
+  }
+  .switch_chk:checked + .sun:before {
+    content: "";
+    left: 3.7rem;
+    background: #3563E9 url(../../assets/images/ico/moon.png) no-repeat 60% center;
+  }
 }
 
 /* ---------------------------------------------------------- */
@@ -108,6 +183,11 @@
     .subscribe {
         margin-bottom: 0;
     }
+  }
+  //dark_mode
+  .turn {
+    top: 11%;
+    left: 238px;
   }
 
 }

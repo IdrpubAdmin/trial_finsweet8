@@ -29,11 +29,28 @@
 .email_send input[type=submit] { width: 30%; background-color: #503AE7; margin-left: -10px; color: #F4F2FF; font-size: 18px; font-weight: 700; vertical-align: bottom; }
 
 /* banner */
-.mq_logo_list { width: 70%; margin: 192px auto 0 auto; }
+.notify-wrap { position: relative; margin: 192px auto 0 auto; }
 
-.mq_logo_list marquee > a { padding-right: 200px; }
+.notify-wrap .ellipsis { overflow: hidden; white-space: nowrap; }
 
-.mq_logo_list marquee > a img { vertical-align: -webkit-baseline-middle; }
+.notify-wrap .notify-wrap-inner { padding: 0 20px; margin: 0 30px; }
+
+.notify-wrap .notify-wrap-inner .notify-scroll { display: inline-block; animation: text-scroll 25s linear infinite; }
+
+.notify-wrap .notify-wrap-inner .notify-scroll ul li { display: inline-block; padding-right: 350px; vertical-align: text-bottom; }
+
+.notify-wrap .notify-wrap-inner .notify-scroll ul li a { display: block; }
+
+@keyframes text-scroll { from { transform: translateX(20%);
+    -moz-transform: translateX(20%);
+    -webkit-transform: translateX(20%);
+    -o-transform: translateX(20%);
+    -ms-transform: translateX(20%); }
+  to { transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    -ms-transform: translateX(-100%); } }
 
 .page_home .swiper { height: 100%; margin: 128px 80px 0; color: var(--fontColor); }
 
@@ -74,8 +91,7 @@
   .email_send input[type="email"]::placeholder { color: #AFB0B9; font-size: 14px; }
   .email_send input[type=submit] { width: 25%; font-size: 14px; }
   /* banner */
-  .mq_logo_list { width: 100%; margin-top: 80px; }
-  .mq_logo_list marquee > a { padding-right: 80px; }
+  .notify-wrap { margin: 80px auto 0 auto; }
   .custom_swiper .custom_wrap { display: flex; }
   .page_home .swiper { margin: 30px 0px 0; padding: 0 16px; }
   .page_home .swiper-sec { margin-bottom: 64px; }
@@ -91,7 +107,7 @@
   .email_send input[type="email"] { width: 70%; }
   .email_send input[type=submit] { width: 30%; }
   /* banner */
-  .mq_logo_list { margin-top: 40px; } }
+  .notify-wrap { margin: 40px auto 0 auto; } }
 
 /* // mobile 지정 */
 /* main e =================================================== */
