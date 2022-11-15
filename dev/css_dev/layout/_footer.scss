@@ -21,10 +21,15 @@
   .logoipsum {
     margin-top: 64px;
     font-size: 0;
-    img {
-      margin-right: 50px;
-      &:last-child {
-        margin-right: 0;
+    overflow: hidden;
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      li {
+        &:last-child {
+          margin-right: 0;
+        }
       }
     }
   }
@@ -154,6 +159,7 @@
 
   .footer_top {
     padding: 0;
+    margin-top: 30px;
   }
 
   .footer_sponsors,
@@ -162,9 +168,11 @@
     transform: inherit;
     .logoipsum {
       margin-top: 34px;
-      img {
-          margin-right: 10px !important;
+      ul {
+        flex-wrap: wrap;
+        li {
           padding: 10px;
+        }
       }
     }
   }

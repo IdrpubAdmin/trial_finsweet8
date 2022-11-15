@@ -720,11 +720,11 @@ header .gnb .sub_menu ul.sns li a { vertical-align: sub; }
 
 .footer_sponsors { color: #fff; padding: 72px 0; background-color: #503AE7; text-align: center; transform: translateY(30%); }
 
-.footer_sponsors .logoipsum { margin-top: 64px; font-size: 0; }
+.footer_sponsors .logoipsum { margin-top: 64px; font-size: 0; overflow: hidden; }
 
-.footer_sponsors .logoipsum img { margin-right: 50px; }
+.footer_sponsors .logoipsum ul { display: flex; justify-content: space-evenly; flex-wrap: wrap; }
 
-.footer_sponsors .logoipsum img:last-child { margin-right: 0; }
+.footer_sponsors .logoipsum ul li:last-child { margin-right: 0; }
 
 .footer_con { color: #fff; width: 100%; background-color: #222; padding: 195px 80px 96px; display: flex; justify-content: space-between; flex-wrap: wrap; position: relative; }
 
@@ -757,10 +757,11 @@ header .gnb .sub_menu ul.sns li a { vertical-align: sub; }
 .turn .switch_chk:checked + .sun:before { content: ""; left: 3.7rem; background: #3563E9 url(../../assets/images/ico/moon.png) no-repeat 60% center; }
 
 /* ---------------------------------------------------------- */
-@media only screen and (max-width: 768px) { .footer_top { padding: 0; }
+@media only screen and (max-width: 768px) { .footer_top { padding: 0; margin-top: 30px; }
   .footer_sponsors, .inbox_wrap { padding: 42px 42px !important; transform: inherit; }
   .footer_sponsors .logoipsum, .inbox_wrap .logoipsum { margin-top: 34px; }
-  .footer_sponsors .logoipsum img, .inbox_wrap .logoipsum img { margin-right: 10px !important; padding: 10px; }
+  .footer_sponsors .logoipsum ul, .inbox_wrap .logoipsum ul { flex-wrap: wrap; }
+  .footer_sponsors .logoipsum ul li, .inbox_wrap .logoipsum ul li { padding: 10px; }
   .footer_con { padding: 60px 20px; flex-direction: column; transform: inherit; }
   .footer_con .logo_wrap { margin-bottom: 40px; }
   .footer_con .pages, .footer_con .reach_us { margin-bottom: 60px; }

@@ -73,7 +73,9 @@ var swiper = new Swiper(".custom_swiper", {
 var swiper = new Swiper(".meetTeamSwiper", {
   slidesPerView: 4,
   spaceBetween: 16,
+  autoplay: true,
   // loop: true,
+
   pagination: {
     el: ".team-pagination",
     clickable: true,
