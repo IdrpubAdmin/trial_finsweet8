@@ -43,6 +43,24 @@
   }
 }
 
+/* list_typ_01 */
+.list_typ_01{
+  .typ_list_wrap{
+    .iframe_wrap{
+      position:relative;
+      height:0;
+      padding-bottom:56.25%;
+      iframe{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+      }
+    }
+  }
+}
+
 /* list_type_01 _ tit */
 .typ_tit_wrap {
   color: var(--fontColor);
@@ -97,8 +115,7 @@ a.mute {
   .typ_list_wrap{
     ul {
       li {
-        a{
-          display: block;
+        .list_item{
           .typ_list_img {
             width: 100%;
             height: 100%;

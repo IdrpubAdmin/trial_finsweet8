@@ -66,9 +66,7 @@
 
 .page_home .custom_swiper .custom_wrap { overflow: visible; }
 
-.page_home .custom_swiper .custom_wrap > li { margin-bottom: 28px; }
-
-.page_home .custom_swiper .custom_wrap > li::after { content: ''; display: block; width: 100%; height: 12px; margin-top: 12px; background: #503AE7; }
+.page_home .custom_swiper .custom_wrap .item::after { content: ''; display: block; width: 100%; height: 12px; margin-top: 12px; background: #503AE7; }
 
 .page_home .custom_swiper .custom_wrap .my_review { display: flex; align-items: center; margin-bottom: 16px; }
 

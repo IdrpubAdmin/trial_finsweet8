@@ -137,8 +137,7 @@
   .custom_swiper{
     .custom_wrap{
       overflow: visible;
-      & > li{
-        margin-bottom: 28px;
+      .item{
         &::after{
           content: '';
           display: block;

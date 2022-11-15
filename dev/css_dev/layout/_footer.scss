@@ -102,7 +102,7 @@
   position: relative;
   top: 52%;
   left: 82px;
-  width: 6rem;
+  width: 5rem;
   height: 2.6rem;
   margin: -2rem auto 0 auto;
   overflow: hidden;
@@ -124,7 +124,6 @@
   .sun {
     width: 100%;
     z-index: 2;
-    background: url(../../assets/images/ico/sun.png) no-repeat 22% center;
     &::before {
       content: "";
       background: url(../../assets/images/ico/sun.png) no-repeat 50% center;
@@ -134,7 +133,7 @@
       width: 1rem;
       height: 0rem;
       padding: .9rem .4rem;
-      background-color: #3563E9;
+      background-color: $prime_color;
       border-radius: 50%;
       transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
     }
@@ -147,8 +146,8 @@
   }
   .switch_chk:checked + .sun:before {
     content: "";
-    left: 3.7rem;
-    background: #3563E9 url(../../assets/images/ico/moon.png) no-repeat 60% center;
+    left: 2.9rem;
+    background: $prime_color url(../../assets/images/ico/moon.png) no-repeat 60% center;
   }
 }
 
