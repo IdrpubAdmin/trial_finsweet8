@@ -269,6 +269,11 @@
         img, span {
           display: block;
         }
+        & > img{
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+        }
         .name {
           font-weight: $b;
           font-size: 24px;

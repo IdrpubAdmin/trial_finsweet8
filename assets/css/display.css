@@ -552,6 +552,8 @@ ul.socials_list li .ico_linkedIn_p { background: url(../../assets/images/ico/ico
 
 .producer_post .pro_po_profile .pro_po_profile_wrap .pro_info img, .producer_post .pro_po_profile .pro_po_profile_wrap .pro_info span { display: block; }
 
+.producer_post .pro_po_profile .pro_po_profile_wrap .pro_info > img { width: 64px; height: 64px; border-radius: 50%; }
+
 .producer_post .pro_po_profile .pro_po_profile_wrap .pro_info .name { font-weight: 700; font-size: 24px; line-height: 36px; margin-top: 16px; }
 
 .producer_post .pro_po_profile .pro_po_profile_wrap .pro_info .job { line-height: 24px; }
