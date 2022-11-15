@@ -546,6 +546,11 @@
     .meetTeamSwiper {
       margin-top: 49px;
       .swiper-slide {
+        img {
+          width: 308px;
+          height: 302px;
+          object-fit: cover;
+        }
         .meet_t_txt {
           .name {
             display: block;

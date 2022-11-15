@@ -177,6 +177,8 @@
 
 .meet_our_team .meet_t .meetTeamSwiper { margin-top: 49px; }
 
+.meet_our_team .meet_t .meetTeamSwiper .swiper-slide img { width: 308px; height: 302px; object-fit: cover; }
+
 .meet_our_team .meet_t .meetTeamSwiper .swiper-slide .meet_t_txt .name { display: block; line-height: 38.4px; margin-top: 32px; }
 
 .meet_our_team .meet_t .meetTeamSwiper .swiper-slide .meet_t_txt .job { color: #AFB0B9; line-height: 24px; margin-top: 16px; display: block; }
