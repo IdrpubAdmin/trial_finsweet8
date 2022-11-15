@@ -15,70 +15,9 @@
 
 <!-- wrapper -->
 <div id="wrapper">
-<!-- header -->
-<header class="con_pd">
-    <h1>
-      <a href="Home.html"><img src="../assets/images/logo/logo.svg" alt="finsweet"></a>
-    </h1>
-
-    <!-- gnb -->
-    <nav>
-      <div class="gnb">
-        
-        <!-- mo_hamburger -->
-        <div class="mo_hamburger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-        <!-- //mo_hamburger -->
-
-        <div class="bg_gray"></div>
-
-        <div class="sub_menu">
-          <ul class="menu">
-            <li><a href="Podcasts.html">Podcasts</a></li>
-            <li><a href="Host.html">Host</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Blog.html">Blog</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-          </ul>
-
-          <ul class="sns">
-            <li><a href="#none" class="facebook_b"></a></li>
-            <li><a href="#none" class="linkedIn_b"></a></li>
-            <li><a href="#none" class="instagram_b"></a></li>
-          </ul>
-        </div>
-        
-      </div>
-    </nav>
-    <!-- //gnb -->
-</header>
-<!-- //header -->
-
-<script>
-
-  const burger = document.querySelector('.mo_hamburger');
-  const sub = document.querySelector('.sub_menu');
-  const bgOn = document.querySelector('.bg_gray');
-
-  burger.addEventListener('click', () => {
-    burger.classList.toggle('toggle');
-    // 수정필요 .contents oh
-    sub.classList.toggle('mo_menu_on')
-    bgOn.classList.toggle('mo_bg_on')
-    document.body.classList.toggle('no_scroll')
-  })
-
-</script>
 
   <!-- container -->
   <div class="container">
-
-    <!-- dark_mode -->
-    <!-- <input class="dark_mode" type="checkbox"> -->
-    <!-- // dark_mode -->
     
       <!-- contents -->
       <div id="contents" class="page_about">
@@ -100,6 +39,47 @@
           </div>
         </div>
         <!-- banner_top -->
+
+        <!-- info -->
+        <div class="list_type custom_swiper con-m con_pd">
+          <!-- typ_list_wrap -->
+          <div class="typ_list_wrap">
+            <ul class="custom_wrap">
+              <li>
+                <div class="my_review">
+                  <img src="../assets/images/ico/ico_podcasts_p.png" alt="Eve Madien" class="ico_podcasts_img">
+                  <p class="heading_4">500+ Podcast</p>
+                </div>
+                <div class="heading_5 icon_desc">
+                  Apparently we had reached a great height in the atmosphere,
+                  for the sky was a dead black, and the stars had ceased to twinkle.
+                </div>
+              </li>
+              <li>
+                <div class="my_review">
+                  <img src="../assets/images/ico/ico_subscribers_p.png" alt="Ash Benfred" class="ico_subscribers_img">
+                  <p class="heading_4">24M Views</p>
+                </div>
+                <div class="heading_5 icon_desc">
+                  Apparently we had reached a great height in the atmosphere,
+                  for the sky was a dead black, and the stars had ceased to twinkle.
+                </div>
+              </li>
+              <li>
+                <div class="my_review">
+                  <img src="../assets/images/ico/ico_view_p.png" alt="Ryan Smith" class="ico_view_img">
+                  <p class="heading_4">600k Subs</p>
+                </div>
+                <div class="heading_5 icon_desc">
+                  Apparently we had reached a great height in the atmosphere,
+                  for the sky was a dead black, and the stars had ceased to twinkle.
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- //typ_list_wrap -->
+        </div>
+        <!-- //info -->
 
         <!-- our_team -->
         <div class="our_team">
@@ -287,71 +267,11 @@
         <!-- //recent_episodes -->
 
       </div>
-<!-- footer_sponsors -->
-<div class="footer_top con_pd">
-  <div class="footer_sponsors">
-    <h3 class="heading_2">Our Sponsors</h3>
-    <div class="logoipsum">
-        <img src="../assets/images/logo/logoipsum_1.png" alt="logoipsum">
-        <img src="../assets/images/logo/logoipsum_2.png" alt="logoipsum">
-        <img src="../assets/images/logo/logoipsum_3.png" alt="logoipsum">
-        <img src="../assets/images/logo/logoipsum_4.png" alt="logoipsum">
-        <img src="../assets/images/logo/logoipsum_5.png" alt="logoipsum">
-    </div>
-  </div>
-</div>
-<!-- //footer_sponsors -->
       <!-- //contents -->
 
   </div>
   <!-- //container -->
 
-<!-- footer -->
-<footer>
-  <!-- footer_con -->
-  <div class="footer_con">
-    <div class="logo_wrap">
-      <a href="Home.html"><img src="../assets/images/logo/logo_w.svg" alt="finsweet"></a>
-    </div>
-
-    <div class="pages">
-      <h4>Pages</h4>
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="podcasts.html">Podcasts</a></li>
-        <li><a href="host.html">Host</a></li>
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
-    </div>
-
-    <div class="reach_us">
-      <h4>Reach Us</h4>
-      <ul>
-        <li><a href="#none">Contact</a></li>
-        <li><a href="#none">About</a></li>
-      </ul>
-    </div>
-
-    <div class="subscribe">
-      <h4>Subscribe</h4>
-      <ul>
-        <li class="logo_apple"><a href="#none"><img src="../assets/images/logo/apple_podcasts_w.png" alt="apple podcasts"></a></li>
-        <li class="logo_sound_cloud"><a href="#none"><img src="../assets/images/logo/sound_cloud_w.png" alt="sound cloud"></a></li>
-        <li class="google_logo"><a href="#none"><img src="../assets/images/logo/google_podcast_w.png" alt="googl _podcast"></a></li>
-        <li class="spotify_logo"><a href="#none"><img src="../assets/images/logo/spotify_w.png" alt="spotify"></a></li>
-      </ul>
-    </div>
-    <!-- dark_mode -->
-    <input class="dark_mode" type="checkbox">
-    <!-- // dark_mode -->
-  </div>
-
-  <div class="copyright">
-    <em>© Copyright Finsweet 2021</em>
-  </div>
-
-</footer>
-<!-- //footer -->
 </div>
 <!-- //wrapper -->
 

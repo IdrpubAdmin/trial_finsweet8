@@ -446,8 +446,8 @@ ul.socials_list li .ico_linkedIn_p { background: url(../../assets/images/ico/ico
 /* page_host */
 .page_host .layout_banner_wrap { background: url(../../assets/images/contents/host_banner.png) no-repeat center; background-size: cover; }
 
-/* page_padcast */
-.page_padcast .layout_banner_wrap { background: url(../../assets/images/contents/podcast_banner_2.png) no-repeat center; background-size: cover; }
+/* page_podcast */
+.page_podcast .layout_banner_wrap { background: url(../../assets/images/contents/podcast_banner_2.png) no-repeat center; background-size: cover; }
 
 /* page_blog */
 .page_blog .typ_sec_01 { padding: 64px 124px 62px 0; }
