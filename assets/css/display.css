@@ -639,13 +639,18 @@ ul.socials_list li .ico_linkedIn_p { background: url(../../assets/images/ico/ico
 /* ========================================================== */
 /* ---------------------------------------------------------- */
 /* header s ================================================= */
-header { position: relative; height: 72px; line-height: 72px; background-color: #fff; display: flex; justify-content: space-between; z-index: 30; overflow: hidden; }
+header { position: relative; height: 72px; line-height: 72px; background-color: #fff; display: flex; justify-content: space-between; z-index: 30; max-width: 1280px; }
 
 header h1 { margin: 0; }
 
 header h1 a { display: block; }
 
 header h1 a img { vertical-align: middle; }
+
+header.drop { position: fixed; animation: drop 0.3s; top: 0; width: 100%; }
+
+@keyframes drop { 0% { top: -5rem; }
+  100% { top: 0; } }
 
 @media only screen and (max-width: 768px) { header { overflow: inherit; padding: 0 20px !important; overflow-x: clip !important; } }
 
@@ -681,6 +686,12 @@ header .gnb .sub_menu ul.sns li { float: left; margin-right: 16px; }
 header .gnb .sub_menu ul.sns li:last-child { margin-right: 0; }
 
 header .gnb .sub_menu ul.sns li a { vertical-align: sub; }
+
+header .gnb .quick_top { position: relative; }
+
+header .gnb .quick_top a.btn_top { width: 50px; height: 50px; border-radius: 50%; background-color: #503AE7; position: fixed; bottom: 20px; right: 20px; }
+
+header .gnb .quick_top a.btn_top:after { content: ''; height: 0; width: 0; position: absolute; border: 7px solid transparent; border-top-width: 0; border-bottom-color: #fff; top: 47%; left: 50%; transform: translate(-50%, -50%); }
 
 .mo_hamburger { width: 50px; position: absolute; top: 50%; right: 20px; transform: translateY(-50%); z-index: 100; }
 
