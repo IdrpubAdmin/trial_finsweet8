@@ -5,7 +5,7 @@
 <!-- wrapper -->
 <div id="wrapper">
   <div class="container">
-
+<!-- @@include ../page_include/header.html -->
       <div id="contents" class="page_home">
         <div class="home_wrap">
           <div class="main_top">
@@ -47,12 +47,18 @@
 
         <div class="top_sec_wrap con-m sec_fir">
           <div class="top_img_wrap reverse typ_01_img">
-            <div class="img_only ">
-              <p class="">
-                <img src="../assets/images/contents/makers_profile.png" alt="makers_profile img" >
-                <img src="../assets/images/contents/main_con_1.png" alt="makers_profile img" >
-                <img src="../assets/images/contents/articles_2.png" alt="makers_profile img" >
-              </p>
+            <div class="img_only swiper tImgSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="../assets/images/contents/makers_profile.png" alt="makers_profile img">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../assets/images/contents/main_con_1.png" alt="makers_profile img">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../assets/images/contents/articles_2.png" alt="makers_profile img">
+                </div>
+              </div>
             </div>
           </div>
           <div class="typ_sec typ_sec_03">
@@ -151,8 +157,10 @@
           <!-- @@include ../page_include/layout_list_typ_02.html -->
 
         </div><!-- //home_wrap -->
+        <!-- @@include ../page_include/footer_sponsors.html -->
       </div>
       <!-- //contents -->
+      <!-- @@include ../page_include/footer.html -->
   </div>
     <!-- //container -->
 </div>

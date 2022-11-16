@@ -27,7 +27,7 @@ function gnb() {
 function scrollTop() {
 
   const btn = document.querySelector('.btn_top')
-  
+
   window.addEventListener('scroll', () => {
     if (document.querySelector('html').scrollTop > 100) {
       btn.classList.remove('dn');
@@ -37,14 +37,14 @@ function scrollTop() {
       btn.classList.add('dn');
     }
   });
-  
+
   btn.addEventListener('click', () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
     });
   })
-  
+
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------
@@ -55,17 +55,17 @@ function headerFixed() {
 
   const header = document.querySelector("header");
   const headerHeight = header.offsetHeight;
-  
+
   window.onscroll = function() {
     const windowTop = window.scrollY;
     if (windowTop >= headerHeight) {
       header.classList.add("drop");
-    } 
+    }
     else {
       header.classList.remove("drop");
     }
   };
-  
+
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------
@@ -100,11 +100,11 @@ function classOn() {
 
   Array.from(btns).forEach(item => {
       item.addEventListener("click", () => {
-         var selected = document.getElementsByClassName("on");
-         selected[0].className = selected[0].className.replace(" on", "");
-         item.className += " on";
-      });
-   });
+        var selected = document.getElementsByClassName("on");
+        selected[0].className = selected[0].className.replace(" on", "");
+        item.className += " on";
+    });
+  });
 
 }
 
@@ -156,6 +156,21 @@ var swiper = new Swiper(".custom_swiper", {
   }
 });
 
+var swiper = new Swiper(".tImgSwiper", {
+  spaceBetween: 30,
+  effect: "fade",
+  autoplay: {
+    delay: 3500
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  }
+});
 
 /*---------------------------------------------------------------------------------------------------------------------------
  * 	meet our team swiper
