@@ -505,6 +505,10 @@ ul.socials_list li .ico_linkedIn_p { background: url(../../assets/images/ico/ico
 
 .page_home .top_img_wrap .bnt_video { position: absolute; left: 60%; bottom: 40px; width: 318px; height: 112px; padding-left: 68px; border: 0; background-image: url(../../assets/images/ico/ico_youtube.png); background-repeat: no-repeat; background-position: 10% center; }
 
+.page_home .typ_01_img { width: 632px; height: 450px; position: relative; background-color: #503AE7; }
+
+.page_home .typ_01_img img { display: block; width: 384px; height: 384px; position: absolute; left: 70px; top: 50%; transform: translateY(-50%); }
+
 .sec_fir .typ_sec_03 { background-image: url(../../assets/images/lines/bg_lines_8.png); background-position: 44%; }
 
 .sec_fir .typ_sec_03 .top_sub_01 { padding: 100px 116px 0 114px; }

@@ -169,6 +169,28 @@
       background-position: 10% center;
     }
   }
+  .typ_01_img{
+    width: 632px;
+    height: 450px;
+    position: relative;
+    background-color: $prime_color;
+    // &::after{
+    //   content: '';
+    //   display: block;
+    //   background: url(../../assets/images/lines/bg_lines_2.png) no-repeat right center;
+    //   width: 180px;
+    //   height: 72px;
+    // }
+    img{
+      display: block;
+      width: 384px;
+      height: 384px;
+      position: absolute;
+      left: 70px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
 }
 .sec_fir{
   .typ_sec_03{

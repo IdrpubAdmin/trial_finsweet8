@@ -35,7 +35,7 @@
 
 .notify-wrap .notify-wrap-inner { padding: 0 20px; margin: 0 30px; }
 
-.notify-wrap .notify-wrap-inner .notify-scroll { display: inline-block; animation: text-scroll 25s linear infinite; }
+.notify-wrap .notify-wrap-inner .notify-scroll { display: inline-block; animation: text-scroll 20s linear infinite; }
 
 .notify-wrap .notify-wrap-inner .notify-scroll ul li { display: inline-block; padding-right: 350px; vertical-align: text-bottom; }
 
