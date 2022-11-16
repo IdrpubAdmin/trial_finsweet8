@@ -1,57 +1,117 @@
 <!-- header -->
 <header>
-    <h1>
-      <a href="Home.html"><img src="../assets/images/logo/logo.svg" alt="finsweet"></a>
-    </h1>
+  <h1>
+    <a href="Home.html"><img src="../assets/images/logo/logo.svg" alt="finsweet"></a>
+  </h1>
 
-    <!-- gnb -->
-    <nav>
-      <div class="gnb">
+  <!-- gnb -->
+  <nav>
+    <div class="gnb">
 
-        <!-- mo_hamburger -->
-        <div class="mo_hamburger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-        <!-- //mo_hamburger -->
+      <!-- mo_hamburger -->
+      <div class="mo_hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <!-- //mo_hamburger -->
 
-        <div class="bg_gray"></div>
+      <div class="bg_gray"></div>
 
-        <div class="sub_menu">
-          <ul class="menu">
-            <li><a href="podcast.html">Podcasts</a></li>
-            <li><a href="host.html">Host</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+      <div class="sub_menu">
 
-          <ul class="sns">
-            <li><a href="https://ko-kr.facebook.com/facebook/" class="facebook_b"></a></li>
-            <li><a href="https://www.figma.com/file/q4jTVMDIpHbB7AXcZb3fSj/Client-First-Template-8---Podcast-(Community)?node-id=292%3A972" class="linkedIn_b"></a></li>
-            <li><a href="https://www.instagram.com/" class="instagram_b"></a></li>
-          </ul>
-        </div>
+        <!-- menu -->
+        <ul class="menu">
+          <li><a href="podcast.html">Podcasts</a></li>
+          <li><a href="host.html">Host</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <!-- //menu -->
+
+        <!-- sns -->
+        <ul class="sns">
+          <li><a href="https://ko-kr.facebook.com/facebook/" class="facebook_b"><span class="blind">go to facebook</span></a></li>
+          <li><a href="https://www.figma.com/file/q4jTVMDIpHbB7AXcZb3fSj/Client-First-Template-8---Podcast-(Community)?node-id=292%3A972" class="linkedIn_b"><span class="blind">go to linkedIn</span></a></li>
+          <li><a href="https://www.instagram.com/" class="instagram_b"><span class="blind">go to instagram</span></a></li>
+        </ul>
+        <!-- //sns -->
 
       </div>
-    </nav>
-    <!-- //gnb -->
+
+      <div class="quick_top">
+        <a href="" class="btn_top"></a>
+      </div>
+
+    </div>
+  </nav>
+  <!-- //gnb -->
 </header>
 <!-- //header -->
 
 <script>
 
-  const burger = document.querySelector('.mo_hamburger');
-  const sub = document.querySelector('.sub_menu');
-  const bgOn = document.querySelector('.bg_gray');
+//gnb js
+function gnb() {
 
-  burger.addEventListener('click', () => {
-    burger.classList.toggle('toggle');
-    // 수정필요 .contents oh
-    sub.classList.toggle('mo_menu_on')
-    bgOn.classList.toggle('mo_bg_on')
-    document.body.classList.toggle('no_scroll')
-  })
+const burger = document.querySelector('.mo_hamburger');
+const sub = document.querySelector('.sub_menu');
+const bgOn = document.querySelector('.bg_gray');
 
+burger.addEventListener('click', () => {
+  burger.classList.toggle('toggle');
+  sub.classList.toggle('mo_menu_on')
+  bgOn.classList.toggle('mo_bg_on')
+  document.body.classList.toggle('no_scroll')
+})
+
+}
+
+gnb();
+
+// scrollTop js
+function scrollTop() {
+
+const btn = document.querySelector('.btn_top')
+
+window.addEventListener('scroll', () => {
+  if (document.querySelector('html').scrollTop > 100) {
+    btn.classList.remove('dn');
+    btn.classList.add('db');
+  } else {
+    btn.classList.remove('db');
+    btn.classList.add('dn');
+  }
+});
+
+btn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+})
+
+}
+
+scrollTop()
+
+function headerFixed() {
+
+const header = document.querySelector("header");
+const headerHeight = header.offsetHeight;
+
+window.onscroll = function () {
+  const windowTop = window.scrollY;
+  if (windowTop >= headerHeight) {
+    header.classList.add("drop");
+  } 
+  else {
+    header.classList.remove("drop");
+  }
+};
+
+}
+
+headerFixed()
 </script>
