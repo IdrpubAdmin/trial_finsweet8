@@ -281,7 +281,7 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; colo
 
 :root[color-theme='light'] { --background: #fff; --fontColor: #000; }
 
-:root[color-theme='dark'] { --background: #000; --fontColor: #fff; }
+:root[color-theme='dark'] { --background: #222; --fontColor: #fff; }
 
 .container { max-width: 1280px; margin: 0 auto; }
 
