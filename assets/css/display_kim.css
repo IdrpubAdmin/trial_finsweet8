@@ -6,7 +6,7 @@
 /* ========================================================== */
 /* ---------------------------------------------------------- */
 /* main s =================================================== */
-.home_wrap .main_top { padding: 0 125px; background: url(../../assets/images/contents/bg_audio_track.png) no-repeat center right 20%; }
+.home_wrap .main_top { padding: 0 125px; background: url(../../assets/images/temp/bg_audio_track.png) no-repeat center right 20%; }
 
 .home_wrap .main_top .main_tit { width: 480px; margin-top: 92px; }
 
@@ -60,9 +60,9 @@
 
 .page_home .swiper-sec .swiper-button-next::after, .page_home .swiper-sec .swiper-button-prev::after { content: ''; }
 
-.page_home .swiper-sec .swiper-button-prev { left: 88%; background: #503AE7 url(../../assets/images/ico/ico_prev.png) no-repeat center; }
+.page_home .swiper-sec .swiper-button-prev { left: 88%; background: #503AE7 url(../../assets/images/temp/ico_prev.png) no-repeat center; }
 
-.page_home .swiper-sec .swiper-button-next { right: 0%; background: #503AE7 url(../../assets/images/ico/ico_next_01.png) no-repeat center; }
+.page_home .swiper-sec .swiper-button-next { right: 0%; background: #503AE7 url(../../assets/images/temp/ico_next_01.png) no-repeat center; }
 
 .page_home .custom_swiper .custom_wrap { overflow: visible; }
 

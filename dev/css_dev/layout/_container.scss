@@ -34,7 +34,7 @@
 /* page_host */
 .page_host{
   .layout_banner_wrap{
-    background: url(../../assets/images/contents/host_banner.png) no-repeat center;
+    background: url(../../assets/images/temp/host_banner.png) no-repeat center;
     background-size: cover;
   }
 }
@@ -42,7 +42,7 @@
 /* page_podcast */
 .page_podcast{
   .layout_banner_wrap{
-    background: url(../../assets/images/contents/podcast_banner_2.png) no-repeat center;
+    background: url(../../assets/images/temp/podcast_banner_2.png) no-repeat center;
     background-size: cover;
   }
 }
@@ -178,12 +178,12 @@
       display: block;
       height: 100%;
       width: 100%;
-      background: url(../../assets/images/lines/bg_lines_3.png) no-repeat left 34px top 125px;
+      background: url(../../assets/images/temp/bg_lines_3.png) no-repeat left 34px top 125px;
     }
     &::after{
       content: '';
       display: block;
-      background: url(../../assets/images/lines/bg_lines_2.png) no-repeat right center;
+      background: url(../../assets/images/temp/bg_lines_2.png) no-repeat right center;
       height: 72px;
       width: 108px;
       position: absolute;
@@ -221,7 +221,7 @@
 }
 .sec_fir{
   .typ_sec_03{
-    background-image: url(../../assets/images/lines/bg_lines_8.png);
+    background-image: url(../../assets/images/temp/bg_lines_8.png);
     background-position: 44%;
     .top_sub_01{
       padding: 100px 116px 0 114px;
@@ -230,7 +230,7 @@
 }
 .sec_secon{
   .typ_sec_03{
-    background-image: url(../../assets/images/lines/bg_lines_4.png);
+    background-image: url(../../assets/images/temp/bg_lines_4.png);
     background-position: top 12% right 12%;
     .top_sub_01 {
       padding: 100px 173px 0 114px;
@@ -251,7 +251,7 @@
     }
   }
   .typ_sec_03{
-    background-image: url(../../assets/images/lines/bg_lines_6.png);
+    background-image: url(../../assets/images/temp/bg_lines_6.png);
     background-position: bottom 30% right 5%;
     .top_sub_01 {
       padding: 90px 244px 0 0px;
@@ -322,6 +322,7 @@
           width: 64px;
           height: 64px;
           border-radius: 50%;
+          object-fit: cover;
         }
         .name {
           font-weight: $b;

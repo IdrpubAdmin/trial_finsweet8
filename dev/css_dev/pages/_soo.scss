@@ -34,7 +34,7 @@
   .banner_top_01 {
     .banner_top_img {
       height: 524px;
-      background: url(../../assets/images/contents/main_host.png) no-repeat left;
+      background: url(../../assets/images/temp/main_host.png) no-repeat left;
     }
     .banner_top_tit_wrap {
       left: 51%;
@@ -55,7 +55,7 @@
 
 // origins
 .origins_wrap {
-  background: url(../../assets/images/lines/bg_lines_9.png) no-repeat left / contain;
+  background: url(../../assets/images/temp/bg_lines_9.png) no-repeat left / contain;
   padding: 107px 114px 0px 114px;
   margin-top: 40px;
   .ori_con {
@@ -157,7 +157,7 @@
   .page_host {
     .banner_top_01 {
       .banner_top_img {
-        background: url(../../assets/images/contents/main_host.png) no-repeat left / 60%;
+        background: url(../../assets/images/temp/main_host.png) no-repeat left / 60%;
       }
     }
     .banner_top_tit_wrap {
@@ -214,7 +214,7 @@
     .banner_top_01 {
       .banner_top_img {
         height: 390px;
-        background: url(../../assets/images/contents/main_host.png) no-repeat center / 100%;
+        background: url(../../assets/images/temp/main_host.png) no-repeat center / 100%;
       }
       .banner_top_tit_wrap {
         position: inherit;
@@ -274,7 +274,7 @@
 //podcast_top
 .podcast_top {
   .podcast_tit_wrap {
-    background: url(../../assets/images/contents/podcasts_banner_1.png) no-repeat right bottom;
+    background: url(../../assets/images/temp/podcasts_banner_1.png) no-repeat right bottom;
     width: 100%;
     height: 564px;
     position: relative;
@@ -359,7 +359,7 @@
       }
     }
   }
-  
+
 }
 
 
@@ -387,7 +387,7 @@
 }
 
 // producer_post : page include section
-.page_single_podcast {
+.page_s_podcast {
  .producer_post {
   display: flex;
   justify-content: space-between;
@@ -395,7 +395,7 @@
   max-width: 1024px;
   .producer_post_wrap {
     width: 62%;
-    
+
   }
   .listen_on {
     h3 {
@@ -406,7 +406,7 @@
         margin-bottom: 32px;
         a {
          display: block;
-         height: 100%; 
+         height: 100%;
         }
         &:last-child {
           margin-bottom: 0;
@@ -418,14 +418,14 @@
 }
 
 // recent_episodes
-.page_single_podcast {
+.page_s_podcast {
   .typ_tit_wrap {
     color: var(--fontColor)
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .page_single_podcast {
+  .page_s_podcast {
     .producer_post {
       flex-wrap: wrap;
      .producer_post_wrap {
@@ -465,7 +465,7 @@
 }
 
 @media only screen and (max-width: 425px) {
-  .page_single_podcast {
+  .page_s_podcast {
     .producer_post {
      .listen_on {
        .podcasts_list {
@@ -494,7 +494,7 @@
   .banner_top_01 {
     max-width: 1024px;
     .banner_top_img {
-      background: url(../../assets/images/contents/main_about.png) no-repeat right;
+      background: url(../../assets/images/temp/main_about.png) no-repeat right;
       height: 500px;
     }
     .banner_top_tit_wrap {
@@ -518,7 +518,7 @@
 //our_team
 .our_team {
   margin-top: 86px;
-  background: url(../../assets/images/lines/bg_lines_10.png) no-repeat left 33%;
+  background: url(../../assets/images/temp/bg_lines_10.png) no-repeat left 33%;
   color: var(--fontColor);
   .our_t_tit_wrap {
     margin: 0 auto;
@@ -547,7 +547,7 @@
 
 // meet_our_team
 .meet_our_team {
-  background: url(../../assets/images/lines/bg_lines_5.png) no-repeat right bottom 18%;
+  background: url(../../assets/images/temp/bg_lines_5.png) no-repeat right bottom 18%;
   color: var(--fontColor);
   .meet_t {
     .meetTeamSwiper {
@@ -593,7 +593,7 @@
 .our_sponsors {
   margin-top: 102px;
   .our_s_tit_wrap {
-    background: url(../../assets/images/lines/bg_lines_11.png) no-repeat top right;
+    background: url(../../assets/images/temp/bg_lines_11.png) no-repeat top right;
     h2 {
       color: var(--fontColor);
     }
@@ -849,7 +849,7 @@
               white-space: normal;
               display: -webkit-box;
               -webkit-box-orient: vertical;
-              overflow: hidden;  
+              overflow: hidden;
             }
             h3 {
               -webkit-line-clamp: 2;
@@ -985,7 +985,7 @@
   color: var(--fontColor);
   margin-top: 64px;
   height: calc( 100vh - 136px );
-  background: url(../../assets/images/contents/bg_contact.png) no-repeat right bottom;
+  background: url(../../assets/images/temp/bg_contact.png) no-repeat right bottom;
   .contact_us_wrap {
     display: flex;
     .contact_input_wrap {
