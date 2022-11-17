@@ -525,7 +525,7 @@ ul.socials_list li .ico_linkedIn_p { background: url(../../assets/images/ico/ico
 
 .sec_secon .typ_sec_03 .top_sub_01 { padding: 100px 173px 0 114px; }
 
-.sec_thir .top_img_wrap::after { content: ''; display: inline-block; position: absolute; left: -34px; bottom: -21px; width: 384px; height: 124px; background: #503AE7 url(../../assets/images/contents/sound_wave.png) no-repeat center; }
+.sec_thir .top_img_wrap::after { content: ''; display: inline-block; position: absolute; left: -34px; bottom: -21px; width: 384px; height: 124px; background: #503AE7 url(../../assets/images/temp/sound_wave.png) no-repeat center; }
 
 .sec_thir .typ_sec_03 { background-image: url(../../assets/images/temp/bg_lines_6.png); background-position: bottom 30% right 5%; }
 
