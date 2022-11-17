@@ -177,7 +177,20 @@
       }
     }
   }
+  .promo_only{
+    color: #fff;
+    margin: 30px 0;
+    padding: 20px;
+    & > p{
+      margin-top: 20px;
+    }
+  }
 
+  .page_promotion {
+    .socials {
+      margin-top: 0 !important;
+    }
+  }
 
 // mdq_tab
 @media only screen and (max-width: 768px) {

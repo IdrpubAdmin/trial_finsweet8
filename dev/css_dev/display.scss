@@ -20,11 +20,14 @@
 	'layout/footer.scss';
 
 @import
+  'pages/main.scss';
+
+@import
 	'display/button.scss',
 	'display/form.scss',
 	'display/table.scss',
 	'display/list.scss',
-	'display/tab.scss',
+	'display/section.scss',
 	'display/promotion.scss';
 
 

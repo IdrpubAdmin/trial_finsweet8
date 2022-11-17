@@ -77,20 +77,22 @@ function categoryOn() {
   const item = document.querySelectorAll('.page_podcast .data li')
   const btn = document.querySelectorAll('.page_podcast .cate_pod')
 
-  itemTab.addEventListener('click', (e) => {
-    const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
-    if (filter == null) {
-      return;
-    }
-    item.forEach((item) => {
-      if (filter === '*' || filter === item.dataset.type) {
-        item.style.display = "block";
-      } else {
-        item.style.display = "none";
-
+  if(itemTab){
+    itemTab.addEventListener('click', (e) => {
+      const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+      if (filter == null) {
+        return;
       }
+      item.forEach((item) => {
+        if (filter === '*' || filter === item.dataset.type) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+
+        }
+      });
     });
-  });
+  }
 
 }
 
@@ -98,13 +100,15 @@ function classOn() {
 
   const btns = document.querySelectorAll('.page_podcast .cate_pod')
 
-  Array.from(btns).forEach(item => {
-      item.addEventListener("click", () => {
-        var selected = document.getElementsByClassName("on");
-        selected[0].className = selected[0].className.replace(" on", "");
-        item.className += " on";
+  if(btns){
+    Array.from(btns).forEach(item => {
+        item.addEventListener("click", () => {
+          var selected = document.getElementsByClassName("on");
+          selected[0].className = selected[0].className.replace(" on", "");
+          item.className += " on";
+      });
     });
-  });
+  }
 
 }
 
@@ -112,21 +116,24 @@ function classOn() {
  * 	 darkmode
  *--------------------------------------------------------------------------------------------------------------------------*/
 
-const $checkbox = document.querySelector('.dark_mode');
 
-$checkbox.addEventListener('click', e=> {
-  if (e.target.checked) {
-    document.documentElement.setAttribute('color-theme', 'dark');
-  } else {
-    document.documentElement.setAttribute('color-theme', 'light');
-  }
-});
+function darkMode(){
+  const $checkbox = document.querySelector('.dark_mode');
+
+  $checkbox.addEventListener('click', e=> {
+    if (e.target.checked) {
+      document.documentElement.setAttribute('color-theme', 'dark');
+    } else {
+      document.documentElement.setAttribute('color-theme', 'light');
+    }
+  });
+}
 
 /*---------------------------------------------------------------------------------------------------------------------------
  * 	 home swiper
  *--------------------------------------------------------------------------------------------------------------------------*/
 
-var swiper = new Swiper(".custom_swiper", {
+var swiperOne = new Swiper(".custom_swiper", {
   slidesPerView: 3,
   spaceBetween: 16,
   slidesPerGroup: 1,
@@ -156,7 +163,7 @@ var swiper = new Swiper(".custom_swiper", {
   }
 });
 
-var swiper = new Swiper(".tImgSwiper", {
+var swiperTwo = new Swiper(".tImgSwiper", {
   spaceBetween: 30,
   effect: "fade",
   autoplay: {
@@ -176,7 +183,7 @@ var swiper = new Swiper(".tImgSwiper", {
  * 	meet our team swiper
  *--------------------------------------------------------------------------------------------------------------------------*/
 
-var swiper = new Swiper(".meetTeamSwiper", {
+var swiperThr = new Swiper(".meetTeamSwiper", {
   slidesPerView: 4,
   spaceBetween: 16,
   autoplay: true,
@@ -213,6 +220,7 @@ window.onload = function() {
   gnb();
   scrollTop();
   headerFixed();
+  darkMode();
   categoryOn();
   classOn();
 }
