@@ -10,13 +10,13 @@ header {
   position: relative;
   height: 72px;
   line-height: 72px;
-  background-color: #fff;
   display: flex;
   justify-content: space-between;
   z-index: 30;
   max-width: 1280px;
   color: var(--fontColor);
-  background: var(--background);
+  background-color: #fff;
+  background-color: var(--background);
   h1 {
     margin: 0;
     a {
