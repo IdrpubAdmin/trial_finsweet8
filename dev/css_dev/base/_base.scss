@@ -189,6 +189,7 @@ body {
   height: 24px;
   display: inline-block;
 }
+
 .linkedIn_b {
   background: url(../../assets/images/ico/ico_linkedIn.svg) no-repeat center;
   width: 24px;
@@ -200,6 +201,31 @@ body {
   width: 24px;
   height: 24px;
   display: inline-block;
+}
+.sns{
+  & > li{
+    &:nth-child(1){
+      & > a{
+        &.chg_img{
+          background: url(../../assets/images/ico/ico_facebook_p.png) no-repeat center;
+        }
+      }
+    }
+    &:nth-child(2){
+      & > a{
+        &.chg_img{
+          background: url(../../assets/images/ico/ico_linkedIn_p.png) no-repeat center;
+        }
+      }
+    }
+    &:nth-child(3){
+      & > a{
+        &.chg_img{
+          background: url(../../assets/images/ico/ico_twitter_p.png) no-repeat center;
+        }
+      }
+    }
+  }
 }
 
 .facebook_s {

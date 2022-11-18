@@ -356,6 +356,12 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; colo
 
 .instagram_b { background: url(../../assets/images/ico/ico_instagram.svg) no-repeat center; width: 24px; height: 24px; display: inline-block; }
 
+.sns > li:nth-child(1) > a.chg_img { background: url(../../assets/images/ico/ico_facebook_p.png) no-repeat center; }
+
+.sns > li:nth-child(2) > a.chg_img { background: url(../../assets/images/ico/ico_linkedIn_p.png) no-repeat center; }
+
+.sns > li:nth-child(3) > a.chg_img { background: url(../../assets/images/ico/ico_twitter_p.png) no-repeat center; }
+
 .facebook_s { background: url(../../assets/images/ico/ico_facebook.svg) no-repeat center/100%; width: 16px; height: 16px; display: inline-block; }
 
 .linkedIn_s { background: url(../../assets/images/ico/ico_linkedIn.svg) no-repeat center/100%; width: 16px; height: 16px; display: inline-block; }
@@ -865,7 +871,7 @@ header h1 { margin: 0; }
 
 header h1 a { display: block; }
 
-header h1 a img { vertical-align: middle; }
+header h1 a img { width: 130px; vertical-align: middle; }
 
 header.drop { position: fixed; animation: drop 0.3s; top: 0; width: 100%; }
 
@@ -1048,6 +1054,8 @@ header .gnb .quick_top a.btn_top:after { content: ''; height: 0; width: 0; posit
 .notify-wrap .notify-wrap-inner .notify-scroll ul li { display: inline-block; padding-right: 350px; vertical-align: text-bottom; }
 
 .notify-wrap .notify-wrap-inner .notify-scroll ul li a { display: block; }
+
+.notify-wrap .notify-wrap-inner .notify-scroll ul.dark_hide { display: none; }
 
 @keyframes text-scroll { from { transform: translateX(20%);
     -moz-transform: translateX(20%);
