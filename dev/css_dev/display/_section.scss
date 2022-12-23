@@ -127,11 +127,11 @@
   }
 }
 .sec_fir,
-  .sec_secon{
-    .typ_sec_03{
-      background: none;
-    }
+.sec_secon{
+  .typ_sec_03{
+    background: none;
   }
+}
 
 
 /* tablet 지정 */
@@ -211,6 +211,17 @@
   /* typ_sec_03 */
   .typ_sec_03{
     background-image: none;
+  }
+
+  /* typ_sec_03 */
+  .top_sec_wrap{
+    .typ_sec_03{
+      .top_sub_01,
+      .top_sub_txt_02,
+      .top_sub_txt_03{
+        padding: 0 30px !important;
+      }
+    }
   }
 
 }/* mobile 지정 */

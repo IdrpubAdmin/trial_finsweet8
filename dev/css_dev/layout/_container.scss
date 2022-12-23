@@ -10,7 +10,7 @@
   color: #fff;
   position: relative;
   width: 100%;
-	padding-top : 46%;
+  padding-top : 46%;
   &::after{
     content: '';
     display: block;
@@ -25,7 +25,7 @@
     & > p{
       margin-bottom: 32px;
       &:nth-child(2){
-      line-height: 28px;
+        line-height: 28px;
       }
     }
   }
@@ -73,7 +73,7 @@
         span {
           font-weight: $b;
         }
-          margin-bottom: 20px;
+        margin-bottom: 20px;
         span.dbr {
           display: block;
         }
@@ -702,6 +702,24 @@
           display: grid;
           grid-template-columns: 1fr 1fr;
           gap: 30px 100px;
+          .podcasts_item{
+            .light_mode_item{
+              display: block;
+            }
+            .dark_mode_item{
+              display: none;
+            }
+          }
+          &.dark_mode{
+            .podcasts_item{
+              .light_mode_item{
+                display: none;
+              }
+              .dark_mode_item{
+                display: block;
+              }
+            }
+          }
         }
       }
       .socials {
@@ -721,7 +739,7 @@
       & > p{
         margin-bottom: 12px;
         &:nth-child(2){
-        line-height: 18px;
+          line-height: 18px;
         }
       }
     }
@@ -929,18 +947,18 @@
     flex-wrap: wrap;
     padding: 0 20px;
     .producer_post_wrap {
-    width: 100%;
-    .pro_po_profile {
-      margin-top: 36px;
-      .pro_po_profile_wrap {
-        padding: 17px 0 22px 25px;
-        flex-wrap: wrap;
-        .pro_info_con {
-          margin-top: 20px;
-          margin-left: 0;
+      width: 100%;
+      .pro_po_profile {
+        margin-top: 36px;
+        .pro_po_profile_wrap {
+          padding: 17px 0 22px 25px;
+          flex-wrap: wrap;
+          .pro_info_con {
+            margin-top: 20px;
+            margin-left: 0;
+          }
         }
       }
-    }
     }
   }
 
@@ -989,7 +1007,7 @@
         height: 480px;
       }
       .banner_top_tit_wrap {
-        padding: 0 20px;
+        padding: 0 30px;
         width: 100%;
         position: relative;
         .banner_top_tit {
@@ -1029,6 +1047,7 @@
   }
   .our_team {
     .our_t_tit_wrap {
+      padding: 0 30px;
       .our_t_txt {
         flex-wrap: wrap;
         p {
@@ -1063,13 +1082,16 @@
         position: inherit;
         left: inherit;
         .typ_sec_02 {
-          padding: 0 20px;
+          padding: 0 30px;
         }
       }
     }
     .mq_logo_list {
       margin-top: 38px;
     }
+  }
+  .origins_wrap {
+    padding: 0 30px;
   }
   .podcasts_n_view_wrap {
     height: 280px;
@@ -1132,7 +1154,7 @@
   /* page_single_blog */
   .single_blog_top {
     .sin_b_top_tit {
-      margin: 34px 20px 0 20px;
+      margin: 34px 30px 0 30px;
       p {
         line-height: 25px;
         .dbr {
@@ -1145,8 +1167,14 @@
     }
   }
 
+  //producer_post
+  .producer_post {
+    padding: 0 30px;
+  }
+
   /* contact */
   .contact_us {
+    padding: 0 30px;
     background-image: none;
     .subscribe {
       .podcasts_list {

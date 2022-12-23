@@ -32,7 +32,7 @@ body {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -149,10 +149,10 @@ body {
   &:hover {
     color: #3E2DB2;
     transition: .5s;
-      .play {
-        background-color: #3E2DB2;
-        transition: .5s;
-      }
+    .play {
+      background-color: #3E2DB2;
+      transition: .5s;
+    }
   }
   i.play {
     background: url(../../assets/images/ico/ico_play.png) no-repeat center;
@@ -273,6 +273,41 @@ ul.socials_list {
       display: inline-block;
       margin-right: 0;
     }
+    .ico_facebook_w {
+      background: url(../../assets/images/ico/ico_facebook_w.png) no-repeat center;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+    }
+    .ico_twitter_w {
+      background: url(../../assets/images/ico/ico_twitter_w.png) no-repeat center;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+    }
+    .ico_linkedIn_w {
+      background: url(../../assets/images/ico/ico_linkedIn_w.png) no-repeat center;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      margin-right: 0;
+    }
+    .light_mode_item{
+      display: block;
+    }
+    .dark_mode_item{
+      display: none;
+    }
+  }
+  &.dark_mode {
+    li{
+      .light_mode_item{
+        display: none;
+      }
+      .dark_mode_item{
+        display: block;
+      }
+    }
   }
 }
 .blind {
@@ -343,6 +378,19 @@ ul.socials_list {
   }
 }
 
+.skip{
+  a{
+    background-color: #000;
+    color: $white;
+    position: absolute;
+    top: -100px;
+    display: inline-block;
+    padding: 5px 10px;
+    &:focus{
+      top: 0;
+    }
+  }
+}
 
 /* tablet 지정 */
 @media only screen and (max-width: 768px) {
@@ -411,6 +459,11 @@ ul.socials_list {
   // margin
   .con-m{
     margin-top: $margin-t-s;
+  }
+
+  // content padding
+  .con_pd {
+    padding: 0 30px;
   }
 
   /* your_inbox */

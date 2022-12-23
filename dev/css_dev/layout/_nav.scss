@@ -38,9 +38,12 @@ header {
             display: block;
             height: 100%;
             font-weight: $b;
+            &.gnbOn {
+              color: $sub_color;
+            }
           }
         }
-        }
+      }
       ul.sns {
         float: left;
         li {

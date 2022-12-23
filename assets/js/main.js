@@ -20,6 +20,21 @@ function gnb() {
 
 }
 
+
+/*--------------------------------------------------------------------------------
+ * 	gnb on
+ *------------------------------------------------------------------------------*/
+
+function gnbOn() {
+  const navItem = document.querySelectorAll('.menu li a')
+  const path = window.location.pathname
+  for(let i=0; i<navItem.length; i++){
+    if(path.includes(navItem[i].innerText.toLowerCase())){
+      navItem[i].classList.add('gnbOn')
+    }
+  }
+}
+
 /*------------------------------------------------------------------------------
  * 	 scrollTop
  *----------------------------------------------------------------------------*/
@@ -116,14 +131,34 @@ function classOn() {
  * 	 darkmode
  *----------------------------------------------------------------------------------*/
 
+const checkBox = document.querySelector('.dark_mode');
+const chgSnsTag = document.querySelectorAll('.sns li a');
+const chgLogo = document.querySelector(".logo_img");
+const chgRolling = document.querySelector('.light_ver');
+const chgRolling2 = document.querySelector('.dark_ver');
+const chgSnsList = document.querySelector('.chg_socials_list');
+const chgpodList = document.querySelector('.chg_podcasts_list');
+
+function darkModeCheck(){
+  for(var i = 0; i < chgSnsTag.length; i++){
+    var item = chgSnsTag.item(i);
+    if (sessionStorage.getItem('dark') === 'true') {
+      checkBox.checked = true;
+      document.documentElement.setAttribute('color-theme', 'dark');
+      item.classList.add("chg_img");
+      chgLogo.src = "../assets/images/logo/logo_w.svg";
+      if(chgSnsList){
+        chgSnsList.classList.add('dark_mode');
+        chgpodList.classList.add('dark_mode');
+      } else if(chgRolling){
+        chgRolling.classList.add('dark_hide');
+        chgRolling2.classList.remove('dark_hide');
+      }
+    }
+  }
+};
 
 function darkMode(){
-  const checkBox = document.querySelector('.dark_mode');
-  const chgSnsTag = document.querySelectorAll('.sns li a');
-  const chgLogo = document.querySelector(".logo_img");
-  const chgRolling = document.querySelector('.light_ver');
-  const chgRolling2 = document.querySelector('.dark_ver');
-
   checkBox.addEventListener('click', e=> {
     for(var i = 0; i < chgSnsTag.length; i++){
       var item = chgSnsTag.item(i);
@@ -131,14 +166,26 @@ function darkMode(){
         document.documentElement.setAttribute('color-theme', 'dark');
           item.classList.add("chg_img");
           chgLogo.src = "../assets/images/logo/logo_w.svg";
-          chgRolling.classList.add('dark_hide');
-          chgRolling2.classList.remove('dark_hide');
+          if(chgSnsList){
+            chgSnsList.classList.add('dark_mode');
+            chgpodList.classList.add('dark_mode');
+          } else if(chgRolling){
+            chgRolling.classList.add('dark_hide');
+            chgRolling2.classList.remove('dark_hide');
+          }
+          sessionStorage.setItem('dark', true);
       } else {
         document.documentElement.setAttribute('color-theme', 'light');
           item.classList.remove("chg_img");
           chgLogo.src = "../assets/images/logo/logo.svg";
-          chgRolling.classList.remove('dark_hide');
-          chgRolling2.classList.add('dark_hide');
+          if(chgSnsList){
+            chgSnsList.classList.remove('dark_mode');
+            chgpodList.classList.remove('dark_mode');
+          } else if(chgRolling){
+            chgRolling.classList.remove('dark_hide');
+            chgRolling2.classList.add('dark_hide');
+          }
+          sessionStorage.setItem('dark', false);
       }
     }
   });
@@ -161,9 +208,11 @@ var swiperOne = new Swiper(".custom_swiper", {
   breakpoints: {
     360: {
       slidesPerView: 1,
+      spaceBetween: 30,
     },
-    425: {
+    426: {
       slidesPerView: 1,
+      spaceBetween: 16,
     },
     768: {
       slidesPerView: 2,
@@ -230,14 +279,13 @@ var swiperThr = new Swiper(".meetTeamSwiper", {
 /*-------------------------------------------------------------------------------
  *-----------------------------------------------------------------------------*/
 
-window.onload = function() {
+window.addEventListener('DOMContentLoaded', function() {
+  darkModeCheck()
   gnb();
+  gnbOn();
   scrollTop();
   headerFixed();
   darkMode();
   categoryOn();
   classOn();
-}
-
-
-
+});

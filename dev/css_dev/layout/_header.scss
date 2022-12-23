@@ -13,7 +13,7 @@ header {
   display: flex;
   justify-content: space-between;
   z-index: 30;
-  max-width: 1280px;
+  max-width: 1000px;
   color: var(--fontColor);
   background-color: var(--background);
   h1 {
@@ -50,6 +50,13 @@ header.drop {
     overflow: inherit;
     padding: 0 20px !important;
     overflow-x: clip !important;
+  }
+}
+
+//mdq tab
+@media only screen and (max-width: 425px) {
+  header {
+    padding: 0 30px !important;
   }
 }
 

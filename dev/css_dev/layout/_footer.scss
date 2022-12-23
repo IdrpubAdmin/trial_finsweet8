@@ -37,54 +37,54 @@
 
 //footer_con
 .footer_con {
-    color: #fff;
-    width: 100%;
-    background-color: $black;
-    padding: 195px 80px 96px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: relative;
-    &::after{
-      content: '';
-      display: block;
-      clear: both;
+  color: #fff;
+  width: 100%;
+  background-color: $black;
+  padding: 195px 80px 96px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  &::after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .pages,
+  .reach_us,
+  .subscribe {
+    h4 {
+      font-weight: $b;
+      margin-bottom: 32px;
+      font-size: 20px;
     }
-    .pages,
-    .reach_us,
-    .subscribe {
-        h4 {
-            font-weight: $b;
-            margin-bottom: 32px;
-            font-size: 20px;
-        }
-        li {
-            margin-bottom: 16px;
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
+    li {
+      margin-bottom: 16px;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
+  }
 }
 
 .footer_con {
-    .subscribe {
-        ul {
-            li {
-                margin-bottom: 32px;
-            }
-        }
+  .subscribe {
+    ul {
+      li {
+        margin-bottom: 32px;
+      }
     }
+  }
 }
 
 //copyright
 .copyright {
-    height: 64px;
-    line-height: 64px;
-    color: #fff;
-    background-color: $prime_color;
-    text-align: center;
-    font-weight: $b;
+  height: 64px;
+  line-height: 64px;
+  color: #fff;
+  background-color: $prime_color;
+  text-align: center;
+  font-weight: $b;
 }
 
 //dark_mode
@@ -177,18 +177,18 @@
   }
 
   .footer_con {
-      padding: 60px 20px;
-      flex-direction: column;
-      transform: inherit;
+    padding: 60px 20px;
+    flex-direction: column;
+    transform: inherit;
     .logo_wrap {
-        margin-bottom: 40px;
+      margin-bottom: 40px;
     }
     .pages,
     .reach_us {
-        margin-bottom: 60px;
+      margin-bottom: 60px;
     }
     .subscribe {
-        margin-bottom: 0;
+      margin-bottom: 0;
     }
   }
   //dark_mode
@@ -207,12 +207,13 @@
     transform: inherit;
     .logoipsum {
       img {
-          width: 45%;
+        width: 45%;
       }
     }
   }
 
   .footer_con {
+    padding: 60px 30px;
     .logo_wrap {
       margin-bottom: 50px;
     }

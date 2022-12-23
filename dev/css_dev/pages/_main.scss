@@ -315,15 +315,15 @@
     }
     .typ_01_img{
       &::before,
-        &::after{
-          display: none;
-        }
-        .img_only{
-          left: 50%;
-          top: 50%;
-          transform: translate(-50%, -50%);
-          margin: 30px 0px 0;
-        }
+      &::after{
+        display: none;
+      }
+      .img_only{
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        margin: 30px 0px 0;
+      }
     }
     .custom_swiper {
       margin: 30px 0px 0;
@@ -353,6 +353,7 @@
 @media only screen and (max-width: 425px) {
   .home_wrap{
     .main_top{
+      padding: 0 30px;
       background: none;
       .main_tit{
         width: 100%;
@@ -374,6 +375,12 @@
   /* banner */
   .notify-wrap{
     margin: 40px auto 0 auto;
+  }
+
+  .page_home{
+    .custom_swiper {
+      padding: 0 30px;
+    }
   }
 
 } /* // mobile 지정 */

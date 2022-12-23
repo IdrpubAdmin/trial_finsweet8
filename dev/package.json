@@ -13,7 +13,6 @@
     "@babel/core": "^7.16.7",
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.16.7",
-    "@babel/preset-es2015": "^7.0.0-beta.53",
     "@babel/preset-react": "^7.16.7",
     "autoprefixer": "^10.4.13",
     "gulp": "^4.0.2",
