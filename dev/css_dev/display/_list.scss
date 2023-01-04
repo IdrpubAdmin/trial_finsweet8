@@ -26,6 +26,7 @@
           h3 {
             display: block;
             line-height: 26px;
+
           }
           p,
           a.btn_listen {
@@ -33,6 +34,7 @@
           }
           .sub_txt{
             line-height: 24px;
+            @include set-ellipsis(2);
           }
         }
         &:last-child {

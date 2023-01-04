@@ -74,10 +74,13 @@
     .notify-scroll{
       display: inline-block;
       animation:text-scroll 20s linear infinite;
+      &:hover {
+        animation-play-state: paused;
+      }
       ul{
         li{
           display: inline-block;
-          padding-right: 350px;
+          padding-right: 150px;
           vertical-align: text-bottom;
           a{
             display: block;
@@ -202,26 +205,34 @@
       }
     }
     .swiper-button-prev{
-      left: 88%;
+      left: unset;
+      right: 58px;
       background: $prime_color url(../../assets/images/temp/ico_prev.png) no-repeat center;
+      transition: 0.3s;
+      &:hover {
+        background: #3E2DB2 url(../../assets/images/temp/ico_prev.png) no-repeat center;
+      }
     }
     .swiper-button-next{
-      right: 0%;
+      right: 0;
       background: $prime_color url(../../assets/images/temp/ico_next_01.png) no-repeat center;
+      transition: 0.3s;
+      &:hover {
+        background: #3E2DB2 url(../../assets/images/temp/ico_next_01.png) no-repeat center;
+      }
     }
   }
   .custom_swiper{
     .custom_wrap{
       overflow: visible;
+      li {
+        height: auto;
+      }
       .item{
-        &::after{
-          content: '';
-          display: block;
-          width: 100%;
-          height: 12px;
-          margin-top: 12px;
-          background: $prime_color;
-        }
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
       }
       .my_review{
         display: flex;
@@ -243,8 +254,16 @@
       }
       .review_con{
         height: auto;
-        min-height: 192px;
+        //min-height: 192px;
         line-height: 24px;
+        margin-bottom: auto;
+      }
+      .review_bar {
+          display: block;
+          width: 100%;
+          height: 12px;
+          margin-top: 12px;
+          background: $prime_color;
       }
     }
   }
@@ -333,8 +352,7 @@
       margin-bottom: 64px;
       .swiper_btn_wrap{
         position: absolute;
-        position: absolute;
-        right: 66px;
+        right: 0;
         bottom: -10px;
       }
       .swiper-button-next,
@@ -342,6 +360,12 @@
         width: 32px;
         height: 32px;
         background-size: 50%;
+        &:hover {
+          background-size: 50%;
+        }
+      }
+      .swiper-button-prev {
+        right: 42px;
       }
     }
   }
