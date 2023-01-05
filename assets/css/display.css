@@ -1059,11 +1059,11 @@ header .gnb .quick_top a.btn_top:after { content: ''; height: 0; width: 0; posit
 
 .home_wrap .main_top .main_tit { width: 480px; margin-top: 92px; }
 
-.home_wrap .main_top .main_tit p { margin-top: 32px; color: var(--fontColor); }
+.home_wrap .main_top .main_tit p, .home_wrap .main_top .main_tit form { margin-top: 32px; color: var(--fontColor); }
 
-.home_wrap .main_top .main_tit p:first-child { margin-top: 0; }
+.home_wrap .main_top .main_tit p:first-child, .home_wrap .main_top .main_tit form:first-child { margin-top: 0; }
 
-.home_wrap .main_top .main_tit p:nth-child(2) { line-height: 28px; }
+.home_wrap .main_top .main_tit p:nth-child(2), .home_wrap .main_top .main_tit form:nth-child(2) { line-height: 28px; }
 
 /* //home_wrap */
 /* email_input */

@@ -200,14 +200,14 @@ function validateEmail(inputText)
   let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   if(inputText.value.match(mailformat))
   {
-    alert("Valid email address!");
+    // alert("Valid email address!");
     // document.form1.text1.focus();
     this.parentNode.nextElementSibling.innerHTML = "이메일주소가 제출되었습니다."
     return true;
   }
   else
   {
-    alert("Invalid email address!");
+    // alert("Invalid email address!");
     document.form1.text1.focus();
     this.parentNode.nextElementSibling.innerHTML = "유효하지 않은 이메일 주소입니다. 다시 입력해 주세요."
     return false;
